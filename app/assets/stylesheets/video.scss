@@ -1,0 +1,78 @@
+.youtube {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.random__mac {
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  height: 650px;
+  width: 650px;
+  border-radius: 100%;
+}
+
+.mac__face {
+  position: absolute;
+  top: 25%;
+  left: 32.5%;
+  height: 50%;
+  width: 35%;
+  animation: wmwtso 4s infinite ease-out;
+  z-index: 5;
+}
+
+.swimming {
+  position: absolute;
+  top: 2.5%;
+  left: 38%;
+  height: 150px;
+  width: 150px;
+  z-index: 12;
+}
+
+.faces {
+  position: absolute;
+  right: 5%;
+  top: 40%;
+  height: 150px;
+  width: 150px;
+  z-index: 12;
+}
+
+.wmtso {
+  position: absolute;
+  bottom: 2.5%;
+  left: 38%;
+  height: 150px;
+  width: 150px;
+  z-index: 12;
+}
+
+.good__am {
+  position: absolute;
+  left: 5%;
+  top: 40%;
+  height: 150px;
+  width: 150px;
+  z-index: 12;
+}
+
+@keyframes wmwtso {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(900deg);
+    }
+}
+
+@keyframes faces {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(810deg);
+    }
+}
