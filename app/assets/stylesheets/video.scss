@@ -11,16 +11,67 @@
   height: 650px;
   width: 650px;
   border-radius: 100%;
+  border: solid 1px black;
 }
 
-.mac__face {
+.mac__face-- {
   position: absolute;
   top: 25%;
   left: 32.5%;
   height: 50%;
   width: 35%;
-  animation: wmwtso 4s infinite ease-out;
   z-index: 5;
+}
+
+.mac__face--album1 {
+  position: absolute;
+  top: 25%;
+  left: 32.5%;
+  height: 50%;
+  width: 35%;
+  z-index: 5;
+  animation: swimming 5s ease-out forwards
+}
+
+.mac__face--album2 {
+  position: absolute;
+  top: 25%;
+  left: 32.5%;
+  height: 50%;
+  width: 35%;
+  z-index: 5;
+  animation: faces 5s ease-out forwards
+}
+
+.mac__face--album3 {
+  position: absolute;
+  top: 25%;
+  left: 32.5%;
+  height: 50%;
+  width: 35%;
+  z-index: 5;
+  animation: wmwtso 5s ease-out forwards
+}
+
+.mac__face--album4 {
+  position: absolute;
+  top: 25%;
+  left: 32.5%;
+  height: 50%;
+  width: 35%;
+  z-index: 5;
+  animation: am 5s ease-out forwards
+}
+
+.play__song {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  height: 10%;
+  width: 10%;
+  background: blue;
+  cursor: pointer;
+  color: white;
 }
 
 .swimming {
@@ -57,6 +108,24 @@
   height: 150px;
   width: 150px;
   z-index: 12;
+}
+
+@keyframes swimming {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(1080deg);
+    }
+}
+
+@keyframes am {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(990deg);
+    }
 }
 
 @keyframes wmwtso {
