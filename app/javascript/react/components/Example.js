@@ -16,12 +16,17 @@ class Example extends React.Component {
         videoId={this.props.youtube}
         opts={opts}
         onReady={this._onReady}
+        onEnd={this.props.songEnd}
       />
     );
   }
 
   _onReady(event) {
     event.target.playVideo();
+  }
+
+  _onEnd(event) {
+    this.props.songEnd()
   }
 }
 

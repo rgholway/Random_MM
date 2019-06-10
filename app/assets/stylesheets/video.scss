@@ -1,4 +1,15 @@
-.youtube {
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+.youtube-- {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.youtube--active {
   position: absolute;
   top: 30%;
   right: 5%;
@@ -10,8 +21,9 @@
   left: 5%;
   height: 650px;
   width: 650px;
-  border-radius: 100%;
-  border: solid 1px black;
+  border-radius: 50%;
+  background: black;
+  border: solid .5px black;
 }
 
 .mac__face-- {
@@ -76,38 +88,130 @@
 
 .swimming {
   position: absolute;
-  top: 2.5%;
-  left: 38%;
-  height: 150px;
-  width: 150px;
+  top: 4%;
+  left: 40%;
+  height: 20%;
+  width: 20%;
+  z-index: 12;
+  border: solid 2px black;
+}
+
+.divine {
+  position: absolute;
+  top: 14%;
+  left: 64%;
+  height: 18%;
+  width: 18%;
+  z-index: 12;
+}
+
+.blue {
+  position: absolute;
+  top: 67%;
+  left: 65%;
+  height: 18%;
+  width: 18%;
+  z-index: 12;
+}
+
+.kids {
+  position: absolute;
+  top: 65%;
+  right: 67%;
+  height: 18%;
+  width: 18%;
+  z-index: 12;
+}
+
+.macadelic {
+  position: absolute;
+  top: 16%;
+  right: 74%;
+  height: 9%;
+  width: 9%;
+  z-index: 12;
+}
+
+.delusional {
+  position: absolute;
+  top: 25%;
+  right: 74%;
+  height: 9%;
+  width: 9%;
+  z-index: 12;
+}
+
+.bde {
+  position: absolute;
+  top: 25%;
+  right: 65.2%;
+  height: 9%;
+  width: 9%;
+  z-index: 12;
+}
+
+.space {
+  position: absolute;
+  top: 16%;
+  right: 65.2%;
+  height: 9%;
+  width: 9%;
   z-index: 12;
 }
 
 .faces {
   position: absolute;
-  right: 5%;
+  right: 2.5%;
   top: 40%;
-  height: 150px;
-  width: 150px;
+  height: 18%;
+  width: 18%;
   z-index: 12;
 }
 
 .wmtso {
   position: absolute;
   bottom: 2.5%;
-  left: 38%;
-  height: 150px;
-  width: 150px;
+  left: 40%;
+  height: 18%;
+  width: 18%;
   z-index: 12;
 }
 
 .good__am {
   position: absolute;
-  left: 5%;
+  left: 2.5%;
   top: 40%;
-  height: 150px;
-  width: 150px;
+  height: 18%;
+  width: 18%;
   z-index: 12;
+}
+
+.title {
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 43%;
+  left: 33%;
+  color: black;
+  font-size: 2.5vw;
+  z-index: 15;
+  font-family: 'Raleway', sans-serif;
+}
+
+.circle {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 30%;
+  left: 30%;
+  border-top: solid 3px #6DEA75;
+  border-right: solid 3px black;
+  border-left: solid 3px black;
+  border-bottom: solid 3px black;
+  border-radius: 100%;
+  z-index: 13;
+  background: white;
+  animation: swimming 5s ease-out forwards
 }
 
 @keyframes swimming {
