@@ -7,13 +7,14 @@ class Home extends Component {
     this.state = {
       song: [],
       album: "",
-      active: ""
+      active: "",
+      selected: ""
     }
     this.playSong = this.playSong.bind(this)
   }
 
 playSong() {
-  let num = (1 + Math.floor(Math.random() * 4))
+  let num = (1 + Math.floor(Math.random() * 12))
     this.setState({album: `album${num}`, active: "active"})
       fetch(`/api/v1/albums/${num}`)
       .then(response => {
@@ -42,10 +43,9 @@ playSong() {
             songEnd= {this.playSong}
           />
         </div>
-        <div className="play__song" onClick={this.playSong}>Play Song</div>
         <div className="random__mac">
           <div className={`mac__face--${this.state.album}`}></div>
-          <div className="title">MAC MILLER</div>
+          <div className="title" onClick={this.playSong}>MAC MILLER</div>
           <img className="swimming" src="https://media.pitchfork.com/photos/5b4e36a4dc6c142e533571c8/1:1/w_600/Mac%20Miller_Swimming.jpg"/>
           <img className="faces" src="https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"/>
           <img className="wmtso" src="https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg"/>
@@ -57,7 +57,8 @@ playSong() {
           <img className="delusional" src="http://hw-img.datpiff.com/m9019023/Mac_Miller_Delusional_Thomas-front-large.jpg"/>
           <img className="bde" src="https://cps-static.rovicorp.com/3/JPG_500/MI0004/067/MI0004067757.jpg?partner=allrovi.com"/>
           <img className="space" src="http://images.genius.com/932f12c26d028188907e55cf5ff23f3e.600x600x1.jpg"/>
-          <div className="circle"></div>
+          <div className="play__song" onClick={this.playSong}>Click for Random Song</div>
+          <div className={`circle--${this.state.album}`} onClick={this.playSong}></div>
         </div>
       </div>
     )}

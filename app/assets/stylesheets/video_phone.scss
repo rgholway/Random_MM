@@ -1,0 +1,416 @@
+@media screen and (max-width:700px){
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+  .youtube-- {
+    position: absolute;
+    right: 30%;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .youtube--active {
+    position: absolute;
+    top: 65%;
+    left: 0%;
+  }
+
+  .random__mac {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+    cursor: pointer;
+  }
+
+  .play__song {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 52%;
+    left: 39%;
+    color: black;
+    font-size: 1.5vw;
+    z-index: 15;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .swimming {
+    position: absolute;
+    top: 5%;
+    left: 41%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+    border: solid 2px black;
+  }
+
+  .divine {
+    position: absolute;
+    top: 17%;
+    left: 67%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+  }
+
+  .blue {
+    position: absolute;
+    top: 68%;
+    left: 65%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+  }
+
+  .kids {
+    position: absolute;
+    top: 65%;
+    right: 67%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+  }
+
+  .macadelic {
+    position: absolute;
+    top: 16%;
+    right: 74%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+  }
+
+  .delusional {
+    position: absolute;
+    top: 25%;
+    right: 74%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+  }
+
+  .bde {
+    position: absolute;
+    top: 25%;
+    right: 65.2%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+  }
+
+  .space {
+    position: absolute;
+    top: 16%;
+    right: 65.2%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+  }
+
+  .faces {
+    position: absolute;
+    right: 3%;
+    top: 42%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+  }
+
+  .wmtso {
+    position: absolute;
+    bottom: 2.5%;
+    left: 40%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+  }
+
+  .good__am {
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    height: 18%;
+    width: 18%;
+    z-index: 12;
+  }
+
+  .title {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 43%;
+    left: 38%;
+    color: black;
+    font-size: 3vw;
+    z-index: 15;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .circle-- {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+  }
+
+  .circle--album1 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: swimming 3s ease-out forwards
+  }
+
+  .circle--album2 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: faces 3s ease-out forwards
+  }
+
+  .circle--album3 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: wmwtso 3s ease-out forwards
+  }
+
+  .circle--album4 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: am 3s ease-out forwards
+  }
+
+  .circle--album5 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: divine 3s ease-out forwards
+  }
+
+  .circle--album6 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: blue_slide 3s ease-out forwards
+  }
+
+  .circle--album7 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: kids 3s ease-out forwards
+  }
+
+  .circle--album8 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album9 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album10 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: other 3s ease-out forwards
+  }
+
+  .circle--album11 {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 28%;
+    left: 29%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 13;
+    background: white;
+    animation: other 3s ease-out forwards
+  }
+
+  @keyframes swimming {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(1080deg);
+      }
+  }
+
+  @keyframes am {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(990deg);
+      }
+  }
+
+  @keyframes wmwtso {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(900deg);
+      }
+  }
+
+  @keyframes faces {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(810deg);
+      }
+  }
+
+  @keyframes divine {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(765deg);
+      }
+  }
+
+  @keyframes blue_slide {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(855deg);
+      }
+  }
+
+  @keyframes kids {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(945deg);
+      }
+  }
+
+  @keyframes other {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(1035deg);
+      }
+  }
+}
