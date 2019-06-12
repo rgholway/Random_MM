@@ -14,7 +14,8 @@ class Home extends Component {
   }
 
 playSong() {
-  let num = (1 + Math.floor(Math.random() * 12))
+  let num = (1 + Math.floor(Math.random() * 11))
+  console.log(num)
     this.setState({album: `album${num}`, active: "active"})
       fetch(`/api/v1/albums/${num}`)
       .then(response => {
