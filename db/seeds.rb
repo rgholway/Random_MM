@@ -32,7 +32,29 @@ end
 
 faces_songs = [
   {name: "Colors and Shapes", youtube: "8P5Hx3xXYqw", album_id: 2},
-  {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2}
+  {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2},
+  {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2},
+  {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2},
+  {name: "Friends", youtube: "7i-MT7YdS64thw", album_id: 2},
+  {name: "Angel Dust", youtube: "rIQqzTNRmoc", album_id: 2},
+  {name: "Malibu", youtube: "zlHUpGHJSR0", album_id: 2},
+  {name: "What Do You Do", youtube: "mmeo85zjZlo", album_id: 2},
+  {name: "It Just Doesn't Matter", youtube: "8Zrd6QSwgE8", album_id: 2},
+  {name: "Therapy", youtube: "ts0I8YY30Rk", album_id: 2},
+  {name: "Polo Jeans", youtube: "0o-6n5IiVY0", album_id: 2},
+  {name: "Happy Birthday", youtube: "s8_f4Sj5qzk", album_id: 2},
+  {name: "Wedding", youtube: "x3elAONl3jY", album_id: 2},
+  {name: "Funeral", youtube: "k8gQZ60u2jg", album_id: 2},
+  {name: "Diablo", youtube: "KlQESTshOPw", album_id: 2},
+  {name: "Ave Maria", youtube: "j2dXGVFT9fg", album_id: 2},
+  {name: "55", youtube: "7pjyOg-3_RM", album_id: 2},
+  {name: "San Francisco", youtube: "jR_WuiY6-Sg", album_id: 2},
+  {name: "Insomiak", youtube: "VywJsq4YXfA", album_id: 2},
+  {name: "Uber", youtube: "Zn9CMLebeuc", album_id: 2},
+  {name: "Rain", youtube: "DmmVy2bWlgM", album_id: 2},
+  {name: "Apparition", youtube: "J7iMyLl987w", album_id: 2},
+  {name: "Thumbalina", youtube: "QxHWGjXmf0s", album_id: 2},
+  {name: "Grand Finale", youtube: "O8QJYVG1cpI", album_id: 2},
 ]
 
 faces_songs.each do |song|
@@ -40,7 +62,26 @@ faces_songs.each do |song|
 end
 
 wmwtso_songs = [
-  {name: "Aquarium", youtube: "R_me4SNmGbc", album_id: 3}
+  {name: "Aquarium", youtube: "R_me4SNmGbc", album_id: 3},
+  {name: "The Star Room", youtube: "Mos8UiWV6_g", album_id: 3},
+  {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 3},
+  {name: "Avian", youtube: "mFWf4Tb5m6Y", album_id: 3},
+  {name: "I'm Not Real", youtube: "GDLFo600vvg", album_id: 3},
+  {name: "SDS", youtube: "jj4csT4eviU", album_id: 3},
+  {name: "Bird Call", youtube: "qGnXnLAXO8c", album_id: 3},
+  {name: "Matches", youtube: "VfSgvNs3irw", album_id: 3},
+  {name: "I Am Who I Am", youtube: "jLTOuvBTLxA", album_id: 3},
+  {name: "Objects in the Mirror", youtube: "fG9C7Bo2vzU", album_id: 3},
+  {name: "Red Dot Music", youtube: "LD6SbTFy8vs", album_id: 3},
+  {name: "Gees", youtube: "1JGmTalfUQY", album_id: 3},
+  {name: "Watching Movies", youtube: "wdaI7F3Jv5M", album_id: 3},
+  {name: "Suplexes inside of Complexes and Duplexes", youtube: "fJo-Cjq0yjg", album_id: 3},
+  {name: "Remember", youtube: "u7MrdaSYvo0", album_id: 3},
+  {name: "Someone Like You", youtube: "e9iS7zaUeQo", album_id: 3},
+  {name: "Youforia", youtube: "lMjQGOfpSo4", album_id: 3},
+  {name: "Goosebumpz", youtube: "M-ev8TFGhGI", album_id: 3},
+  {name: "O.K.", youtube: "eXbz4nSnWf8", album_id: 3},
+  {name: "Claymation.", youtube: "qF22BW168tw", album_id: 3}
 ]
 
 wmwtso_songs.each do |song|
@@ -48,7 +89,23 @@ wmwtso_songs.each do |song|
 end
 
 am_songs = [
-  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4}
+  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4},
+  {name: "Doors", youtube: "wE_KOXiSbI8", album_id: 4},
+  {name: "Brand Name", youtube: "vuCyrtGQhAk", album_id: 4},
+  {name: "Rush Hour", youtube: "L73SaFeTaA8", album_id: 4},
+  {name: "Two Matches", youtube: "KWtg0BDRl9k", album_id: 4},
+  {name: "100 Grandkids", youtube: "RDCoM1x7U38", album_id: 4},
+  {name: "Time Flies", youtube: "TOvPYP55FlM", album_id: 4},
+  {name: "Weekend", youtube: "EAL3PuyulZw", album_id: 4},
+  {name: "Club House", youtube: "d2iONei2b7U", album_id: 4},
+  {name: "In The Bag", youtube: "cRxpib4eV2E", album_id: 4},
+  {name: "Break the Law", youtube: "IQ49uwe-zv8", album_id: 4},
+  {name: "Perfect Circle/God Speed", youtube: "2UkrJ0YjjUY", album_id: 4},
+  {name: "When in Rome", youtube: "hGizbKWt7_g", album_id: 4},
+  {name: "ROS", youtube: "-2AfeMnpiRI", album_id: 4},
+  {name: "Cut the Check", youtube: "K6-8KO5UQQo", album_id: 4},
+  {name: "Jump", youtube: "x-2Jd9d2GTY", album_id: 4},
+  {name: "The Festival", youtube: "ZptG-yglvmw", album_id: 4}
 ]
 
 am_songs.each do |song|
@@ -56,7 +113,17 @@ am_songs.each do |song|
 end
 
 divine_songs = [
-  {name: "We", youtube: "XL--KSNxfy8", album_id: 5}
+  {name: "We", youtube: "XL--KSNxfy8", album_id: 5},
+  {name: "Congratulations", youtube: "JoFkQ7iAQcw", album_id: 5},
+  {name: "Dang!", youtube: "LR3GQfryp9M", album_id: 5},
+  {name: "Stay", youtube: "5WU7oGiwiao", album_id: 5},
+  {name: "Skin", youtube: "GE_iHakWos0", album_id: 5},
+  {name: "Cinderella", youtube: "0fcsGS1dEro", album_id: 5},
+  {name: "Planet God Damn", youtube: "P91dAAsvsPY", album_id: 5},
+  {name: "Soulmate", youtube: "3ADKdqcdNqs", album_id: 5},
+  {name: "My Favorite Part", youtube: "J_8xCOSekog", album_id: 5},
+  {name: "God is Fair, Sexy, Nasty", youtube: "YbbaJIpkGMs", album_id: 5}
+
 ]
 
 divine_songs.each do |song|
@@ -64,7 +131,22 @@ divine_songs.each do |song|
 end
 
 blue_songs = [
-  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6}
+  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6},
+  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 6},
+  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 6},
+  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 6},
+  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 6},
+  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 6},
+  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 6},
+  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 6},
+  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 6},
+  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 6},
+  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 6},
+  {name: "Hole in my Pocket", youtube: "tmA3TcLf8c", album_id: 6},
+  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 6},
+  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 6},
+  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 6},
+  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 6},
 ]
 
 blue_songs.each do |song|
@@ -72,7 +154,26 @@ blue_songs.each do |song|
 end
 
 kids_songs = [
-  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7}
+  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7},
+  {name: "Kicking Incredibly Dope Shit", youtube: "FV9_ND7CrYs", album_id: 7},
+  {name: "Outside", youtube: "g-Nj1LIKo3U", album_id: 7},
+  {name: "Get em Up", youtube: "jwj_4kbcUHY", album_id: 7},
+  {name: "Nikes on my Feet", youtube: "a-rqu-hjobc", album_id: 7},
+  {name: "Senior Skip Day", youtube: "h7NJfuVk9hY", album_id: 7},
+  {name: "The Spins", youtube: "mkGT1c98soU", album_id: 7},
+  {name: "Traffic in the Sky", youtube: "WIUJXgvwgZ0", album_id: 7},
+  {name: "Dont Mind if I Do", youtube: "VbjhM3Bmusw", album_id: 7},
+  {name: "Paper Route", youtube: "uF__NW16rT4", album_id: 7},
+  {name: "Good Evening", youtube: "ST4HeGPuw8Y", album_id: 7},
+  {name: "Ride Around", youtube: "qrxkiAf0sl8", album_id: 7},
+  {name: "Mad Flava Heavy Flow", youtube: "sDgBUU8-4QE", album_id: 7},
+  {name: "Kool Aid and Frozen Pizza", youtube: "UnAbszcy3bs", album_id: 7},
+  {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 7},
+  {name: "Poppy", youtube: "C_7G48V71m0", album_id: 7},
+  {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 7},
+  {name: "La La LA", youtube: "_MMI1hEScO8", album_id: 7},
+
+
 ]
 
 kids_songs.each do |song|
@@ -80,7 +181,16 @@ kids_songs.each do |song|
 end
 
 delusional_songs = [
-  {name: "Larry", youtube: "fxopeGFFw0I", album_id: 8}
+  {name: "Larry", youtube: "fxopeGFFw0I", album_id: 8},
+  {name: "Halo", youtube: "yG6KysBKtYE", album_id: 8},
+  {name: "Vertigo", youtube: "sY2Su11-zuE", album_id: 8},
+  {name: "Bill", youtube: "il92krFwM-o", album_id: 8},
+  {name: "72", youtube: "4ekjhYXhno4", album_id: 8},
+  {name: "The Jesuits", youtube: "gALBvI_a7mY", album_id: 8},
+  {name: "Dr. Thomas", youtube: "ZjOeQfMD89w", album_id: 8},
+  {name: "Labido", youtube: "cO8VuIhcA5c", album_id: 8},
+  {name: "Melvin", youtube: "oq1fb3wWpUw", album_id: 8},
+  {name: "Grandpa Used to Carry a Flask", youtube: "xKpg7bV5ml4", album_id: 8},
 ]
 
 delusional_songs.each do |song|

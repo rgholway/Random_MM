@@ -24,7 +24,6 @@
   border-radius: 50%;
   background: black;
   border: solid .5px black;
-  cursor: pointer;
 }
 
 .play__song {
@@ -34,8 +33,9 @@
   top: 52%;
   left: 37%;
   color: black;
-  font-size: 1vw;
+  font-size: 15px;
   z-index: 15;
+  cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -146,8 +146,9 @@
   top: 43%;
   left: 33%;
   color: black;
-  font-size: 2.5vw;
+  font-size: 35px;
   z-index: 15;
+  cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -164,6 +165,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
 }
 
 .circle--album1 {
@@ -179,7 +181,8 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
-  animation: swimming 3s ease-out forwards
+  animation: swimming 3s ease-out forwards;
+  cursor: pointer;
 }
 
 .circle--album2 {
@@ -195,6 +198,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: faces 3s ease-out forwards
 }
 
@@ -211,6 +215,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: wmwtso 3s ease-out forwards
 }
 
@@ -227,6 +232,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: am 3s ease-out forwards
 }
 
@@ -243,6 +249,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: divine 3s ease-out forwards
 }
 
@@ -259,6 +266,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: blue_slide 3s ease-out forwards
 }
 
@@ -275,6 +283,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: kids 3s ease-out forwards
 }
 
@@ -291,6 +300,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: other 3s ease-out forwards
 }
 
@@ -307,6 +317,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: other 3s ease-out forwards
 }
 
@@ -323,6 +334,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: other 3s ease-out forwards
 }
 
@@ -339,6 +351,7 @@
   border-radius: 100%;
   z-index: 13;
   background: white;
+  cursor: pointer;
   animation: other 3s ease-out forwards
 }
 
