@@ -198,7 +198,23 @@ delusional_songs.each do |song|
 end
 
 macadelic_songs = [
-  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9}
+  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9},
+  {name: "Love Me As I Have Loved You", youtube: "TlS_XHgKjvo", album_id: 9},
+  {name: "Desperado", youtube: "C8-L78g10Ag", album_id: 9},
+  {name: "Loud", youtube: "_BYIEXzdnlY", album_id: 9},
+  {name: "Thoughts from a Balcony", youtube: "nxufWf7dEcM", album_id: 9},
+  {name: "Aliens Fighting Robots", youtube: "1ivzb0yl4fg", album_id: 9},
+  {name: "Vitamins", youtube: "kcfUxP0yoak", album_id: 9},
+  {name: "Fight the Feeling", youtube: "As_cvwAMYi4", album_id: 9},
+  {name: "Lucky Ass Bitch", youtube: "XZAU4K9TXBM", album_id: 9},
+  {name: "The Mourning After", youtube: "kZk3OhsPYQk", album_id: 9},
+  {name: "1 Threw 8", youtube: "_0bqJ1yRaOs", album_id: 9},
+  {name: "Ignorant", youtube: "AnMz52URFXc", album_id: 9},
+  {name: "The Question", youtube: "DS4dmS-t60Q", album_id: 9},
+  {name: "Angels", youtube: "mODR7mL-9pU", album_id: 9},
+  {name: "America", youtube: "1nZKwreCVtU", album_id: 9},
+  {name: "Sunlight", youtube: "CVSzOsi3sao", album_id: 9},
+  {name: "Fuck em All", youtube: "FgcAUMz9lzA", album_id: 9}
 ]
 
 macadelic_songs.each do |song|
@@ -206,7 +222,20 @@ macadelic_songs.each do |song|
 end
 
 space_songs = [
-  {name: "Clarity", youtube: "p2Ic55PW1Dc", album_id: 10}
+  {name: "Life", youtube: "p2Ic55PW1Dc", album_id: 10},
+  {name: "SDS Live", youtube: "2jcFbup8M_0", album_id: 10},
+  {name: "Star Room Live", youtube: "528ZCmsaJZc", album_id: 10},
+  {name: "Best Day Ever Live", youtube: "Uu3PMT5yDWI", album_id: 10},
+  {name: "Bird Call Live", youtube: "4bcK2mcCw1I", album_id: 10},
+  {name: "Watching Movies Live", youtube: "94u8Dd7AX5M", album_id: 10},
+  {name: "Remember Live", youtube: "2brPdaMXt4g", album_id: 10},
+  {name: "The Question Live", youtube: "jleodeLhexY", album_id: 10},
+  {name: "Objects in the Mirror Live", youtube: "IyIY4wBMowk", album_id: 10},
+  {name: "Youforia Live", youtube: "xhnA-h80um0", album_id: 10},
+  {name: "Eggs Aisle", youtube: "Nd4BkhorZbc", album_id: 10},
+  {name: "Earth", youtube: "arh4rGKdEMk", album_id: 10},
+  {name: "Black Bush", youtube: "DGzFVOCnb9c", album_id: 10},
+  {name: "In the Morning", youtube: "YVpRT0_g2FQ", album_id: 10}
 ]
 
 space_songs.each do |song|
@@ -214,7 +243,23 @@ space_songs.each do |song|
 end
 
 best_songs = [
-  {name: "Best Day Ever", youtube: "AbV-Q6tz4B8", album_id: 11}
+  {name: "Best Day Ever", youtube: "AbV-Q6tz4B8", album_id: 11},
+  {name: "Get Up", youtube: "YcXRs-XwA-Y", album_id: 11},
+  {name: "Donald Trump", youtube: "74TFS8r_SMI", album_id: 11},
+  {name: "Oy Vey", youtube: "xhDPVvEY8XM", album_id: 11},
+  {name: "I'll Be There", youtube: "JX2W8d4GMDM", album_id: 11},
+  {name: "GetUp", youtube: "YcXRsXwAY", album_id: 11},
+  {name: "Wear My Hat", youtube: "bbhgzA98IAY", album_id: 11},
+  {name: "Wake Up", youtube: "lhacDi7_c9c", album_id: 11},
+  {name: "All Around the World", youtube: "LO243sHBblw", album_id: 11},
+  {name: "Down the Rabbit Hole", youtube: "n62c2GcQ-NQ", album_id: 11},
+  {name: "In the Air", youtube: "QtTXIoy48XU", album_id: 11},
+  {name: "Play ya Cards", youtube: "sT-RypfNTEc", album_id: 11},
+  {name: "She Said", youtube: "iQdkWnLM8Y8", album_id: 11},
+  {name: "Life Aint Easy", youtube: "p9I35Tav2us", album_id: 11},
+  {name: "Snooze", youtube: "P-EygKhHxmw", album_id: 11},
+  {name: "Keep Floatin", youtube: "KDjxQFpGvNQ", album_id: 11},
+  {name: "BDE Bonus", youtube: "J1z_6XRytak", album_id: 11}
 ]
 
 best_songs.each do |song|
