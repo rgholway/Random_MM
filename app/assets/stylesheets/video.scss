@@ -47,6 +47,7 @@
   width: 18%;
   z-index: 12;
   border: solid 2px black;
+  cursor: pointer;
 }
 
 .divine {
@@ -56,6 +57,78 @@
   height: 18%;
   width: 18%;
   z-index: 12;
+  cursor: pointer;
+}
+
+.hover--1 {
+  position: absolute;
+  height: 17%;
+  top: 5.5%;
+  left: 58.5%;
+  width: 25%;
+  z-index: 14;
+  background: blue;
+  cursor: pointer;
+  border-left: solid 2px red;
+}
+
+.hover--5 {
+  position: relative;
+  height: 100%;
+  top: 0%;
+  left: 100%;
+  width: 25%;
+  z-index: 14;
+  background: blue;
+  cursor: pointer;
+  border-left: solid 2px red;
+}
+
+.hover-- {
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.title__hover {
+  padding: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 0%;
+}
+
+.title__ {
+  padding: absolute;
+  top: 0%;
+  overflow: hidden;
+  width: 0%;
+  height: 0%;
+}
+
+.songs__ {
+  padding: absolute;
+  top: 0%;
+  overflow: hidden;
+  width: 0%;
+  height: 0%;
+}
+
+.songs__hover {
+  position: absolute;
+  top: 20%;
+  height: 80%;
+  width: 100%;
+  background: green;
+  color: red;
+  z-index: 20;
+}
+
+.tracks {
+  position: relative;
+  top: 5%;
+  color: white;
+  z-index: 21;
 }
 
 .blue {
@@ -65,6 +138,7 @@
   height: 18%;
   width: 18%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .kids {
@@ -74,6 +148,7 @@
   height: 18%;
   width: 18%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .macadelic {
@@ -83,6 +158,7 @@
   height: 9%;
   width: 9%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .delusional {
@@ -92,6 +168,7 @@
   height: 9%;
   width: 9%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .bde {
@@ -101,6 +178,7 @@
   height: 9%;
   width: 9%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .space {
@@ -110,6 +188,7 @@
   height: 9%;
   width: 9%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .faces {
@@ -119,6 +198,7 @@
   height: 18%;
   width: 18%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .wmtso {
@@ -128,6 +208,7 @@
   height: 18%;
   width: 18%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .good__am {
@@ -137,6 +218,7 @@
   height: 18%;
   width: 18%;
   z-index: 12;
+  cursor: pointer;
 }
 
 .title {
