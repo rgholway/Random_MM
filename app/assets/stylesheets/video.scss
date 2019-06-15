@@ -62,26 +62,81 @@
 
 .hover--1 {
   position: absolute;
-  height: 17%;
-  top: 5.5%;
+  height: 18%;
+  top: 5%;
   left: 58.5%;
   width: 25%;
   z-index: 14;
-  background: blue;
+  background: black;
+  color: white;
   cursor: pointer;
-  border-left: solid 2px red;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--2 {
+  position: absolute;
+  height: 18%;
+  top: 42%;
+  left: 96.5%;
+  width: 25%;
+  z-index: 14;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--3 {
+  position: absolute;
+  height: 18%;
+  bottom: 2.5%;
+  left: 58%;
+  width: 25%;
+  z-index: 14;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--4 {
+  position: absolute;
+  height: 18%;
+  top: 40%;
+  left: 21%;
+  width: 25%;
+  z-index: 14;
+  background: black;
+  color: white;
+  cursor: pointer;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  font-family: 'Raleway', sans-serif;
 }
 
 .hover--5 {
-  position: relative;
-  height: 100%;
-  top: 0%;
-  left: 100%;
+  position: absolute;
+  height: 18%;
+  top: 17%;
+  left: 85%;
   width: 25%;
   z-index: 14;
   background: blue;
   cursor: pointer;
-  border-left: solid 2px red;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+  border-bottom: solid 2px black;
+  font-family: 'Raleway', sans-serif;
 }
 
 .hover-- {
@@ -95,7 +150,8 @@
   top: 0%;
   left: 0%;
   width: 100%;
-  height: 0%;
+  height: auto;
+  z-index: 20;
 }
 
 .title__ {
@@ -119,16 +175,25 @@
   top: 20%;
   height: 80%;
   width: 100%;
-  background: green;
+  background: white;
   color: red;
   z-index: 20;
+  overflow: scroll;
 }
 
 .tracks {
   position: relative;
   top: 5%;
-  color: white;
+  margin-top: 5%;
+  color: black;
   z-index: 21;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+}
+
+.tracks:hover {
+  background: black;
+  color: white;
 }
 
 .blue {

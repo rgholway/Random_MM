@@ -13,6 +13,7 @@ class Home extends Component {
       albums: []
     }
     this.playSong = this.playSong.bind(this)
+    this.clickSong = this.clickSong.bind(this)
     this.fetchAlbums = this.fetchAlbums.bind(this)
   }
 
@@ -55,9 +56,27 @@ playSong() {
         .catch(error => console.error(`Error in fetch: ${error.message}`));
     }
 
+  clickSong(id) {
+    fetch(`/api/v1/tracks/${id}`)
+    .then(response => {
+      if (response.ok) {
+        return response;
+      } else {
+        let errorMessage = `${response.status} (${response.statusText})`,
+        error = new Error(errorMessage);
+        throw(error);
+      }
+    })
+    .then(response => response.json())
+    .then(body => {
+      this.setState({ song: body, active: "active" })
+    })
+    .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
   componentDidMount() {
     this.fetchAlbums()
-}
+  }
 
   render() {
     let albumArray = this.state.albums.map(album => {
@@ -68,6 +87,7 @@ playSong() {
           name= {album.title}
           art= {album.art}
           css= {album.short}
+          clickSong= {this.clickSong}
         />
       )
     })
