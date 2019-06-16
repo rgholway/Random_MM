@@ -1,8 +1,8 @@
 Album.create(title: "Swimming", short: "swimming", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg")
 Album.create(title: "Faces", short: "faces", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg")
-Album.create(title: "Watching Movies with the Sound Off", short: "wmtso", art: "https://assets.capitalxtra.com/2013/48/best-hip-hop-album-covers-6-1386002950-view-0.jpg")
+Album.create(title: "WMWTSO", short: "wmtso", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg")
 Album.create(title: "Go:od AM", short: "good__am", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1")
-Album.create(title: "The Divine Feminine", short: "divine", art: "https://media.pitchfork.com/photos/5929bcb3ea9e61561daa752c/1:1/w_600/178c182f.jpg")
+Album.create(title: "Divine Feminine", short: "divine", art: "https://media.pitchfork.com/photos/5929bcb3ea9e61561daa752c/1:1/w_600/178c182f.jpg")
 Album.create(title: "Blue Slide Park", short: "blue", art: "https://images.genius.com/ab260470b208b8984a74e2e42e7d1ff6.600x600x1.jpg")
 Album.create(title: "K.I.D.S", short: "kids", art: "https://cdn.shopify.com/s/files/1/0807/4553/products/s-l1600-1_883370e4-02dc-4b8a-8986-22a9bcfe00fa_grande.jpg?v=1544759626")
 Album.create(title: "Delusional Thomas", short: "delusional", art: "http://hw-img.datpiff.com/m9019023/Mac_Miller_Delusional_Thomas-front-large.jpg")
@@ -171,7 +171,7 @@ kids_songs = [
   {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 7},
   {name: "Poppy", youtube: "C_7G48V71m0", album_id: 7},
   {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 7},
-  {name: "La La LA", youtube: "_MMI1hEScO8", album_id: 7},
+  {name: "La La La", youtube: "_MMI1hEScO8", album_id: 7},
 
 
 ]

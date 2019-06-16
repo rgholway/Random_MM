@@ -66,7 +66,7 @@ class AlbumTile extends Component {
         <div>
           <img className={this.props.css} src={this.props.art} onMouseEnter={this.handleHover}/>
         </div>
-        <div className={`hover--${this.state.album}`} onMouseEnter={this.handleEnter} onMouseLeave={this.handleLeave}>
+        <div className={`hover--${this.state.album}`} onMouseEnter={this.handleEnter} onClick={this.handleEnter} onMouseLeave={this.handleLeave}>
           <div className={`title__${this.state.hover}`}>{this.props.name}</div>
           <div className={`songs__${this.state.hover}`}>{songsArray}</div>
         </div>
