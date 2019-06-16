@@ -11,16 +11,18 @@
 
 .youtube--active {
   position: absolute;
+  height: 45%;
+  width: 35%;
   top: 30%;
   right: 5%;
 }
 
 .random__mac {
   position: absolute;
-  top: 3%;
-  left: 5%;
-  height: 650px;
-  width: 650px;
+  top: 10%;
+  left: 4%;
+  height: 80vmin;
+  width: 80vmin;
   border-radius: 50%;
   background: black;
   border: solid .5px black;
@@ -33,7 +35,7 @@
   top: 52%;
   left: 37%;
   color: black;
-  font-size: 15px;
+  font-size: 2vmin;
   z-index: 15;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
@@ -64,15 +66,13 @@
   position: absolute;
   height: 18%;
   top: 5%;
-  left: 58.5%;
-  width: 25%;
+  left: 41%;
+  width: 18%;
   z-index: 14;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
+  font-size: 2.3vmin;
   cursor: pointer;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
-  border-bottom: solid 2px black;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -80,15 +80,13 @@
   position: absolute;
   height: 18%;
   top: 42%;
-  left: 96.5%;
-  width: 25%;
+  left: 79%;
+  width: 18%;
   z-index: 14;
-  background: black;
-  color: white;
+  font-size: 2.3vmin;
+  background: #F9C647;
+  color: black;
   cursor: pointer;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
-  border-bottom: solid 2px black;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -96,15 +94,13 @@
   position: absolute;
   height: 18%;
   bottom: 2.5%;
-  left: 58%;
-  width: 25%;
+  left: 40%;
+  width: 18%;
   z-index: 14;
-  background: black;
+  background: #B92A28;
   color: white;
+  font-size: 2.3vmin;
   cursor: pointer;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
-  border-bottom: solid 2px black;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -112,30 +108,111 @@
   position: absolute;
   height: 18%;
   top: 40%;
-  left: 21%;
-  width: 25%;
+  left: 3%;
+  width: 18%;
   z-index: 14;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   cursor: pointer;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
-  border-bottom: solid 2px black;
+  font-size: 2.3vmin;
   font-family: 'Raleway', sans-serif;
+  z-index: 17;
 }
 
 .hover--5 {
   position: absolute;
   height: 18%;
   top: 17%;
-  left: 85%;
-  width: 25%;
+  left: 67%;
+  width: 18%;
   z-index: 14;
-  background: blue;
+  font-size: 2vmin;
+  background: #DCC0BD;
   cursor: pointer;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
-  border-bottom: solid 2px black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--6 {
+  position: absolute;
+  height: 18%;
+  top: 68%;
+  left: 65%;
+  width: 18%;
+  z-index: 22;
+  background: #2F46F6;
+  font-size: 2vmin;
+  color: white;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--7 {
+  position: absolute;
+  height: 18%;
+  top: 65%;
+  left: 15%;
+  width: 18%;
+  z-index: 22;
+  background: #E2BC9C;
+  font-size: 2.5vmin;
+  color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--8 {
+  position: absolute;
+  height: 18%;
+  top: 16%;
+  left: 17%;
+  width: 18%;
+  z-index: 22;
+  background: #3C3D42;
+  font-size: 1.5vmin;
+  color: white;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--9 {
+  position: absolute;
+  height: 18%;
+  top: 16%;
+  left: 17%;
+  width: 18%;
+  z-index: 22;
+  background: white;
+  font-size: 2.2vmin;
+  color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--10 {
+  position: absolute;
+  height: 18%;
+  top: 16%;
+  left: 17%;
+  width: 18%;
+  z-index: 22;
+  background: #E84E4B;
+  font-size: 1.8vmin;
+  color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--11 {
+  position: absolute;
+  height: 18%;
+  top: 16%;
+  left: 17%;
+  width: 18%;
+  z-index: 22;
+  background: #A2369A;
+  font-size: 2.2vmin;
+  color: black;
+  cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -150,7 +227,7 @@
   top: 0%;
   left: 0%;
   width: 100%;
-  height: auto;
+  height: 50%;
   z-index: 20;
 }
 
@@ -183,10 +260,11 @@
 
 .tracks {
   position: relative;
-  top: 5%;
   margin-top: 5%;
   color: black;
-  z-index: 21;
+  background-color: white;
+  z-index: 19;
+  font-size: 2vmin;
   font-family: 'Raleway', sans-serif;
   cursor: pointer;
 }
@@ -293,7 +371,7 @@
   top: 43%;
   left: 33%;
   color: black;
-  font-size: 35px;
+  font-size: 5vmin;
   z-index: 15;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
@@ -301,8 +379,8 @@
 
 .circle-- {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -317,8 +395,8 @@
 
 .circle--album1 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -334,8 +412,8 @@
 
 .circle--album2 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -351,8 +429,8 @@
 
 .circle--album3 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -368,8 +446,8 @@
 
 .circle--album4 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -385,8 +463,8 @@
 
 .circle--album5 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -402,8 +480,8 @@
 
 .circle--album6 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -419,8 +497,8 @@
 
 .circle--album7 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -436,8 +514,8 @@
 
 .circle--album8 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -453,8 +531,8 @@
 
 .circle--album9 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -470,8 +548,8 @@
 
 .circle--album10 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;
@@ -487,8 +565,8 @@
 
 .circle--album11 {
   position: absolute;
-  height: 250px;
-  width: 250px;
+  height: 34vmin;
+  width: 34vmin;
   top: 30%;
   left: 30%;
   border-top: solid 3px #6DEA75;

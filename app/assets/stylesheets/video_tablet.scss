@@ -1,6 +1,4 @@
-@media screen and (max-width:700px){
-  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-
+@media screen and (min-width:701px) and (max-width:1025px){
   @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
   .youtube-- {
@@ -14,16 +12,16 @@
 
   .youtube--active {
     position: absolute;
-    height: 45%;
+    height: 100%;
     width: 90%;
-    top: 80%;
+    top: 100%;
     left: 5%;
   }
 
   .random__mac {
     position: absolute;
     top: 10%;
-    left: 10%;
+    left: 20%;
     height: 80vmin;
     width: 80vmin;
     border-radius: 50%;
@@ -654,5 +652,4 @@
           transform:rotate(1035deg);
       }
   }
-
 }
