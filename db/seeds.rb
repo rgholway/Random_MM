@@ -31,7 +31,6 @@ swimming_songs.each do |song|
 end
 
 faces_songs = [
-  {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2},
   {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2},
   {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2},
   {name: "Friends", youtube: "7i-MT7YdS64thw", album_id: 2},
@@ -113,8 +112,6 @@ am_songs.each do |song|
   Song.create(song)
 end
 
-divine_songs = [
-  {name: "We", youtube: "XL--KSNxfy8", album_id: 5},
   {name: "Congratulations", youtube: "JoFkQ7iAQcw", album_id: 5},
   {name: "Dang!", youtube: "LR3GQfryp9M", album_id: 5},
   {name: "Stay", youtube: "5WU7oGiwiao", album_id: 5},
