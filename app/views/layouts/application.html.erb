@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>RandomMac</title>
+  <%= favicon_link_tag asset_path('favicon-32x32.png') %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <%= stylesheet_link_tag 'application', media: 'all' %>
 
@@ -9,7 +10,6 @@
 
   <%= csrf_meta_tags %>
 </head>
-<link rel="shortcut icon" href="/favicon.ico"></link>
 <body>
 
   <%- flash.each do |key, value| -%>
