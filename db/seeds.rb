@@ -31,7 +31,6 @@ swimming_songs.each do |song|
 end
 
 faces_songs = [
-  {name: "Colors and Shapes", youtube: "8P5Hx3xXYqw", album_id: 2},
   {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2},
   {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2},
   {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2},
@@ -49,12 +48,14 @@ faces_songs = [
   {name: "Ave Maria", youtube: "j2dXGVFT9fg", album_id: 2},
   {name: "55", youtube: "7pjyOg-3_RM", album_id: 2},
   {name: "San Francisco", youtube: "jR_WuiY6-Sg", album_id: 2},
+  {name: "Colors and Shapes", youtube: "8P5Hx3xXYqw", album_id: 2},
   {name: "Insomiak", youtube: "VywJsq4YXfA", album_id: 2},
   {name: "Uber", youtube: "Zn9CMLebeuc", album_id: 2},
   {name: "Rain", youtube: "DmmVy2bWlgM", album_id: 2},
   {name: "Apparition", youtube: "J7iMyLl987w", album_id: 2},
   {name: "Thumbalina", youtube: "QxHWGjXmf0s", album_id: 2},
-  {name: "Grand Finale", youtube: "O8QJYVG1cpI", album_id: 2},
+  {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2},
+  {name: "Grand Finale", youtube: "O8QJYVG1cpI", album_id: 2}
 ]
 
 faces_songs.each do |song|
@@ -62,7 +63,6 @@ faces_songs.each do |song|
 end
 
 wmwtso_songs = [
-  {name: "Aquarium", youtube: "R_me4SNmGbc", album_id: 3},
   {name: "The Star Room", youtube: "Mos8UiWV6_g", album_id: 3},
   {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 3},
   {name: "Avian", youtube: "mFWf4Tb5m6Y", album_id: 3},
@@ -78,6 +78,7 @@ wmwtso_songs = [
   {name: "Suplexes inside of Complexes and Duplexes", youtube: "fJo-Cjq0yjg", album_id: 3},
   {name: "Remember", youtube: "u7MrdaSYvo0", album_id: 3},
   {name: "Someone Like You", youtube: "e9iS7zaUeQo", album_id: 3},
+  {name: "Aquarium", youtube: "R_me4SNmGbc", album_id: 3},
   {name: "Youforia", youtube: "lMjQGOfpSo4", album_id: 3},
   {name: "Goosebumpz", youtube: "M-ev8TFGhGI", album_id: 3},
   {name: "O.K.", youtube: "eXbz4nSnWf8", album_id: 3},
@@ -89,7 +90,6 @@ wmwtso_songs.each do |song|
 end
 
 am_songs = [
-  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4},
   {name: "Doors", youtube: "wE_KOXiSbI8", album_id: 4},
   {name: "Brand Name", youtube: "vuCyrtGQhAk", album_id: 4},
   {name: "Rush Hour", youtube: "L73SaFeTaA8", album_id: 4},
@@ -104,6 +104,7 @@ am_songs = [
   {name: "When in Rome", youtube: "hGizbKWt7_g", album_id: 4},
   {name: "ROS", youtube: "-2AfeMnpiRI", album_id: 4},
   {name: "Cut the Check", youtube: "K6-8KO5UQQo", album_id: 4},
+  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4},
   {name: "Jump", youtube: "x-2Jd9d2GTY", album_id: 4},
   {name: "The Festival", youtube: "ZptG-yglvmw", album_id: 4}
 ]
@@ -121,6 +122,7 @@ divine_songs = [
   {name: "Cinderella", youtube: "0fcsGS1dEro", album_id: 5},
   {name: "Planet God Damn", youtube: "P91dAAsvsPY", album_id: 5},
   {name: "Soulmate", youtube: "3ADKdqcdNqs", album_id: 5},
+  {name: "We", youtube: "XL--KSNxfy8", album_id: 5},
   {name: "My Favorite Part", youtube: "J_8xCOSekog", album_id: 5},
   {name: "God is Fair, Sexy, Nasty", youtube: "YbbaJIpkGMs", album_id: 5}
 
@@ -131,11 +133,11 @@ divine_songs.each do |song|
 end
 
 blue_songs = [
-  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6},
   {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 6},
   {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 6},
   {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 6},
   {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 6},
+  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6},
   {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 6},
   {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 6},
   {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 6},
@@ -154,7 +156,6 @@ blue_songs.each do |song|
 end
 
 kids_songs = [
-  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7},
   {name: "Kicking Incredibly Dope Shit", youtube: "FV9_ND7CrYs", album_id: 7},
   {name: "Outside", youtube: "g-Nj1LIKo3U", album_id: 7},
   {name: "Get em Up", youtube: "jwj_4kbcUHY", album_id: 7},
@@ -166,6 +167,7 @@ kids_songs = [
   {name: "Paper Route", youtube: "uF__NW16rT4", album_id: 7},
   {name: "Good Evening", youtube: "ST4HeGPuw8Y", album_id: 7},
   {name: "Ride Around", youtube: "qrxkiAf0sl8", album_id: 7},
+  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7},
   {name: "Mad Flava Heavy Flow", youtube: "sDgBUU8-4QE", album_id: 7},
   {name: "Kool Aid and Frozen Pizza", youtube: "UnAbszcy3bs", album_id: 7},
   {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 7},
@@ -198,7 +200,6 @@ delusional_songs.each do |song|
 end
 
 macadelic_songs = [
-  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9},
   {name: "Love Me As I Have Loved You", youtube: "TlS_XHgKjvo", album_id: 9},
   {name: "Desperado", youtube: "C8-L78g10Ag", album_id: 9},
   {name: "Loud", youtube: "_BYIEXzdnlY", album_id: 9},
@@ -214,6 +215,7 @@ macadelic_songs = [
   {name: "Angels", youtube: "mODR7mL-9pU", album_id: 9},
   {name: "America", youtube: "1nZKwreCVtU", album_id: 9},
   {name: "Sunlight", youtube: "CVSzOsi3sao", album_id: 9},
+  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9},
   {name: "Fuck em All", youtube: "FgcAUMz9lzA", album_id: 9}
 ]
 
@@ -222,7 +224,6 @@ macadelic_songs.each do |song|
 end
 
 space_songs = [
-  {name: "Life", youtube: "p2Ic55PW1Dc", album_id: 10},
   {name: "SDS Live", youtube: "2jcFbup8M_0", album_id: 10},
   {name: "Star Room Live", youtube: "528ZCmsaJZc", album_id: 10},
   {name: "Best Day Ever Live", youtube: "Uu3PMT5yDWI", album_id: 10},
@@ -234,6 +235,7 @@ space_songs = [
   {name: "Youforia Live", youtube: "xhnA-h80um0", album_id: 10},
   {name: "Eggs Aisle", youtube: "Nd4BkhorZbc", album_id: 10},
   {name: "Earth", youtube: "arh4rGKdEMk", album_id: 10},
+  {name: "Life", youtube: "p2Ic55PW1Dc", album_id: 10},
   {name: "Black Bush", youtube: "DGzFVOCnb9c", album_id: 10},
   {name: "In the Morning", youtube: "YVpRT0_g2FQ", album_id: 10}
 ]
