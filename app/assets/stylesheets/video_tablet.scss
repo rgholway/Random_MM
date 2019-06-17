@@ -581,6 +581,14 @@
     animation: other 3s ease-out forwards
   }
 
+  .footer {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(100,100, 100, 0.5)
+  }
+
   @keyframes swimming {
       from {
           transform:rotate(0deg);
