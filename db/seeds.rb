@@ -142,7 +142,7 @@ blue_songs = [
   {name: "My Team", youtube: "cCaSqmdOm04", album_id: 6},
   {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 6},
   {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 6},
-  {name: "Hole in my Pocket", youtube: "tmA3TcLf8c", album_id: 6},
+  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 6},
   {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 6},
   {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 6},
   {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 6},
