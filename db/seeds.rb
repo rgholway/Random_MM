@@ -30,7 +30,7 @@ swimming_songs.each do |song|
   Song.create(song)
 end
 
-faces_songs =
+faces_songs = [
   {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2},
   {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2},
   {name: "Friends", youtube: "7i-MT7YdS64thw", album_id: 2},
