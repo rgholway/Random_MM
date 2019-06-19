@@ -317,7 +317,8 @@ everything_songs = [
   {name: "Inertia", youtube: "qKh8FiKzfvQ", album_id: 13},
   {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 13},
   {name: "Real", youtube: "-iJkg9gdrYw", album_id: 13},
-  {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13}
+  {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13},
+  {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 13}
 ]
 
 everything_songs.each do |song|
