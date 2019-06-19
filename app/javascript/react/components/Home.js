@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Example from './Example'
 import AlbumTile from './AlbumTile'
+import Animation from './Animation'
 
 class Home extends Component {
   constructor(props) {
@@ -105,6 +106,10 @@ playSong() {
           {albumArray}
           <div className="play__song" onClick={this.playSong}>Click for Random Song</div>
           <div className={`circle--${this.state.album}`} onClick={this.playSong}></div>
+        </div>
+        <div className={`animation__box--${this.state.active}`}>
+          <Animation
+          />
         </div>
       </div>
     )}

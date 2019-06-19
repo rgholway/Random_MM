@@ -9,7 +9,7 @@ Album.create(title: "Delusional Thomas", short: "delusional", art: "http://hw-im
 Album.create(title: "Macadelic", short: "macadelic", art: "https://ssla.ulximg.com/image/750x750/cover/1332543471_fcbecdd3c7f506b3e7861654c8153f07.jpg/06a0fb870fc8d7c46f60cb31ddd8297e/1332543471_mac_miller_macadelic.jpg")
 Album.create(title: "Live From Space", short: "space", art: "http://images.genius.com/932f12c26d028188907e55cf5ff23f3e.600x600x1.jpg")
 Album.create(title: "Best Day Ever", short: "bde", art: "https://cps-static.rovicorp.com/3/JPG_500/MI0004/067/MI0004067757.jpg?partner=allrovi.com")
-Album.create(title: "Run on Sentences V1", short: "v1", art: "https://ssla.ulximg.com/image/750x750/cover/1362407226_b378446d8c5acfc033c85e8662022663.jpg/54af3da11b8c521d4244cf9ef9d30f7d/1362407226_abc57058448d2a15b4159a5d07b228c6.jpg")
+Album.create(title: "Run on Sentences", short: "v1", art: "https://ssla.ulximg.com/image/750x750/cover/1362407226_b378446d8c5acfc033c85e8662022663.jpg/54af3da11b8c521d4244cf9ef9d30f7d/1362407226_abc57058448d2a15b4159a5d07b228c6.jpg")
 Album.create(title: "Everything Else", short: "everything", art: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg")
 Album.create(title: "Stolen Youth", short: "stolen", art: "https://earmilk-com.exactdn.com/wp-content/uploads/2013/07/Vince_Staples_Larry_Fisherman_Stolen_Youth-front-large.jpg?strip=all&lossy=1&ssl=1")
 
@@ -66,7 +66,6 @@ end
 
 wmwtso_songs = [
   {name: "The Star Room", youtube: "Mos8UiWV6_g", album_id: 3},
-  {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 3},
   {name: "Avian", youtube: "mFWf4Tb5m6Y", album_id: 3},
   {name: "I'm Not Real", youtube: "GDLFo600vvg", album_id: 3},
   {name: "SDS", youtube: "jj4csT4eviU", album_id: 3},
@@ -323,6 +322,7 @@ stolen_songs.each do |song|
 end
 
 everything_songs = [
+  {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
   {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 13},
