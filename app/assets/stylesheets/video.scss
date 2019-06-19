@@ -149,8 +149,8 @@
 .hover--7 {
   position: absolute;
   height: 18%;
-  top: 65%;
-  left: 15%;
+  top: 66%;
+  left: 16%;
   width: 18%;
   z-index: 22;
   background: #E2BC9C;
@@ -212,6 +212,48 @@
   background: #A2369A;
   font-size: 2.2vmin;
   color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--12 {
+  position: absolute;
+  height: 18%;
+  top: 66%;
+  left: 16%;
+  width: 18%;
+  z-index: 22;
+  background: #FFEF4F;
+  font-size: 1.6vmin;
+  color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--13 {
+  position: absolute;
+  height: 18%;
+  top: 66%;
+  left: 16%;
+  width: 18%;
+  z-index: 22;
+  background: #2046F6;
+  font-size: 1.9vmin;
+  color: white;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--14 {
+  position: absolute;
+  height: 18%;
+  top: 66%;
+  left: 16%;
+  width: 18%;
+  z-index: 22;
+  background: #684B74;
+  font-size: 2vmin;
+  color: white;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
@@ -286,10 +328,40 @@
 
 .kids {
   position: absolute;
-  top: 65%;
-  right: 67%;
-  height: 18%;
-  width: 18%;
+  top: 66%;
+  right: 75%;
+  height: 9%;
+  width: 9%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.v1 {
+  position: absolute;
+  top: 66%;
+  right: 66%;
+  height: 9%;
+  width: 9%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.everything {
+  position: absolute;
+  top: 75%;
+  right: 66%;
+  height: 9%;
+  width: 9%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.stolen {
+  position: absolute;
+  top: 75%;
+  right: 75%;
+  height: 9%;
+  width: 9%;
   z-index: 12;
   cursor: pointer;
 }
@@ -578,6 +650,57 @@
   background: white;
   cursor: pointer;
   animation: other 3s ease-out forwards
+}
+
+.circle--album12 {
+  position: absolute;
+  height: 34vmin;
+  width: 34vmin;
+  top: 30%;
+  left: 30%;
+  border-top: solid 3px #6DEA75;
+  border-right: solid 3px black;
+  border-left: solid 3px black;
+  border-bottom: solid 3px black;
+  border-radius: 100%;
+  z-index: 13;
+  background: white;
+  cursor: pointer;
+  animation: kids 3s ease-out forwards
+}
+
+.circle--album13 {
+  position: absolute;
+  height: 34vmin;
+  width: 34vmin;
+  top: 30%;
+  left: 30%;
+  border-top: solid 3px #6DEA75;
+  border-right: solid 3px black;
+  border-left: solid 3px black;
+  border-bottom: solid 3px black;
+  border-radius: 100%;
+  z-index: 13;
+  background: white;
+  cursor: pointer;
+  animation: kids 3s ease-out forwards
+}
+
+.circle--album14 {
+  position: absolute;
+  height: 34vmin;
+  width: 34vmin;
+  top: 30%;
+  left: 30%;
+  border-top: solid 3px #6DEA75;
+  border-right: solid 3px black;
+  border-left: solid 3px black;
+  border-bottom: solid 3px black;
+  border-radius: 100%;
+  z-index: 13;
+  background: white;
+  cursor: pointer;
+  animation: kids 3s ease-out forwards
 }
 
 .footer {
