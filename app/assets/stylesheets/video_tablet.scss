@@ -150,8 +150,8 @@
   .hover--7 {
     position: absolute;
     height: 18%;
-    top: 65%;
-    left: 15%;
+    top: 66%;
+    left: 16%;
     width: 18%;
     z-index: 22;
     background: #E2BC9C;
@@ -213,6 +213,48 @@
     background: #A2369A;
     font-size: 2.2vmin;
     color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--12 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #FFEF4F;
+    font-size: 1.6vmin;
+    color: black;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--13 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #2046F6;
+    font-size: 1.9vmin;
+    color: white;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .hover--14 {
+    position: absolute;
+    height: 18%;
+    top: 66%;
+    left: 16%;
+    width: 18%;
+    z-index: 22;
+    background: #684B74;
+    font-size: 2vmin;
+    color: white;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
   }
@@ -287,10 +329,10 @@
 
   .kids {
     position: absolute;
-    top: 65%;
-    right: 67%;
-    height: 18%;
-    width: 18%;
+    top: 66%;
+    right: 75%;
+    height: 9%;
+    width: 9%;
     z-index: 12;
     cursor: pointer;
   }

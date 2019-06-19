@@ -9,6 +9,9 @@ Album.create(title: "Delusional Thomas", short: "delusional", art: "http://hw-im
 Album.create(title: "Macadelic", short: "macadelic", art: "https://ssla.ulximg.com/image/750x750/cover/1332543471_fcbecdd3c7f506b3e7861654c8153f07.jpg/06a0fb870fc8d7c46f60cb31ddd8297e/1332543471_mac_miller_macadelic.jpg")
 Album.create(title: "Live From Space", short: "space", art: "http://images.genius.com/932f12c26d028188907e55cf5ff23f3e.600x600x1.jpg")
 Album.create(title: "Best Day Ever", short: "bde", art: "https://cps-static.rovicorp.com/3/JPG_500/MI0004/067/MI0004067757.jpg?partner=allrovi.com")
+Album.create(title: "Run on Sentences V1", short: "v1", art: "https://ssla.ulximg.com/image/750x750/cover/1362407226_b378446d8c5acfc033c85e8662022663.jpg/54af3da11b8c521d4244cf9ef9d30f7d/1362407226_abc57058448d2a15b4159a5d07b228c6.jpg")
+Album.create(title: "Everything Else", short: "everything", art: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg")
+Album.create(title: "Stolen Youth", short: "stolen", art: "https://earmilk-com.exactdn.com/wp-content/uploads/2013/07/Vince_Staples_Larry_Fisherman_Stolen_Youth-front-large.jpg?strip=all&lossy=1&ssl=1")
 
 swimming_songs = [
   {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1},
@@ -262,5 +265,60 @@ best_songs = [
 ]
 
 best_songs.each do |song|
+  Song.create(song)
+end
+
+ros_songs = [
+  {name: "Birthday", youtube: "gLroLUKBpTU", album_id: 12},
+  {name: "If Poseidon had a Surfboard", youtube: "Ucnxz_CNpLU", album_id: 12},
+  {name: "Novice Space Travel", youtube: "r_5jQBNmeCI", album_id: 12},
+  {name: "Gelato Party", youtube: "3EJroHOxC4c", album_id: 12},
+  {name: "I'm Actually a Fish Alien", youtube: "kUr_8hg9y7Q", album_id: 12},
+  {name: "She used to Love Me", youtube: "oc2OBt_kZNg", album_id: 12},
+  {name: "The Revolution is Coming", youtube: "_A9FzckjKDs", album_id: 12},
+  {name: "Avocado", youtube: "ekA-bHWxTE4", album_id: 12},
+]
+
+ros_songs.each do |song|
+  Song.create(song)
+end
+
+stolen_songs = [
+  {name: "Intro", youtube: "l6TwPSAlwVI", album_id: 14},
+  {name: "Fantoms", youtube: "yvYUnv4cMIU", album_id: 14},
+  {name: "Heaven", youtube: "M7wwauyZU4c", album_id: 14},
+  {name: "Guns and Roses", youtube: "J18g3Tr20AE", album_id: 14},
+  {name: "Back Sellin' Crack", youtube: "kUr_8hg9y7Q", album_id: 14},
+  {name: "Stuck in My Ways", youtube: "qgag34NOk-c", album_id: 14},
+  {name: "Killin Y'all", youtube: "8-uZHewurjs", album_id: 14},
+  {name: "Thought About You", youtube: "Ma5Ai5IrFSc", album_id: 14},
+  {name: "Sleep", youtube: "0LSHTlWA6uc", album_id: 14},
+  {name: "Earth Science", youtube: "NcF014iVSUA", album_id: 14},
+  {name: "Progressive 3", youtube: "yf1HtPNGoiE", album_id: 14},
+  {name: "Locked and Loaded", youtube: "arJRoCcTv9s", album_id: 14},
+  {name: "Humble", youtube: "WBfr4Ccpx08", album_id: 14},
+  {name: "45", youtube: "MX1tVoD-E4w", album_id: 14},
+  {name: "Oh You Scared", youtube: "JlcPcMW5Vzw", album_id: 14},
+  {name: "Trunk Rattle", youtube: "wy1SQ2cRKP4", album_id: 14},
+  {name: "Nate", youtube: "snYU9NRCbRs", album_id: 14},
+  {name: "Turn", youtube: "Y2AoYXobIoQ", album_id: 14},
+  {name: "Shots", youtube: "Fm_OW-BwgE4", album_id: 14},
+  {name: "Outro", youtube: "A90PQahFYxQ", album_id: 14}
+]
+
+stolen_songs.each do |song|
+  Song.create(song)
+end
+
+everything_songs = [
+  {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
+  {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
+  {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 13},
+  {name: "Inertia", youtube: "qKh8FiKzfvQ", album_id: 13},
+  {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 13},
+  {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13}
+]
+
+everything_songs.each do |song|
   Song.create(song)
 end
