@@ -269,14 +269,26 @@ best_songs.each do |song|
 end
 
 ros_songs = [
-  {name: "Birthday", youtube: "gLroLUKBpTU", album_id: 12},
-  {name: "If Poseidon had a Surfboard", youtube: "Ucnxz_CNpLU", album_id: 12},
-  {name: "Novice Space Travel", youtube: "r_5jQBNmeCI", album_id: 12},
-  {name: "Gelato Party", youtube: "3EJroHOxC4c", album_id: 12},
-  {name: "I'm Actually a Fish Alien", youtube: "kUr_8hg9y7Q", album_id: 12},
-  {name: "She used to Love Me", youtube: "oc2OBt_kZNg", album_id: 12},
-  {name: "The Revolution is Coming", youtube: "_A9FzckjKDs", album_id: 12},
-  {name: "Avocado", youtube: "ekA-bHWxTE4", album_id: 12},
+  {name: "Birthday v1", youtube: "gLroLUKBpTU", album_id: 12},
+  {name: "If Poseidon had a Surfboard v1", youtube: "Ucnxz_CNpLU", album_id: 12},
+  {name: "Novice Space Travel v1", youtube: "r_5jQBNmeCI", album_id: 12},
+  {name: "Gelato Party v1", youtube: "3EJroHOxC4c", album_id: 12},
+  {name: "I'm Actually a Fish Alien v1", youtube: "kUr_8hg9y7Q", album_id: 12},
+  {name: "She used to Love Me v1", youtube: "oc2OBt_kZNg", album_id: 12},
+  {name: "The Revolution is Coming v1", youtube: "_A9FzckjKDs", album_id: 12},
+  {name: "Avocado v1", youtube: "ekA-bHWxTE4", album_id: 12},
+  {name: "Fuckin Shit v2", youtube: "NpKkwHx66oI&t=3s", album_id: 12},
+  {name: "jjjoh v2", youtube: "utU5edBbCf0", album_id: 12},
+  {name: "Hulu v2", youtube: "Tz557ZjoUjA", album_id: 12},
+  {name: "Yooo v2", youtube: "nYVD0karQG4", album_id: 12},
+  {name: "Atom Bomb v2", youtube: "XQd8Q4hGiNg", album_id: 12},
+  {name: "Juil v2", youtube: "WuDVM6hS6i4", album_id: 12},
+  {name: "HXH v2", youtube: "1VnkuG4xXPo", album_id: 12},
+  {name: "Here is a Bear v2", youtube: "rGDvG4gxkKI", album_id: 12},
+  {name: "FACEBUSH v2", youtube: "1PjMZOH1oiU", album_id: 12},
+  {name: "Funk Me v2", youtube: "_a3zARxtqhQ", album_id: 12},
+  {name: "Best for Last v2", youtube: "lmtxywyKhYY", album_id: 12},
+  {name: "Smile v2", youtube: "i_zlz8nCFrw", album_id: 12}
 ]
 
 ros_songs.each do |song|
@@ -288,7 +300,7 @@ stolen_songs = [
   {name: "Fantoms", youtube: "yvYUnv4cMIU", album_id: 14},
   {name: "Heaven", youtube: "M7wwauyZU4c", album_id: 14},
   {name: "Guns and Roses", youtube: "J18g3Tr20AE", album_id: 14},
-  {name: "Back Sellin' Crack", youtube: "kUr_8hg9y7Q", album_id: 14},
+  {name: "Back Sellin' Crack", youtube: "CfOeB9YpmcY", album_id: 14},
   {name: "Stuck in My Ways", youtube: "qgag34NOk-c", album_id: 14},
   {name: "Killin Y'all", youtube: "8-uZHewurjs", album_id: 14},
   {name: "Thought About You", youtube: "Ma5Ai5IrFSc", album_id: 14},
@@ -316,7 +328,9 @@ everything_songs = [
   {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 13},
   {name: "Inertia", youtube: "qKh8FiKzfvQ", album_id: 13},
   {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 13},
-  {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13}
+  {name: "Real", youtube: "-iJkg9gdrYw", album_id: 13},
+  {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13},
+  {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 13}
 ]
 
 everything_songs.each do |song|
