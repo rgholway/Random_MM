@@ -339,6 +339,36 @@
     cursor: pointer;
   }
 
+  .v1 {
+    position: absolute;
+    top: 66%;
+    right: 66%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .everything {
+    position: absolute;
+    top: 75%;
+    right: 66%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
+  .stolen {
+    position: absolute;
+    top: 75%;
+    right: 75%;
+    height: 9%;
+    width: 9%;
+    z-index: 12;
+    cursor: pointer;
+  }
+
   .macadelic {
     position: absolute;
     top: 16%;
