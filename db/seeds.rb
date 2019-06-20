@@ -323,6 +323,7 @@ end
 
 everything_songs = [
   {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 13},
+  {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
   {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 13},
@@ -330,7 +331,13 @@ everything_songs = [
   {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 13},
   {name: "Real", youtube: "-iJkg9gdrYw", album_id: 13},
   {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13},
-  {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 13}
+  {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 13},
+  {name: "Just Some Raps, Nothing To See Here, Move Along", youtube: "KQcx53rn1Ic", album_id: 13},
+  {name: "Headaches & Migraines", youtube: "ntbhlxpzmAY", album_id: 13},
+  {name: "Melt", youtube: "6hVDwQMc_fM", album_id: 13},
+  {name: "Salamander", youtube: "dpTNzLUW1l8", album_id: 13},
+  {name: "Guidelines", youtube: "4WWltsaADBc", album_id: 13},
+  {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 13}
 ]
 
 everything_songs.each do |song|
