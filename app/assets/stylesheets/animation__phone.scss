@@ -28,7 +28,7 @@
 
   .first__m--active {
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 30%;
     font-size: 4vmin;
     height: auto;
@@ -60,8 +60,8 @@
 
   .mac--active {
     position: absolute;
-    left: 43%;
-    top: 35%;
+    left: 48%;
+    top: 34%;
     height: auto;
     width: 0%;
     overflow: hidden;
@@ -80,7 +80,7 @@
 
   .miller--active {
     position: absolute;
-    left: 52%;
+    left: 58%;
     top: 34%;
     height: auto;
     width: 0%;
@@ -88,7 +88,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 3.5vmin;
     float: left;
-    animation: miller 3.5s 1s forwards;
+    animation: miller 3s 1s forwards;
     writing-mode: horizontal-tb;
   }
 
@@ -134,7 +134,7 @@
       }
       to {
         top: 30%;
-        left: 39.1%;
+        left: 44%;
       }
   }
 
@@ -145,7 +145,7 @@
       }
       to {
         top: 30%;
-        left: 48.2%;
+        left: 54%;
       }
   }
 
