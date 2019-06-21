@@ -2,24 +2,25 @@
 
   .animation__box--active {
     position: absolute;
-    height: 0%;
-    width: 0%;
+    top: 70%;
+    height: 10%;
+    width: 100%;
     overflow: hidden;
   }
 
   .animation__box {
     position: absolute;
-    height: 0%;
-    width: 0%;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
   }
 
   .first__m {
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 30%;
     font-size: 4vmin;
-    height: auto;
+    height: 50%;
     width: auto;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
@@ -27,7 +28,7 @@
 
   .first__m--active {
     position: absolute;
-    left: 40%;
+    left: 50%;
     top: 30%;
     font-size: 4vmin;
     height: auto;
@@ -38,7 +39,7 @@
 
   .second__m {
     position: absolute;
-    left: 48%;
+    left: 54%;
     top: 30%;
     font-size: 4vmin;
     height: auto;
@@ -49,7 +50,7 @@
 
   .second__m--active {
     position: absolute;
-    left: 48%;
+    left: 54%;
     top: 30%;
     font-size: 4vmin;
     width: auto;
@@ -59,16 +60,15 @@
 
   .mac--active {
     position: absolute;
-    left: 4%;
-    top: 25%;
-    height: 0%;
-    width: auto;
+    left: 43%;
+    top: 35%;
+    height: auto;
+    width: 0%;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
-    font-size: 3.2vmin;
+    font-size: 3.5vmin;
     animation: mac 3s 1s forwards;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    writing-mode: horizontal-tb;
   }
 
   .mac {
@@ -80,16 +80,16 @@
 
   .miller--active {
     position: absolute;
-    left: 31.2%;
-    top: 25%;
-    height: 0%;
-    width: auto;
+    left: 52%;
+    top: 34%;
+    height: auto;
+    width: 0%;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
-    font-size: 3.2vmin;
+    font-size: 3.5vmin;
+    float: left;
     animation: miller 3.5s 1s forwards;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    writing-mode: horizontal-tb;
   }
 
   .miller {
@@ -101,14 +101,9 @@
 
   .memento--active {
     position: absolute;
-    left: 10%;
-    top: 8.5%;
-    height: auto;
+    height: 0%;
     width: 0%;
     overflow: hidden;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3vmin;
-    animation: memento 3.5s 1s forwards;
   }
 
   .memento {
@@ -127,53 +122,48 @@
 
   .mori--active {
     position: absolute;
-    left: 37%;
-    top: 8.5%;
-    height: auto;
+    height: 0%;
     width: 0%;
     overflow: hidden;
-    font-family: 'Raleway', sans-serif;
-    font-size: 3vmin;
-    animation: memento 3s 1s forwards;
   }
 
   @keyframes first {
       from {
           top: 30%;
-          left: 40%;
+          left: 50%;
       }
       to {
-        top: 5%;
-        left: 5%;
+        top: 30%;
+        left: 39.1%;
       }
   }
 
   @keyframes second {
       from {
           top: 30%;
-          left: 48%;
+          left: 54%;
       }
       to {
-        top: 5%;
-        left: 32%;
+        top: 30%;
+        left: 48.2%;
       }
   }
 
   @keyframes mac {
       from {
-          height: 0%;
+          width: 0%;
       }
       to {
-        height: 50%;
+        width: 15%;
       }
   }
 
   @keyframes miller {
       from {
-          height: 0%;
+          width: 0%;
       }
       to {
-        height: 100%;
+        width: 30%;
       }
   }
 

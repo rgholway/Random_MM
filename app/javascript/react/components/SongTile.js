@@ -4,8 +4,7 @@ class SongTile extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        youtube: "",
-        active: ""
+        youtube: ""
         }
         this.onClick = this.onClick.bind(this)
   }
