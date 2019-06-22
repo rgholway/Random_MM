@@ -29,6 +29,7 @@ class AlbumTile extends Component {
     })
     .then(response => response.json())
     .then(body => {
+      debugger;
       this.setState({ songs: body })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));

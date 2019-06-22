@@ -17,6 +17,16 @@
   right: 5%;
 }
 
+.artists {
+  position: absolute;
+  top: 2%;
+  left: 15%;
+  height: 8%;
+  width: 30%;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
 .random__mac {
   position: absolute;
   top: 10%;
@@ -62,14 +72,36 @@
   cursor: pointer;
 }
 
-.link {
+.cudi__link {
   position: absolute;
   top: 2%;
-  left: 30%;
+  left: 40%;
   height: auto;
   width: auto;
   cursor: pointer;
-  background: green;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+}
+
+.cudi__link:hover {
+  background: black;
+  color: white;
+}
+
+.mac__link {
+  position: absolute;
+  top: 2%;
+  left: 15%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+}
+
+.mac__link:hover {
+  background: black;
+  color: white;
 }
 
 .five {

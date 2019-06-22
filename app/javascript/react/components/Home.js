@@ -21,6 +21,7 @@ class Home extends Component {
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
     this.link = this.link.bind(this)
+    this.macLink = this.macLink.bind(this)
     this.fetchArtist = this.fetchArtist.bind(this)
   }
 
@@ -88,6 +89,11 @@ playSong() {
     location.reload()
   }
 
+  macLink() {
+    browserHistory.push('/mac')
+    location.reload()
+  }
+
   componentWillMount() {
     if (this.props.params.name == undefined) {
      browserHistory.push('/mac')
@@ -115,7 +121,10 @@ playSong() {
 
     return(
       <div>
-        <div to={"/cudi"} className="link" onClick={this.link}>Kid Cudi</div>
+        <div className="artists"> Artists:
+            <div to={"/cudi"} className="cudi__link" onClick={this.link}>Kid Cudi</div>
+            <div to={"/mac"} className="mac__link" onClick={this.macLink}>Mac Miller</div>
+          </div>
         <div className={`youtube--${this.state.active}`}>
           <Example
             youtube= {this.state.song.youtube}
