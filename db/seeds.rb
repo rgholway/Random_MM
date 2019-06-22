@@ -592,6 +592,7 @@ else_songs = [
 {name: "Click Up", youtube: "7asETNEyvy8", album_id: 25},
 {name: "That Girl", youtube: "8hAFccwUemk", album_id: 25},
 {name: "Darkness be Rising", youtube: "yP4UVmIpfNg", album_id: 25},
+{name: "Love", youtube: "d0BNwyrEDiA", album_id: 25}
 ]
 
 else_songs.each do |song|
