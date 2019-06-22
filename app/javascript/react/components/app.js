@@ -6,6 +6,7 @@ export const App = (props) => {
   return (
     <Router history={browserHistory}>
       <Route path="/" component={Home}/>
+      <Route path="/:name" component={Home}/>
     </Router>
   )
 }

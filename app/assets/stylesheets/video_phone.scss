@@ -442,12 +442,13 @@
   .title {
     position: absolute;
     height: auto;
-    width: auto;
+    width: 32vmin;
     top: 43%;
-    left: 33%;
+    left: 31%;
     color: black;
     font-size: 5vmin;
     z-index: 15;
+    text-align: center;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
   }

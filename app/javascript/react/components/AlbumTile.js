@@ -16,7 +16,7 @@ class AlbumTile extends Component {
   }
 
   handleHover() {
-    this.setState({album: `${this.props.id}`, hover: "hover"})
+    this.setState({album: `${this.props.css}`, hover: "hover"})
     fetch(`/api/v1/songs/${this.props.id}`)
     .then(response => {
       if (response.ok) {
@@ -67,7 +67,7 @@ class AlbumTile extends Component {
           <img className={this.props.css} src={this.props.art} onMouseEnter={this.handleHover}/>
         </div>
         <div className={`hover--${this.state.album}`} onMouseEnter={this.handleEnter} onClick={this.handleEnter} onMouseLeave={this.handleLeave}>
-          <div className={`title__${this.state.hover}`}>{this.props.name}</div>
+          <div style={{background: this.props.color, color: this.props.text, fontSize: this.props.size}} className={`title__${this.state.hover}`}>{this.props.name}</div>
           <div className={`songs__${this.state.hover}`}>{songsArray}</div>
         </div>
       </div>
