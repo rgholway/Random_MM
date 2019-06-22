@@ -41,6 +41,17 @@
     border: solid .5px black;
   }
 
+  .random__cudi {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: #363534;
+    border: solid .5px black;
+  }
+
   .play__song {
     position: absolute;
     height: auto;
