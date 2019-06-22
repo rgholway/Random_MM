@@ -4,6 +4,12 @@ class Albums < ActiveRecord::Migration[5.2]
       t.string :title, null: false
       t.string :art
       t.string :short
+      t.string :css
+      t.string :color
+      t.string :text
+      t.string :font_size
+
+      t.belongs_to :artist
 
       t.timestamps null: false
     end

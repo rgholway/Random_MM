@@ -28,12 +28,23 @@
   border: solid .5px black;
 }
 
+.random__cudi {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  height: 80vmin;
+  width: 80vmin;
+  border-radius: 50%;
+  background: #363534;
+  border: solid .5px black;
+}
+
 .play__song {
   position: absolute;
   height: auto;
   width: auto;
   top: 52%;
-  left: 37%;
+  left: 38%;
   color: black;
   font-size: 2vmin;
   z-index: 15;
@@ -41,18 +52,27 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.swimming {
+.first {
   position: absolute;
   top: 5%;
   left: 41%;
   height: 18%;
   width: 18%;
   z-index: 12;
-  border: solid 2px black;
   cursor: pointer;
 }
 
-.divine {
+.link {
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  background: green;
+}
+
+.five {
   position: absolute;
   top: 17%;
   left: 67%;
@@ -62,21 +82,20 @@
   cursor: pointer;
 }
 
-.hover--1 {
+.hover--first {
   position: absolute;
   height: 18%;
   top: 5%;
   left: 41%;
   width: 18%;
-  z-index: 14;
-  background: white;
+  z-index: 22;
   color: black;
   font-size: 2.3vmin;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--2 {
+.hover--two {
   position: absolute;
   height: 18%;
   top: 42%;
@@ -84,13 +103,12 @@
   width: 18%;
   z-index: 14;
   font-size: 2.3vmin;
-  background: #F9C647;
   color: black;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--3 {
+.hover--three {
   position: absolute;
   height: 18%;
   bottom: 2.5%;
@@ -104,7 +122,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--4 {
+.hover--four {
   position: absolute;
   height: 18%;
   top: 40%;
@@ -119,7 +137,7 @@
   z-index: 17;
 }
 
-.hover--5 {
+.hover--five {
   position: absolute;
   height: 18%;
   top: 17%;
@@ -132,7 +150,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--6 {
+.hover--six {
   position: absolute;
   height: 18%;
   top: 68%;
@@ -146,7 +164,21 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--7 {
+.hover--fifteen {
+  position: absolute;
+  height: 18%;
+  top: 67%;
+  left: 15%;
+  width: 18%;
+  z-index: 22;
+  background: #E2BC9C;
+  font-size: 1.2vmin;
+  color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--seven {
   position: absolute;
   height: 18%;
   top: 66%;
@@ -160,7 +192,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--8 {
+.hover--eight {
   position: absolute;
   height: 18%;
   top: 16%;
@@ -174,7 +206,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--9 {
+.hover--nine {
   position: absolute;
   height: 18%;
   top: 16%;
@@ -188,7 +220,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--10 {
+.hover--ten {
   position: absolute;
   height: 18%;
   top: 16%;
@@ -202,7 +234,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--11 {
+.hover--eleven {
   position: absolute;
   height: 18%;
   top: 16%;
@@ -216,7 +248,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--12 {
+.hover--twelve {
   position: absolute;
   height: 18%;
   top: 66%;
@@ -230,7 +262,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--13 {
+.hover--thirteen {
   position: absolute;
   height: 18%;
   top: 66%;
@@ -244,7 +276,7 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.hover--14 {
+.hover--fourteen {
   position: absolute;
   height: 18%;
   top: 66%;
@@ -316,7 +348,7 @@
   color: white;
 }
 
-.blue {
+.six {
   position: absolute;
   top: 68%;
   left: 65%;
@@ -326,7 +358,7 @@
   cursor: pointer;
 }
 
-.kids {
+.seven {
   position: absolute;
   top: 66%;
   right: 75%;
@@ -336,7 +368,7 @@
   cursor: pointer;
 }
 
-.v1 {
+.twelve {
   position: absolute;
   top: 66%;
   right: 66%;
@@ -346,7 +378,7 @@
   cursor: pointer;
 }
 
-.everything {
+.thirteen {
   position: absolute;
   top: 75%;
   right: 66%;
@@ -356,7 +388,7 @@
   cursor: pointer;
 }
 
-.stolen {
+.fourteen {
   position: absolute;
   top: 75%;
   right: 75%;
@@ -366,7 +398,7 @@
   cursor: pointer;
 }
 
-.macadelic {
+.eight {
   position: absolute;
   top: 16%;
   right: 74%;
@@ -376,7 +408,7 @@
   cursor: pointer;
 }
 
-.delusional {
+.nine {
   position: absolute;
   top: 25%;
   right: 74%;
@@ -386,7 +418,7 @@
   cursor: pointer;
 }
 
-.bde {
+.ten {
   position: absolute;
   top: 25%;
   right: 65.2%;
@@ -396,7 +428,7 @@
   cursor: pointer;
 }
 
-.space {
+.eleven {
   position: absolute;
   top: 16%;
   right: 65.2%;
@@ -406,7 +438,7 @@
   cursor: pointer;
 }
 
-.faces {
+.two {
   position: absolute;
   right: 3%;
   top: 42%;
@@ -416,7 +448,7 @@
   cursor: pointer;
 }
 
-.wmtso {
+.three {
   position: absolute;
   bottom: 2.5%;
   left: 40%;
@@ -426,7 +458,7 @@
   cursor: pointer;
 }
 
-.good__am {
+.four {
   position: absolute;
   left: 3%;
   top: 40%;
@@ -436,15 +468,26 @@
   cursor: pointer;
 }
 
+.fifteen {
+  position: absolute;
+  top: 67%;
+  left: 15%;
+  height: 18%;
+  width: 18%;
+  z-index: 12;
+  cursor: pointer;
+}
+
 .title {
   position: absolute;
   height: auto;
-  width: auto;
+  width: 32vmin;
   top: 43%;
-  left: 33%;
+  left: 31%;
   color: black;
   font-size: 5vmin;
   z-index: 15;
+  text-align: center;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
@@ -465,7 +508,7 @@
   cursor: pointer;
 }
 
-.circle--album1 {
+.circle--albumfirst {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -482,7 +525,7 @@
   cursor: pointer;
 }
 
-.circle--album2 {
+.circle--albumtwo {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -499,7 +542,7 @@
   animation: faces 3s ease-out forwards
 }
 
-.circle--album3 {
+.circle--albumthree {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -516,7 +559,7 @@
   animation: wmwtso 3s ease-out forwards
 }
 
-.circle--album4 {
+.circle--albumfour {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -533,7 +576,7 @@
   animation: am 3s ease-out forwards
 }
 
-.circle--album5 {
+.circle--albumfive {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -550,7 +593,7 @@
   animation: divine 3s ease-out forwards
 }
 
-.circle--album6 {
+.circle--albumsix {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -567,7 +610,7 @@
   animation: blue_slide 3s ease-out forwards
 }
 
-.circle--album7 {
+.circle--albumseven {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -584,7 +627,7 @@
   animation: kids 3s ease-out forwards
 }
 
-.circle--album8 {
+.circle--albumeight {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -601,7 +644,7 @@
   animation: other 3s ease-out forwards
 }
 
-.circle--album9 {
+.circle--albumnine {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -618,7 +661,7 @@
   animation: other 3s ease-out forwards
 }
 
-.circle--album10 {
+.circle--albumten {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -635,7 +678,7 @@
   animation: other 3s ease-out forwards
 }
 
-.circle--album11 {
+.circle--albumeleven {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -652,7 +695,7 @@
   animation: other 3s ease-out forwards
 }
 
-.circle--album12 {
+.circle--albumtwelve {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -669,7 +712,7 @@
   animation: kids 3s ease-out forwards
 }
 
-.circle--album13 {
+.circle--albumthirteen {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
@@ -686,7 +729,24 @@
   animation: kids 3s ease-out forwards
 }
 
-.circle--album14 {
+.circle--albumfourteen {
+  position: absolute;
+  height: 34vmin;
+  width: 34vmin;
+  top: 30%;
+  left: 30%;
+  border-top: solid 3px #6DEA75;
+  border-right: solid 3px black;
+  border-left: solid 3px black;
+  border-bottom: solid 3px black;
+  border-radius: 100%;
+  z-index: 13;
+  background: white;
+  cursor: pointer;
+  animation: kids 3s ease-out forwards
+}
+
+.circle--albumfifteen {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
