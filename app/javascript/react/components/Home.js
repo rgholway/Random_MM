@@ -140,6 +140,7 @@ playSong() {
         </div>
         <div className={`animation__box--${this.state.active}`}>
           <Animation
+          name= {this.state.artist.short}
           firstLetter= {this.state.artist.first_letter}
           secondLetter= {this.state.artist.second_letter}
           firstName= {this.state.artist.first_name}

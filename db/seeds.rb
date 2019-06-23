@@ -22,8 +22,8 @@ Album.create(title: "Kids See Ghosts", short: "ghosts", css: "three", art: "http
 Album.create(title: "A Kid Named Cudi", short: "kid", css: "four", art: "https://images.genius.com/f5363e0a1819220e98a3933199540964.500x500x1.jpg", color: "#949494", text: "white", font_size: "1.6vmin", artist_id: 2)
 Album.create(title: "Indicud", short: "indicud", css: "five", art: "https://media.pitchfork.com/photos/5929a060ea9e61561daa4562/1:1/w_600/48d3e548.jpeg", color: "#F07138", text: "black", font_size: "1.9vmin", artist_id: 2)
 Album.create(title: "Satellite Flight", short: "flight", css: "six", art: "https://images.genius.com/f93aafaafd092a8bb9b2224aea7385f6.670x670x1.jpg", color: "#18251B", text: "white", font_size: "1.8vmin", artist_id: 2)
-Album.create(title: "Passion, Pain, and Demon Slaying", short: "passion", css: "fifteen", art: "https://images-na.ssl-images-amazon.com/images/I/41rBRkrDLSL._SY355_.jpg", color: "#E4408A", text: "black", font_size: "1vmin", artist_id: 2)
-Album.create(title: "Speedin' Bullet 2 Heaven", short: "bullet", css: "eight", art: "https://media.pitchfork.com/photos/5929b293c0084474cd0c1fb9/1:1/w_600/e6de59a6.png", color: "#847C58", text: "black", font_size: "1.2vmin", artist_id: 2)
+Album.create(title: "Passion, Pain, & Demon Slayin'", short: "passion", css: "fifteen", art: "https://images-na.ssl-images-amazon.com/images/I/41rBRkrDLSL._SY355_.jpg", color: "#E4408A", text: "black", font_size: "1vmin", artist_id: 2)
+Album.create(title: "Speedin' Bullet 2 Heaven", short: "bullet", css: "eight", art: "https://media.pitchfork.com/photos/5929b293c0084474cd0c1fb9/1:1/w_600/e6de59a6.png", color: "#847C58", text: "white", font_size: "1.2vmin", artist_id: 2)
 Album.create(title: "WZRD", short: "wzrd", css: "nine", art: "https://images-na.ssl-images-amazon.com/images/I/41ar5KYsRQL._SY355_.jpg", color: "#DD3861", text: "black", font_size: "2vmin", artist_id: 2)
 Album.create(title: "Dat Kid From Cleveland", short: "dat", css: "ten", art: "http://hw-img.datpiff.com/m3ddbe3e/Kid_Cudi_DJ_E-V_Dat_Kid_From_Cleveland-front-large.jpg", color: "#C8946D", text: "white", font_size: "1.4vmin", artist_id: 2)
 Album.create(title: "Everything Else", short: "else", css: "eleven", art: "https://c6i6j3odemn4axammj4iy6hr-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/as11-44-6667-597x600.jpg", color: "#7A7A83", text: "white", font_size: "1.7vmin", artist_id: 2)
@@ -588,10 +588,11 @@ else_songs = [
 {name: "Dose of Dopeness", youtube: "kZ9h6s8CyiU", album_id: 25},
 {name: "Dat New New", youtube: "6dtMI96zc0s", album_id: 25},
 {name: "Cudderisback", youtube: "LVG1-TvtMTY", album_id: 25},
-{name: "Fallin' Star", youtube: "TGOX-aFwo-M", album_id: 25},
+{name: "Falling Star", youtube: "TGOX-aFwo-M", album_id: 25},
 {name: "Click Up", youtube: "7asETNEyvy8", album_id: 25},
 {name: "That Girl", youtube: "8hAFccwUemk", album_id: 25},
 {name: "Darkness be Rising", youtube: "yP4UVmIpfNg", album_id: 25},
+{name: "Love", youtube: "d0BNwyrEDiA", album_id: 25}
 ]
 
 else_songs.each do |song|
