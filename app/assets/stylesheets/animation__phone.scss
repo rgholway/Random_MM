@@ -15,7 +15,7 @@
     overflow: hidden;
   }
 
-  .first__m {
+  .first__mac {
     position: absolute;
     left: 50%;
     top: 30%;
@@ -26,7 +26,7 @@
     font-family: 'Raleway', sans-serif;
   }
 
-  .first__m--active {
+  .first__mac--active {
     position: absolute;
     left: 45%;
     top: 30%;
@@ -37,7 +37,7 @@
     animation: first 1s forwards;
   }
 
-  .second__m {
+  .second__mac {
     position: absolute;
     left: 54%;
     top: 30%;
@@ -48,7 +48,7 @@
     cursor: pointer;
   }
 
-  .second__m--active {
+  .second__mac--active {
     position: absolute;
     left: 54%;
     top: 30%;
@@ -58,7 +58,93 @@
     animation: second 1s forwards;
   }
 
-  .mac--active {
+  .first__cudi {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 4vmin;
+    height: 45%;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .first__cudi--active {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    animation: firstcudi 1s forwards;
+  }
+
+  .second__cudi {
+    position: absolute;
+    left: 52%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    animation: secondcudi 1s forwards;
+  }
+
+  .second__cudi--active {
+    position: absolute;
+    left: 52%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    animation: secondcudi 1s forwards;
+  }
+
+  .ID--active {
+    position: absolute;
+    left: 49%;
+    top: 33.8%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5vmin;
+    text-align: left;
+    animation: mac 3s 1s forwards;
+  }
+
+  .ID {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .UDI--active {
+    position: absolute;
+    left: 57%;
+    top: 33.8%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5vmin;
+    text-align: left;
+    animation: mac 3s 1s forwards;
+  }
+
+  .UDI {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .AC--active {
     position: absolute;
     left: 48%;
     top: 34%;
@@ -72,14 +158,14 @@
     writing-mode: horizontal-tb;
   }
 
-  .mac {
+  .AC {
     position: absolute;
     height: 0%;
     width: 0%;
     overflow: hidden;
   }
 
-  .miller--active {
+  .ILLER--active {
     position: absolute;
     left: 58%;
     top: 34%;
@@ -94,35 +180,35 @@
     writing-mode: horizontal-tb;
   }
 
-  .miller {
+  .ILLER {
     position: absolute;
     height: 0%;
     width: 0%;
     overflow: hidden;
   }
 
-  .memento--active {
+  .EMENTO--active {
     position: absolute;
     height: 0%;
     width: 0%;
     overflow: hidden;
   }
 
-  .memento {
+  .EMENTO {
     position: absolute;
     height: 0%;
     width: 0%;
     overflow: hidden;
   }
 
-  .mori {
+  .ORI {
     position: absolute;
     height: 0%;
     width: 0%;
     overflow: hidden;
   }
 
-  .mori--active {
+  .ORI--active {
     position: absolute;
     height: 0%;
     width: 0%;
@@ -169,6 +255,28 @@
       }
   }
 
+  @keyframes firstcudi {
+      from {
+          top: 30%;
+          left: 50%;
+      }
+      to {
+        top: 30%;
+        left: 46%;
+      }
+  }
+
+  @keyframes secondcudi {
+      from {
+          top: 30%;
+          left: 54%;
+      }
+      to {
+        top: 30%;
+        left: 54%;
+      }
+  }
+
   @keyframes memento {
       from {
           width: 0%;
@@ -186,6 +294,7 @@
         width: 5%;
       }
   }
+
 
 
 }
