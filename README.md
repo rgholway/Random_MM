@@ -3,3 +3,5 @@ This app allows users to listen to random songs using the React Youtube NPM. I w
 I also decided to purchase a custom url for this site and the app can be found at randommac.com.
 
 Milestones: 4 days into the launch of the site and over 2,000 unique users have visited the site!
+
+6/23 the site has hit over 5,000 pageviews!
