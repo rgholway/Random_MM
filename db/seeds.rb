@@ -1,5 +1,6 @@
 Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI")
-Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI" )
+Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI")
+Artist.create(name: "Kendrick Lamar", short: "kendrick", first_letter: "K", second_letter: "L", first_name: "ENDRICK", second_name: "LAMAR")
 
 Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1)
 Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1)
@@ -27,6 +28,8 @@ Album.create(title: "Speedin' Bullet 2 Heaven", short: "bullet", css: "eight", a
 Album.create(title: "WZRD", short: "wzrd", css: "nine", art: "https://images-na.ssl-images-amazon.com/images/I/41ar5KYsRQL._SY355_.jpg", color: "#DD3861", text: "black", font_size: "2vmin", artist_id: 2)
 Album.create(title: "Dat Kid From Cleveland", short: "dat", css: "ten", art: "http://hw-img.datpiff.com/m3ddbe3e/Kid_Cudi_DJ_E-V_Dat_Kid_From_Cleveland-front-large.jpg", color: "#C8946D", text: "white", font_size: "1.4vmin", artist_id: 2)
 Album.create(title: "Everything Else", short: "else", css: "eleven", art: "https://c6i6j3odemn4axammj4iy6hr-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/as11-44-6667-597x600.jpg", color: "#7A7A83", text: "white", font_size: "1.7vmin", artist_id: 2)
+
+
 
 swimming_songs = [
   {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1},
