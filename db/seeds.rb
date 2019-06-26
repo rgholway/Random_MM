@@ -1,6 +1,7 @@
-Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI")
-Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI")
-Artist.create(name: "Kendrick Lamar", short: "kendrick", first_letter: "K", second_letter: "L", first_name: "ENDRICK", second_name: "LAMAR")
+Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI", icon: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg")
+Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI", icon: "https://officialpsds.com/imageview/r5/j4/r5j4v4_large.png?1521316492")
+Artist.create(name: "Chance the Rapper", short: "chance", first_letter: "C", second_letter: "T", third_letter: "R", first_name: "HANCE", second_name: "HE", third_name: "APPER", icon: "https://i.pinimg.com/originals/e1/09/a0/e109a0b91fd868883aa963a79aab0c1e.png" )
+Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_letter: "S", first_name: "RAVIS", second_name: "COTT", icon: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png")
 
 Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1)
 Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1)
@@ -28,6 +29,9 @@ Album.create(title: "Speedin' Bullet 2 Heaven", short: "bullet", css: "eight", a
 Album.create(title: "WZRD", short: "wzrd", css: "nine", art: "https://images-na.ssl-images-amazon.com/images/I/41ar5KYsRQL._SY355_.jpg", color: "#DD3861", text: "black", font_size: "2vmin", artist_id: 2)
 Album.create(title: "Dat Kid From Cleveland", short: "dat", css: "ten", art: "http://hw-img.datpiff.com/m3ddbe3e/Kid_Cudi_DJ_E-V_Dat_Kid_From_Cleveland-front-large.jpg", color: "#C8946D", text: "white", font_size: "1.4vmin", artist_id: 2)
 Album.create(title: "Everything Else", short: "else", css: "eleven", art: "https://c6i6j3odemn4axammj4iy6hr-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/as11-44-6667-597x600.jpg", color: "#7A7A83", text: "white", font_size: "1.7vmin", artist_id: 2)
+
+Album.create(title: "Acid Rap", short: "acid", css: "first", art: "https://i.ytimg.com/vi/e67Q-sTHVhc/maxresdefault.jpg", color: "#612272", text: "white", font_size: "2vmin", artist_id: 3)
+Album.create(title: "Ten Day", short: "ten", css: "two", art: "https://i.ytimg.com/vi/WJPtq3laocU/maxresdefault.jpg", color: "#2A5879", text: "white", font_size: "2vmin", artist_id: 3)
 
 
 
@@ -342,6 +346,7 @@ end
 everything_songs = [
   {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 13},
   {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
+  {name: "Benji the Dog", youtube: "erIRLhAFUCk", album_id: 13},
   {name: "Happy", youtube: "tCc12IqBzRE", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
@@ -599,5 +604,41 @@ else_songs = [
 ]
 
 else_songs.each do |song|
+  Song.create(song)
+end
+
+acid_songs = [
+{name: "Good Ass Intro", youtube: "ftSUchAdVTE", album_id: 26},
+{name: "Pusha Man", youtube: "N0DcVbSYWUA", album_id: 26},
+{name: "Cocoa Butter Kisses", youtube: "TErySTMbFlk", album_id: 26},
+{name: "Juice", youtube: "Av8sn7BXLxE", album_id: 26},
+{name: "Lost", youtube: "AqjxjMcLK9U", album_id: 26},
+{name: "Everybody's Something", youtube: "uoS9rEfHKwo", album_id: 26},
+{name: "Interlude (That's Love)", youtube: "CwnZI01YdXE", album_id: 26},
+{name: "Favorite Song", youtube: "8mtA9GvpzwU", album_id: 26},
+{name: "Na Na", youtube: "aLWv91Tljhw", album_id: 26},
+{name: "Smoke Again", youtube: "_4_Dmp6lbDE", album_id: 26},
+{name: "Acid Rain", youtube: "U1AOoHSijIk", album_id: 26},
+{name: "Chain Smoker", youtube: "bigsk2g7xO8", album_id: 26}
+]
+
+ten_songs = [
+  {name: "14,400 Minutes", youtube: "-IRbk0yFP9o", album_id: 27},
+  {name: "Nostalgia", youtube: "q8YGRR5mj-8", album_id: 27},
+  {name: "Missing You", youtube: "oVEV76WYijg", album_id: 27},
+  {name: "Windows", youtube: "8PfKitRoOtw", album_id: 27},
+  {name: "Brain Cells", youtube: "haLn7YpJqJo", album_id: 27},
+  {name: "Long Time", youtube: "u6vuKEhwTbo", album_id: 27},
+  {name: "22 Offs", youtube: "UK_tDqg36Gs", album_id: 27},
+  {name: "U Got Me Fucked Up", youtube: "W_YRhs28IpU", album_id: 27},
+  {name: "Family", youtube: "s2HM3gvMT_o", album_id: 27},
+  {name: "Juke Juke", youtube: "KQDVtiMsj_g", album_id: 27},
+  {name: "Fuck You Tahm Bout", youtube: "tR0nXbXmarc", album_id: 27},
+  {name: "Long Time II", youtube: "vvbE-rORzuc", album_id: 27},
+  {name: "Prom Night", youtube: "Ifuj5ynXDUI", album_id: 27},
+  {name: "Hey Ma", youtube: "Ya5jfd-l5fg", album_id: 27},
+]
+
+ten_songs.each do |song|
   Song.create(song)
 end

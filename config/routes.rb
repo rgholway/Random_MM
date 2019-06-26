@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   end
   get '/cudi', to: 'homes#index'
   get '/mac', to: 'homes#index'
+  get '/travis', to: 'homes#index'
+  get '/chance', to: 'homes#index'
   get '*path', to: 'homes#index'
 end
