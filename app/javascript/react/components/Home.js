@@ -9,9 +9,15 @@ class Home extends Component {
     super(props)
     this.state = {
       artists: [],
-      random: ""
+      random: "",
+      circle: "",
+      info: "YOUR FAVORITE ARTIST'S MIXTAPES AND ALBUMS IN ONE PLACE",
+      title: "",
+      line: ""
     }
     this.fetchArtists = this.fetchArtists.bind(this)
+    this.firstClick = this.firstClick.bind(this)
+    this.hover = this.hover.bind(this)
   }
 
   fetchArtists() {
@@ -32,11 +38,22 @@ class Home extends Component {
         .catch(error => console.error(`Error in fetch: ${error.message}`));
     }
 
+    firstClick() {
+      this.setState({circle: `${this.state.random}`})
+      let random = this.state.random
+      setTimeout(function(){ browserHistory.push(`/${random}`); }, 3500)
+    }
+
+    hover(info, title, line) {
+      this.setState({ info: info, title: title, line: line })
+    }
+
   componentWillMount() {
     this.fetchArtists()
   }
 
   render() {
+    console.log(this.state.line);
     let artistsArray = this.state.artists.map(artist => {
       return(
         <ArtistTile
@@ -45,6 +62,8 @@ class Home extends Component {
           short= {artist.short}
           random= {this.state.random}
           icon= {artist.icon}
+          hover= {this.hover}
+          description= {artist.description}
         />
       )
     })
@@ -59,8 +78,13 @@ class Home extends Component {
     })
     return(
       <div>
-        <div className="title__info">Your Favorite Artist's Mixtapes and Albums in one place</div>
+      <div className={`title__main`}>RANDOMMAC</div>
+      <div className={`title__name${this.state.line}`}>{this.state.title}</div>
+      <div className="title__info">
+        <div className="title__description">{this.state.info}</div>
+      </div>
         <div className="home__wheel">
+        <div className={`home${this.state.circle}`} onClick={this.firstClick}></div>
           {artistsArray}
         </div>
       </div>

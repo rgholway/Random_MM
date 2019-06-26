@@ -4,6 +4,7 @@ class Artists < ActiveRecord::Migration[5.2]
       t.string :name, null: false
       t.string :short
       t.string :icon
+      t.string :description
       t.string :first_letter
       t.string :second_letter
       t.string :third_letter

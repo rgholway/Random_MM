@@ -11,6 +11,8 @@ class ArtistTile extends Component {
         }
         this.click = this.click.bind(this)
         this.firstClick = this.firstClick.bind(this)
+        this.hover = this.hover.bind(this)
+        this.leave = this.leave.bind(this)
   }
 
   click() {
@@ -23,15 +25,22 @@ class ArtistTile extends Component {
     setTimeout(function(){ browserHistory.push(`/${random}`); }, 3500)
   }
 
+  hover() {
+    this.props.hover(this.props.description, this.props.name, "--active")
+  }
+
+  leave() {
+    this.props.hover("YOUR FAVORITE ARTIST'S MIXTAPES AND ALBUMS IN ONE PLACE", "", "")
+  }
+
   render() {
     return (
       <div>
       <div className="title__home" onClick={this.firstClick}>RANDOM ARTIST</div>
-        <div className={`${this.props.short}`} onClick={this.click}>
-          <h6 className="artist__name">{this.props.name}</h6>
+        <div className={`${this.props.short}`} onClick={this.click} onMouseEnter={this.hover} onMouseLeave={this.leave}>
+          <h6 className={`artist__name--${this.props.short}`}>{this.props.name}</h6>
           <img className="home__icon" src={this.props.icon}/>
         </div>
-        <div className={`home${this.state.circle}`} onClick={this.firstClick}></div>
       </div>
     )
   }

@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_06_21_183011) do
     t.string "name", null: false
     t.string "short"
     t.string "icon"
+    t.string "description"
     t.string "first_letter"
     t.string "second_letter"
     t.string "third_letter"
