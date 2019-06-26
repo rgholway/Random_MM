@@ -1,0 +1,221 @@
+.nothing {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.home__wheel {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+  }
+
+  .title__home {
+    position: absolute;
+    height: 0%;
+    width: 32vmin;
+    top: 40%;
+    left: 31%;
+    color: black;
+    font-size: 5vmin;
+    z-index: 15;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .play__song {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 52%;
+    left: 38%;
+    color: black;
+    font-size: 2vmin;
+    z-index: 15;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .home {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-radius: 100%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    z-index: 30;
+    background: white;
+    cursor: pointer;
+  }
+
+  .homemac {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 30;
+    background: white;
+    animation: mac_home 3s ease-out forwards;
+    cursor: pointer;
+  }
+
+  .homecudi {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 30;
+    background: white;
+    cursor: pointer;
+    animation: cudi_home 3s ease-out forwards
+  }
+
+  .hometravis {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 30;
+    background: white;
+    cursor: pointer;
+    animation: travis_home 3s ease-out forwards
+  }
+
+  .homechance {
+    position: absolute;
+    height: 34vmin;
+    width: 34vmin;
+    top: 30%;
+    left: 30%;
+    border-top: solid 3px #6DEA75;
+    border-right: solid 3px black;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-radius: 100%;
+    z-index: 30;
+    background: white;
+    cursor: pointer;
+    animation: chance_home 3s ease-out forwards
+  }
+
+.mac {
+  position: absolute;
+  top: 5%;
+  left: 41%;
+  height: 22%;
+  width: 22%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.cudi {
+  position: absolute;
+  right: 3%;
+  top: 35%;
+  height: 22%;
+  width: 22%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.travis {
+  position: absolute;
+  bottom: 2.5%;
+  left: 40%;
+  height: 22%;
+  width: 22%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.chance {
+  position: absolute;
+  left: 3%;
+  top: 35%;
+  height: 22%;
+  width: 22%;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.home__icon {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  top: 0%;
+}
+
+.artist__name {
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  top: 85%;
+  height: auto;
+  width: 100%;
+}
+
+@keyframes mac_home {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(1080deg);
+    }
+}
+
+@keyframes chance_home {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(990deg);
+    }
+}
+
+@keyframes travis_home {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(900deg);
+    }
+}
+
+@keyframes cudi_home {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(810deg);
+    }
+}

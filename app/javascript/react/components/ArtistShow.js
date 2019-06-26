@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Example from './Example'
 import AlbumTile from './AlbumTile'
 import Animation from './Animation'
+import Links from './Links'
 import { browserHistory } from 'react-router';
 import {Link} from 'react-router';
 
@@ -16,12 +17,12 @@ class ArtistShow extends Component {
       selected: "",
       what: "",
       artistName: "",
+      artists: [],
       albums: []
     }
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
     this.link = this.link.bind(this)
-    this.macLink = this.macLink.bind(this)
     this.fetchArtist = this.fetchArtist.bind(this)
   }
 
@@ -66,6 +67,24 @@ playSong() {
         .catch(error => console.error(`Error in fetch: ${error.message}`));
     }
 
+    fetchArtists() {
+        fetch(`/api/v1/artists`)
+          .then(response => {
+            if (response.ok) {
+              return response;
+            } else {
+              let errorMessage = `${response.status} (${response.statusText})`,
+              error = new Error(errorMessage);
+              throw(error);
+            }
+          })
+          .then(response => response.json())
+          .then(body => {
+            this.setState({ artists: body[0] })
+          })
+          .catch(error => console.error(`Error in fetch: ${error.message}`));
+      }
+
   clickSong(id) {
     fetch(`/api/v1/tracks/${id}`)
     .then(response => {
@@ -85,17 +104,12 @@ playSong() {
   }
 
   link() {
-    browserHistory.push('/cudi')
-    location.reload()
-  }
-
-  macLink() {
-    browserHistory.push('/mac')
-    location.reload()
+    browserHistory.push(`/${this.props.short}`)
   }
 
   componentWillMount() {
     this.fetchArtist()
+    this.fetchArtists()
   }
 
   render() {
@@ -114,13 +128,18 @@ playSong() {
         />
       )
     })
-
+    let artistsArray = this.state.artists.map(artist => {
+      return(
+        <Links
+          key= {artist.id}
+          name= {artist.name}
+          short= {artist.short}
+        />
+      )
+    })
     return(
       <div>
-        <div className="artists"> Artists:
-            <div to={"/cudi"} className="cudi__link" onClick={this.link}>Kid Cudi</div>
-            <div to={"/mac"} className="mac__link" onClick={this.macLink}>Mac Miller</div>
-          </div>
+        <div className="artists">Artists: {artistsArray}</div>
         <div className={`youtube--${this.state.active}`}>
           <Example
             youtube= {this.state.song.youtube}
