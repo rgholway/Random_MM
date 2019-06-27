@@ -39,7 +39,13 @@ Album.create(title: "Features", short: "feature", css: "six", art: "http://stati
 Album.create(title: "Owbum", short: "owbum", css: "fifteen", art: "https://images.genius.com/0ea1b30f066f2974043519d9c1ab3453.640x640x1.jpg", color: "#B99E81", text: "black", font_size: "2vmin", artist_id: 3)
 Album.create(title: "Good Ass Job", short: "ass", css: "sixteen", art: "https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F8da2b495ab723e94f30a18713abdca85.750x750x1.png", color: "#DE4CCD", text: "black", font_size: "1.8vmin", artist_id: 3)
 
-
+Album.create(title: "Astroworld", short: "astro", css: "first", art: "https://images-na.ssl-images-amazon.com/images/I/71lqI%2BMuHGL._SY355_.jpg", color: "#F9CB56", text: "black", font_size: "1.8vmin", artist_id: 4)
+Album.create(title: "Owl Pharoah", short: "pharoah", css: "two", art: "https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Travis_Scott_Owl_Pharaoh.jpg/220px-Travis_Scott_Owl_Pharaoh.jpg", color: "#42373F", text: "white", font_size: "1.8vmin", artist_id: 4)
+Album.create(title: "Huncho Jack", short: "huncho", css: "three", art: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Huncho_Jack%2C_Jack_Huncho_cover.jpg/220px-Huncho_Jack%2C_Jack_Huncho_cover.jpg", color: "#EBF1FD", text: "black", font_size: "1.8vmin", artist_id: 4)
+Album.create(title: "Rodeo", short: "rodeo", css: "four", art: "https://elevator-media.imgix.net/app/uploads/2015/08/large-3.jpg?fm=pjpg&ixlib=php-1.2.1&s=984132d453ef5ed6fe5d4df40b38759e", color: "#261710", text: "white", font_size: "2vmin", artist_id: 4)
+Album.create(title: "Day's Before Rodeo", short: "days", css: "five", art: "https://upload.wikimedia.org/wikipedia/en/0/08/Album_Cover_of_Travis_Scott%27s_Day_Before_Rodeo.jpg", color: "#4681C7", text: "black", font_size: "1.5vmin", artist_id: 4)
+Album.create(title: "Birds in the Trap", short: "birds", css: "six", art: "https://res.cloudinary.com/dysheof28/image/upload//t_square_large/images/artists/travis-scott/tracks/beibs-in-the-trap.jpg", color: "#384963", text: "white", font_size: "1.5vmin", artist_id: 4)
+Album.create(title: "Features", short: "feature_travis", css: "fifteen", art: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", color: "#58BD47", text: "black", font_size: "1.8vmin", artist_id: 4)
 
 swimming_songs = [
   {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1},
@@ -277,7 +283,7 @@ best_songs = [
   {name: "Donald Trump", youtube: "74TFS8r_SMI", album_id: 11},
   {name: "Oy Vey", youtube: "xhDPVvEY8XM", album_id: 11},
   {name: "I'll Be There", youtube: "JX2W8d4GMDM", album_id: 11},
-  {name: "GetUp", youtube: "YcXRsXwAY", album_id: 11},
+  {name: "Get Up", youtube: "YcXRs-XwA-Y", album_id: 11},
   {name: "Wear My Hat", youtube: "bbhgzA98IAY", album_id: 11},
   {name: "Wake Up", youtube: "lhacDi7_c9c", album_id: 11},
   {name: "All Around the World", youtube: "LO243sHBblw", album_id: 11},
@@ -676,12 +682,12 @@ coloring_songs.each do |song|
 end
 
 free_songs = [
-  {name: "Last Dance", youtube: "e1efOPSmh1A&t", album_id: 29},
+  {name: "Last Dance", youtube: "e1efOPSmh1A", album_id: 29},
   {name: "What's Next", youtube: "j6_pYA5kj-0", album_id: 29},
-  {name: "First Mixtape", youtube: "gITuB1aCQvs&t", album_id: 29},
-  {name: "Amen", youtube: "NAIHDm6Gtk0&t", album_id: 29},
-  {name: "Do My Dance", youtube: "VP8rSqvm-ZM&t", album_id: 29},
-  {name: "We Rare", youtube: "w8HY9TADly8&t", album_id: 29}
+  {name: "First Mixtape", youtube: "gITuB1aCQvs", album_id: 29},
+  {name: "Amen", youtube: "NAIHDm6Gtk0", album_id: 29},
+  {name: "Do My Dance", youtube: "VP8rSqvm-ZM", album_id: 29},
+  {name: "We Rare", youtube: "w8HY9TADly8", album_id: 29}
 ]
 
 free_songs.each do |song|
@@ -743,5 +749,157 @@ ass_songs = [
 ]
 
 ass_songs.each do |song|
+  Song.create(song)
+end
+
+astro_songs = [
+  {name: "STARGAZING", youtube: "2a8PgqWrc_4", album_id: 34},
+  {name: "CAROUSEL", youtube: "qe-gnV-lvfE", album_id: 34},
+  {name: "SICKO MODE", youtube: "6ONRf7h3Mdk", album_id: 34},
+  {name: "R.I.P. SCREW", youtube: "oBOmHWo14Xk", album_id: 34},
+  {name: "STOP TRYING TO BE GOD", youtube: "AcXp7m1g5yE", album_id: 34},
+  {name: "NO BYSTANDERS", youtube: "OhXVLFpAAKY", album_id: 34},
+  {name: "SKELETONS", youtube: "tAyYYKcySXA", album_id: 34},
+  {name: "WAKE UP", youtube: "FAO8ZAUBx0c", album_id: 34},
+  {name: "5% TINT", youtube: "6SLD1ZQZ_4Y", album_id: 34},
+  {name: "NC-17", youtube: "K2taklQnVzY", album_id: 34},
+  {name: "ASTROTHUNDER", youtube: "Pa67b28h0vY", album_id: 34},
+  {name: "YOSEMITE", youtube: "ykMHDKB0-1o", album_id: 34},
+  {name: "CAN'T SAY", youtube: "2LegcNVM_nM", album_id: 34},
+  {name: "WHO? WHAT!", youtube: "gLkQA7iLNUk", album_id: 34},
+  {name: "BUTTERFLY EFFECT", youtube: "_EyZUTDAH0U", album_id: 34},
+  {name: "HOUSTONFORNICATION", youtube: "XzmnM2PLPfs", album_id: 34},
+  {name: "COFFEE BEAN", youtube: "Z6d3BofQqN0", album_id: 34}
+]
+
+astro_songs.each do |song|
+  Song.create(song)
+end
+
+pharoah_songs = [
+  {name: "Meadow Creek", youtube: "yK8QSfkcPjM", album_id: 35},
+  {name: "Bad Mood/Shit on You", youtube: "vabDcge2w4o", album_id: 35},
+  {name: "Upper Echelon", youtube: "X4MSlFq8bNI", album_id: 35},
+  {name: "Chaz Interlude", youtube: "Xu7IMopcohw", album_id: 35},
+  {name: "Uptown", youtube: "DdouvPcmEco", album_id: 35},
+  {name: "Hell of a Night", youtube: "8XdlQmYpVzU", album_id: 35},
+  {name: "Blocka La Flame", youtube: "CZ2MwwV8a-Y", album_id: 35},
+  {name: "Naked", youtube: "4UZFnLJHkaM", album_id: 35},
+  {name: "Dance on the Moon", youtube: "g0vlRpBh5Y0", album_id: 35},
+  {name: "MIA", youtube: "2zVwCHRX7_Y", album_id: 35},
+  {name: "Drive", youtube: "cknR8xNFop8", album_id: 35},
+  {name: "Quintana", youtube: "kZCC1BkBYvU", album_id: 35},
+  {name: "Bandz", youtube: "OB_3gSmPQto", album_id: 35}
+]
+
+pharoah_songs.each do |song|
+  Song.create(song)
+end
+
+huncho_songs = [
+  {name: "Black and Chinese", youtube: "nBj1d39KtcE", album_id: 36},
+  {name: "Dubai Shit", youtube: "dJ7bquKFC4E", album_id: 36},
+  {name: "Eye 2 Eye", youtube: "ZdtobM01EHM", album_id: 36},
+  {name: "Where U From", youtube: "R9IOZ2a5Zyw", album_id: 36},
+  {name: "Motorcycle Patches", youtube: "vx_trQYHpNc", album_id: 36},
+  {name: "Saint Laurent Mask", youtube: "RuWrt983xAs", album_id: 36},
+  {name: "Saint", youtube: "xgJktfkp06c", album_id: 36},
+  {name: "How U Feel", youtube: "xmu3jfaUVUg", album_id: 36},
+  {name: "Modern Slavery", youtube: "lLfBfsaGMlM", album_id: 36},
+  {name: "Moon Rock", youtube: "1xPw0g-sqcA", album_id: 36},
+  {name: "Best Man", youtube: "WOwLJ4f9PvM", album_id: 36},
+  {name: "Go", youtube: "W15GoxmuiKw", album_id: 36},
+  {name: "Huncho Jack", youtube: "wdrAUrsZdzs", album_id: 36}
+]
+
+huncho_songs.each do |song|
+  Song.create(song)
+end
+
+rodeo_songs = [
+  {name: "Pornography", youtube: "adnjokd1ErM", album_id: 37},
+  {name: "Oh My Dis Side", youtube: "_ZALrZUSshA", album_id: 37},
+  {name: "3500", youtube: "3qNaoLgHU94", album_id: 37},
+  {name: "Wasted", youtube: "4tj6hfn-Vb8", album_id: 37},
+  {name: "90210", youtube: "BuNBLjJzRoo", album_id: 37},
+  {name: "Pray 4 Love", youtube: "EivJ5hpQzms", album_id: 37},
+  {name: "Nightcrawler", youtube: "rNr6X0_vmWM", album_id: 37},
+  {name: "Piss on Your Grave", youtube: "KCsex2tGXrs", album_id: 37},
+  {name: "Antidote", youtube: "KnZ8h3MRuYg", album_id: 37},
+  {name: "Impossible", youtube: "fLMB6-AHTXI", album_id: 37},
+  {name: "Maria I'm Drunk", youtube: "fI-mnYR-Mp8", album_id: 37},
+  {name: "Flying High", youtube: "OdXNvCOAs0w", album_id: 37},
+  {name: "I Can Tell", youtube: "XtPO2PLZ3tk", album_id: 37},
+  {name: "Apple Pie", youtube: "cLx87ceoNT8", album_id: 37},
+  {name: "Ok Alright", youtube: "WFYpz-QhOgk", album_id: 37},
+  {name: "Never Catch Me", youtube: "EgPRheesCnY", album_id: 37}
+]
+
+rodeo_songs.each do |song|
+  Song.create(song)
+end
+
+days_songs = [
+  {name: "DBR: The Prayer", youtube: "nQEzO1vEbOw", album_id: 38},
+  {name: "Mamacita", youtube: "RH9kl6XZixo", album_id: 38},
+  {name: "Quintana, Part 2", youtube: "OKsRF_4mJGM", album_id: 38},
+  {name: "Drugs You Should Try", youtube: "BtZ6hmT5_I0", album_id: 38},
+  {name: "Don't Play", youtube: "iQhLccjeHYI", album_id: 38},
+  {name: "Skyfall", youtube: "7TOLd_jLkWk", album_id: 38},
+  {name: "Zombies", youtube: "29lPtMy-bYA", album_id: 38},
+  {name: "Sloppy Toppy", youtube: "WcmBQ4AzpzY", album_id: 38},
+  {name: "Basement Freestyle", youtube: "Y_V50_YQC5w", album_id: 38},
+  {name: "Backyard", youtube: "ah5RaxBEYwM", album_id: 38},
+  {name: "Grey", youtube: "5byDY8ZXMME", album_id: 38},
+  {name: "Bacc", youtube: "4x56A8m4vBk", album_id: 38}
+]
+
+days_songs.each do |song|
+  Song.create(song)
+end
+
+birds_songs = [
+  {name: "the ends", youtube: "NtQqup0RUjg", album_id: 39},
+  {name: "way back", youtube: "1kgw0vubj9U", album_id: 39},
+  {name: "coordinate", youtube: "Eyt40gCbYeU", album_id: 39},
+  {name: "through the late night", youtube: "Kml734oRers", album_id: 39},
+  {name: "beibs in the trap", youtube: "mSl0YipRs2o", album_id: 39},
+  {name: "sdp interlude", youtube: "iXa5JX-Lctg", album_id: 39},
+  {name: "sweet sweet", youtube: "EqXAV2UcYjU", album_id: 39},
+  {name: "outside", youtube: "Zkp64jjajs0", album_id: 39},
+  {name: "goosebumps", youtube: "Dst9gZkq1a8", album_id: 39},
+  {name: "first take", youtube: "UymdrmFa-m0", album_id: 39},
+  {name: "pick up the phone", youtube: "mZDinQ92OZQ", album_id: 39},
+  {name: "lose", youtube: "yjES98aUflA", album_id: 39},
+  {name: "guidance", youtube: "1_mEWBBvUyE", album_id: 39},
+  {name: "wonderful", youtube: "3STbGs3bJcU", album_id: 39},
+  {name: "theends", youtube: "NtQqup0RUjg", album_id: 39},
+  {name: "theends", youtube: "NtQqup0RUjg", album_id: 39},
+]
+
+birds_songs.each do |song|
+  Song.create(song)
+end
+
+travfeatures_songs = [
+  {name: "No Feelings", youtube: "Lr4b9qxzJhI", album_id: 40},
+  {name: "Whole Lotta Lovin'", youtube: "0z9ib5yLSdQ", album_id: 40},
+  {name: "Bake Sale", youtube: "rTAZlHGOVo8", album_id: 40},
+  {name: "No English", youtube: "I5YmFyPTukE", album_id: 40},
+  {name: "Last Time", youtube: "42Amfo4YN8c", album_id: 40},
+  {name: "Love Galore", youtube: "hHXfCOjb3fk", album_id: 40},
+  {name: "Portland", youtube: "0ua2MeSkBZI", album_id: 40},
+  {name: "Know No Better", youtube: "Sgp0WDMH88g", album_id: 40},
+  {name: "Sky Walker", youtube: "76O3w4pt0CA", album_id: 40},
+  {name: "4 AM", youtube: "TyylUeaTT10", album_id: 40},
+  {name: "Deserve", youtube: "pCdWnY4Dn2w", album_id: 40},
+  {name: "Dark Knight Dummo", youtube: "wrvN87l3s08", album_id: 40},
+  {name: "Close", youtube: "-wo8HsrmYvU", album_id: 40},
+  {name: "ZeZe", youtube: "mjaayCARwro", album_id: 40},
+  {name: "Dangerous World", youtube: "0A956y1Ns_c", album_id: 40},
+  {name: "Mile High", youtube: "PWPafG8wEvc", album_id: 40}
+]
+
+travfeatures_songs.each do |song|
   Song.create(song)
 end
