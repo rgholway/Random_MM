@@ -139,7 +139,7 @@ playSong() {
     })
     return(
       <div>
-        <div className="artists">Artists: {artistsArray}</div>
+        <div className="artists"><Link to="/">|   Home</Link>{artistsArray}</div>
         <div className={`youtube--${this.state.active}`}>
           <Example
             youtube= {this.state.song.youtube}
@@ -155,14 +155,14 @@ playSong() {
         </div>
         <div className={`animation__box--${this.state.active}`}>
           <Animation
-          name= {this.state.artist.short}
-          firstLetter= {this.state.artist.first_letter}
-          secondLetter= {this.state.artist.second_letter}
-          thirdLetter= {this.state.artist.third_letter}
-          firstName= {this.state.artist.first_name}
-          secondName= {this.state.artist.second_name}
-          thirdName= {this.state.artist.third_name}
-          fourthName= {this.state.artist.fourth_name}
+            name= {this.state.artist.short}
+            firstLetter= {this.state.artist.first_letter}
+            secondLetter= {this.state.artist.second_letter}
+            thirdLetter= {this.state.artist.third_letter}
+            firstName= {this.state.artist.first_name}
+            secondName= {this.state.artist.second_name}
+            thirdName= {this.state.artist.third_name}
+            fourthName= {this.state.artist.fourth_name}
           />
         </div>
       </div>

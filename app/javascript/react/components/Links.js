@@ -16,7 +16,7 @@
 
     render() {
       return (
-        <div className={`${this.props.short}__link`} onClick={this.link}>{this.props.name}</div>
+        <div className="links" onClick={this.link}>{this.props.name}</div>
       )
     }
   }

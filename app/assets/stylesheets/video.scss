@@ -20,14 +20,25 @@
 .artists {
   position: absolute;
   top: 2%;
-  left: 15%;
+  left: 5%;
   height: 8%;
-  width: 30%;
+  width: 50%;
   font-family: 'Raleway', sans-serif;
   color: black;
 }
 
 .random__mac {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  height: 80vmin;
+  width: 80vmin;
+  border-radius: 50%;
+  background: black;
+  border: solid .5px black;
+}
+
+.random__travis {
   position: absolute;
   top: 10%;
   left: 4%;
@@ -64,7 +75,7 @@
   position: absolute;
   height: auto;
   width: auto;
-  top: 52%;
+  top: 62%;
   left: 38%;
   color: black;
   font-size: 2vmin;
@@ -86,7 +97,7 @@
 .cudi__link {
   position: absolute;
   top: 2%;
-  left: 40%;
+  left: 35%;
   height: auto;
   width: auto;
   cursor: pointer;
@@ -98,10 +109,55 @@
   color: #F0E4E4;
 }
 
+.chance__link {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+}
+
+.chance__link:hover {
+  color: #F0E4E4;
+}
+
+.travis__link {
+  position: absolute;
+  top: 2%;
+  left: 75%;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+}
+
+.travis__link:hover {
+  color: #F0E4E4;
+}
+
+.links {
+  position: relative;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  z-index: 3;
+  padding-left: 3%;
+  float: left;
+}
+
+.links:hover {
+  color: #F0E4E4;
+}
+
 .mac__link {
   position: absolute;
   top: 2%;
-  left: 15%;
+  left: 20%;
   height: auto;
   width: auto;
   cursor: pointer;
@@ -215,6 +271,20 @@
   background: #E2BC9C;
   font-size: 1.2vmin;
   color: black;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hover--sixteen {
+  position: absolute;
+  height: 18%;
+  top: 17%;
+  left: 17%;
+  width: 18%;
+  z-index: 22;
+  background: #3C3D42;
+  font-size: 1.5vmin;
+  color: white;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
 }
@@ -519,6 +589,16 @@
   cursor: pointer;
 }
 
+.sixteen {
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  height: 18%;
+  width: 18%;
+  z-index: 12;
+  cursor: pointer;
+}
+
 .title {
   position: absolute;
   height: auto;
@@ -788,6 +868,23 @@
 }
 
 .circle--albumfifteen {
+  position: absolute;
+  height: 34vmin;
+  width: 34vmin;
+  top: 30%;
+  left: 30%;
+  border-top: solid 3px #6DEA75;
+  border-right: solid 3px black;
+  border-left: solid 3px black;
+  border-bottom: solid 3px black;
+  border-radius: 100%;
+  z-index: 13;
+  background: white;
+  cursor: pointer;
+  animation: kids 3s ease-out forwards
+}
+
+.circle--albumsixteen {
   position: absolute;
   height: 34vmin;
   width: 34vmin;
