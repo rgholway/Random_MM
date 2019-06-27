@@ -1,7 +1,7 @@
-Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI", icon: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg")
-Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI", icon: "https://officialpsds.com/imageview/r5/j4/r5j4v4_large.png?1521316492")
-Artist.create(name: "Chance the Rapper", short: "chance", first_letter: "C", second_letter: "T", third_letter: "R", first_name: "HANCE", second_name: "HE", third_name: "APPER", icon: "https://i.pinimg.com/originals/e1/09/a0/e109a0b91fd868883aa963a79aab0c1e.png" )
-Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_letter: "S", first_name: "RAVIS", second_name: "COTT", icon: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png")
+Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI", icon: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg", description: "Listen to Faces, Swimming, Best Day Ever, Go:od AM, K.I.D.S, Wathcing Movies with the Sound Off and more...")
+Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI", icon: "https://officialpsds.com/imageview/r5/j4/r5j4v4_large.png?1521316492", description: "Listen to Man on the Moon I & II, A Kid Named Cudi, Indicud, Kids See Ghosts, unreleased songs and yes even WZRD")
+Artist.create(name: "Chance the Rapper", short: "chance", first_letter: "C", second_letter: "T", third_letter: "R", first_name: "HANCE", second_name: "HE", third_name: "APPER", icon: "https://i.pinimg.com/originals/e1/09/a0/e109a0b91fd868883aa963a79aab0c1e.png", description: "Listen to Acid Rap, Ten Day, Coloring Book, Chance's features and Owbum as it is released" )
+Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_letter: "S", first_name: "RAVIS", second_name: "COTT", icon: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", description: "Honestly don't know Travis' music that well IDK astro world and other stuff IDK")
 
 Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1)
 Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1)
@@ -32,6 +32,12 @@ Album.create(title: "Everything Else", short: "else", css: "eleven", art: "https
 
 Album.create(title: "Acid Rap", short: "acid", css: "first", art: "https://i.ytimg.com/vi/e67Q-sTHVhc/maxresdefault.jpg", color: "#612272", text: "white", font_size: "2vmin", artist_id: 3)
 Album.create(title: "Ten Day", short: "ten", css: "two", art: "https://i.ytimg.com/vi/WJPtq3laocU/maxresdefault.jpg", color: "#2A5879", text: "white", font_size: "2vmin", artist_id: 3)
+Album.create(title: "Coloring Book", short: "coloring", css: "three", art: "https://i1.sndcdn.com/artworks-000164666747-vw6nqr-t500x500.jpg", color: "#EE605E", text: "black", font_size: "1.9vmin", artist_id: 3)
+Album.create(title: "Free", short: "free", css: "four", art: "https://ksassets.timeincuk.net/wp/uploads/sites/55/2015/08/2015LiBChanceTheRapper_Press_1_050815.jpg", color: "#F6E65B", text: "black", font_size: "2vmin", artist_id: 3)
+Album.create(title: "Merry Christmas Lil' Mama", short: "merry", css: "five", art: "http://hiphopdx-production.s3.amazonaws.com/2016/12/Jeremih-and-Chance-The-Rapper-Merry-Christmas-Lil-Mama-mixtape-cover-art.jpg", color: "#D53232", text: "black", font_size: "1.4vmin", artist_id: 3)
+Album.create(title: "Features", short: "feature", css: "six", art: "http://static1.squarespace.com/static/5105d89ee4b0869f6416d903/5137a990e4b09e6afa7e25d6/57fb191446c3c42b615b3fe8/1533697414157/chance3-newera-hat1.png", color: "#2C292B", text: "white", font_size: "1.9vmin", artist_id: 3)
+Album.create(title: "Owbum", short: "owbum", css: "fifteen", art: "https://images.genius.com/0ea1b30f066f2974043519d9c1ab3453.640x640x1.jpg", color: "#B99E81", text: "black", font_size: "2vmin", artist_id: 3)
+Album.create(title: "Good Ass Job", short: "ass", css: "sixteen", art: "https://t2.genius.com/unsafe/300x300/https%3A%2F%2Fimages.genius.com%2F8da2b495ab723e94f30a18713abdca85.750x750x1.png", color: "#DE4CCD", text: "black", font_size: "1.8vmin", artist_id: 3)
 
 
 
@@ -94,7 +100,7 @@ wmwtso_songs = [
   {name: "Bird Call", youtube: "qGnXnLAXO8c", album_id: 3},
   {name: "Matches", youtube: "VfSgvNs3irw", album_id: 3},
   {name: "I Am Who I Am", youtube: "jLTOuvBTLxA", album_id: 3},
-  {name: "Objects in the Mirror", youtube: "fG9C7Bo2vzU", album_id: 3},
+  {name: "Objects in the Mirror", youtube: "8gOQKSzbG6w", album_id: 3},
   {name: "Red Dot Music", youtube: "LD6SbTFy8vs", album_id: 3},
   {name: "Gees", youtube: "1JGmTalfUQY", album_id: 3},
   {name: "Watching Movies", youtube: "wdaI7F3Jv5M", album_id: 3},
@@ -363,6 +369,7 @@ everything_songs = [
   {name: "Guidelines", youtube: "4WWltsaADBc", album_id: 13},
   {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 13},
   {name: "He Who Ate All the Caviar", youtube: "AyNf4k9xIXg", album_id: 13},
+  {name: "Tetanus Shots", youtube: "ZYUiyDtoiFI", album_id: 13},
 ]
 
 everything_songs.each do |song|
@@ -622,6 +629,10 @@ acid_songs = [
 {name: "Chain Smoker", youtube: "bigsk2g7xO8", album_id: 26}
 ]
 
+acid_songs.each do |song|
+  Song.create(song)
+end
+
 ten_songs = [
   {name: "14,400 Minutes", youtube: "-IRbk0yFP9o", album_id: 27},
   {name: "Nostalgia", youtube: "q8YGRR5mj-8", album_id: 27},
@@ -640,5 +651,97 @@ ten_songs = [
 ]
 
 ten_songs.each do |song|
+  Song.create(song)
+end
+
+coloring_songs = [
+  {name: "All We Got", youtube: "rDAkWJgTSOk", album_id: 28},
+  {name: "No Problem", youtube: "DbIwOKe3QfQ", album_id: 28},
+  {name: "Summer Friends", youtube: "RAo3mDkUekQ", album_id: 28},
+  {name: "D.R.A.M Sings Special", youtube: "znAaSQuYg54", album_id: 28},
+  {name: "Blessings", youtube: "XdpGJSe44_o", album_id: 28},
+  {name: "Same Drugs", youtube: "4AxJXWs3mnw", album_id: 28},
+  {name: "Mixtape", youtube: "8ZdNqzUQAgw", album_id: 28},
+  {name: "Angels", youtube: "c3WjFk47NqI", album_id: 28},
+  {name: "Juke Jam", youtube: "zFiT6w1rs2Q", album_id: 28},
+  {name: "All Night", youtube: "pqRlp5gakA0", album_id: 28},
+  {name: "How Great", youtube: "l1kupzUz_pc", album_id: 28},
+  {name: "Smoke Break", youtube: "nPY2mSf4C70", album_id: 28},
+  {name: "Finish Line/Drown", youtube: "cD0EIGNe5Nc", album_id: 28},
+  {name: "Blessings 2", youtube: "ix0veVJdmFk", album_id: 28}
+]
+
+coloring_songs.each do |song|
+  Song.create(song)
+end
+
+free_songs = [
+  {name: "Last Dance", youtube: "e1efOPSmh1A&t", album_id: 29},
+  {name: "What's Next", youtube: "j6_pYA5kj-0", album_id: 29},
+  {name: "First Mixtape", youtube: "gITuB1aCQvs&t", album_id: 29},
+  {name: "Amen", youtube: "NAIHDm6Gtk0&t", album_id: 29},
+  {name: "Do My Dance", youtube: "VP8rSqvm-ZM&t", album_id: 29},
+  {name: "We Rare", youtube: "w8HY9TADly8&t", album_id: 29}
+]
+
+free_songs.each do |song|
+  Song.create(song)
+end
+
+merry_songs = [
+  {name: "All the Way", youtube: "D2o44P8I-5A", album_id: 30},
+  {name: "Snowed In", youtube: "JkZi2_8u47w", album_id: 30},
+  {name: "Stranger at the Table", youtube: "ZwUEJt-o3Yk", album_id: 30},
+  {name: "Joy", youtube: "W-CNjZBjrAQ", album_id: 30},
+  {name: "I'm Your Santa", youtube: "bjGHXwUJbxc", album_id: 30},
+  {name: "I Shoulda Left You", youtube: "xEQ5sPWx6kk", album_id: 30},
+  {name: "The Tragedy", youtube: "HylmcN9VIHE", album_id: 30},
+  {name: "Chi Town Christmas", youtube: "WLunrqTyjqg", album_id: 30},
+  {name: "Merry Christmas Lil' Mama", youtube: "7KSHsVq3OC0", album_id: 30}
+]
+
+merry_songs.each do |song|
+  Song.create(song)
+end
+
+feature_songs = [
+  {name: "Life Round Here", youtube: "5S6U_krabrk", album_id: 31},
+  {name: "Confident", youtube: "qnD1hwjR3WU", album_id: 31},
+  {name: "Baby Blue", youtube: "bVP_w1rQweE", album_id: 31},
+  {name: "Church", youtube: "xAE52TBtVrc", album_id: 31},
+  {name: "All My Friends", youtube: "I3mrYxPLSH4", album_id: 31},
+  {name: "Show Me Love", youtube: "J5bAVKzrBzI", album_id: 31},
+  {name: "Penthouse Floor", youtube: "DeTu8xSGpEM", album_id: 31},
+  {name: "I'm the One", youtube: "weeI1G46q0o", album_id: 31},
+  {name: "No Brainer", youtube: "kxloC1MKTpg", album_id: 31},
+  {name: "Whats the Hook", youtube: "sttS1PMuWsQ", album_id: 31},
+  {name: "Cross Me", youtube: "S5n9emOr7SQ", album_id: 31},
+  {name: "Living Single", youtube: "lz78_YCd3_s", album_id: 31},
+  {name: "Ultralight Beam", youtube: "6oHdAA3AqnE", album_id: 31}
+]
+
+feature_songs.each do |song|
+  Song.create(song)
+end
+
+owbum_songs = [
+  {name: "I Might Need Security", youtube: "6ZAc41N2QRU", album_id: 32},
+  {name: "GRoCERIES", youtube: "EoHwMlxmQkE", album_id: 32},
+  {name: "My Own Thing", youtube: "PMQ2nCD88hc", album_id: 32},
+  {name: "Work Out", youtube: "669sIpkdNtQ", album_id: 32},
+  {name: "The Man Who Has Everything", youtube: "ZLuvyj5Vx34", album_id: 32},
+  {name: "65th & Ingleside", youtube: "Y_MkhKaIOQI", album_id: 32},
+  {name: "Wala Cam", youtube: "WumwOPZelTU", album_id: 32}
+]
+
+owbum_songs.each do |song|
+  Song.create(song)
+end
+
+ass_songs = [
+  {name: "Coming Soon? Maybe?", youtube: "T0G2XbOwNZM", album_id: 33}
+]
+
+ass_songs.each do |song|
   Song.create(song)
 end

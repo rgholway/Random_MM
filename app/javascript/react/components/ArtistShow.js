@@ -158,6 +158,7 @@ playSong() {
           name= {this.state.artist.short}
           firstLetter= {this.state.artist.first_letter}
           secondLetter= {this.state.artist.second_letter}
+          thirdLetter= {this.state.artist.third_letter}
           firstName= {this.state.artist.first_name}
           secondName= {this.state.artist.second_name}
           thirdName= {this.state.artist.third_name}

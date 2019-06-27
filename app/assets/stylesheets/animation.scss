@@ -71,6 +71,75 @@
   animation: secondC 1s forwards;
 }
 
+.first__chance {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.first__chance--active {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: firstChance 1s forwards;
+}
+
+.second__chance {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.second__chance--active {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: secondChance 1s forwards;
+}
+
+.third__chance {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.third__chance--active {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  font-size: 4vmin;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  animation: thirdChance 1s forwards;
+}
+
 .first__mac--active {
   position: absolute;
   left: 40%;
@@ -316,5 +385,38 @@
     }
     to {
       width: 30%;
+    }
+}
+
+@keyframes firstChance {
+    from {
+        top: 45%;
+        left: 40%;
+    }
+    to {
+      top: 45%;
+      left: 32%;
+    }
+}
+
+@keyframes secondChance {
+    from {
+        top: 45%;
+        left: 48%;
+    }
+    to {
+      top: 45%;
+      left: 42%;
+    }
+}
+
+@keyframes thirdChance {
+    from {
+        top: 45%;
+        left: 54%;
+    }
+    to {
+      top: 45%;
+      left: 48%;
     }
 }
