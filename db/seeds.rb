@@ -1,7 +1,7 @@
-Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI", icon: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg", description: "Listen to Faces, Swimming, Best Day Ever, Go:od AM, K.I.D.S, Wathcing Movies with the Sound Off and more...")
-Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI", icon: "https://officialpsds.com/imageview/r5/j4/r5j4v4_large.png?1521316492", description: "Listen to Man on the Moon I & II, A Kid Named Cudi, Indicud, Kids See Ghosts, unreleased songs and yes even WZRD")
-Artist.create(name: "Chance the Rapper", short: "chance", first_letter: "C", second_letter: "T", third_letter: "R", first_name: "HANCE", second_name: "HE", third_name: "APPER", icon: "https://i.pinimg.com/originals/e1/09/a0/e109a0b91fd868883aa963a79aab0c1e.png", description: "Listen to Acid Rap, Ten Day, Coloring Book, Chance's features and Owbum as it is released" )
-Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_letter: "S", first_name: "RAVIS", second_name: "COTT", icon: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", description: "Honestly don't know Travis' music that well IDK astro world and other stuff IDK")
+Artist.create(name: "Mac Miller", short: "mac", first_letter: "M", second_letter: "M", first_name: "AC", second_name: "ILLER", third_name: "EMENTO", fourth_name: "ORI", icon: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg", description: "Faces || WMWTSO || Go:od AM || K.I.D.S And Lots More")
+Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter: "C", first_name: "ID", second_name: "UDI", icon: "https://officialpsds.com/imageview/r5/j4/r5j4v4_large.png?1521316492", description: "MOTM I & II || A Kid Named Cudi || Indicud || Unreleased Songs And More")
+Artist.create(name: "Chance the Rapper", short: "chance", first_letter: "C", second_letter: "T", third_letter: "R", first_name: "HANCE", second_name: "HE", third_name: "APPER", icon: "https://i.pinimg.com/originals/e1/09/a0/e109a0b91fd868883aa963a79aab0c1e.png", description: "Acid Rap || Coloring Book || Owbum(so far) || Ten Day And More" )
+Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_letter: "S", first_name: "RAVIS", second_name: "COTT", icon: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", description: "ASTROWORLD || Owl Pharoah || Days Before Rodeo || Huncho Jack And More")
 
 Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1)
 Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1)
@@ -745,7 +745,7 @@ owbum_songs.each do |song|
 end
 
 ass_songs = [
-  {name: "Coming Soon? Maybe?", youtube: "T0G2XbOwNZM", album_id: 33}
+  {name: "Coming Soon? Maybe?", youtube: "-nt88IEgEQs", album_id: 33}
 ]
 
 ass_songs.each do |song|
@@ -872,9 +872,7 @@ birds_songs = [
   {name: "pick up the phone", youtube: "mZDinQ92OZQ", album_id: 39},
   {name: "lose", youtube: "yjES98aUflA", album_id: 39},
   {name: "guidance", youtube: "1_mEWBBvUyE", album_id: 39},
-  {name: "wonderful", youtube: "3STbGs3bJcU", album_id: 39},
-  {name: "theends", youtube: "NtQqup0RUjg", album_id: 39},
-  {name: "theends", youtube: "NtQqup0RUjg", album_id: 39},
+  {name: "wonderful", youtube: "3STbGs3bJcU", album_id: 39}
 ]
 
 birds_songs.each do |song|

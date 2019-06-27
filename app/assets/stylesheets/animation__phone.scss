@@ -215,6 +215,213 @@
     overflow: hidden;
   }
 
+  .first__travis {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .first__travis--active {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    animation: firsttravis 1s forwards;
+  }
+
+  .second__travis {
+    position: absolute;
+    left: 54%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    animation: secondtravis 1s forwards;
+  }
+
+  .second__travis--active {
+    position: absolute;
+    left: 54%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    animation: secondtravis 1s forwards;
+  }
+
+  .RAVIS--active {
+    position: absolute;
+    left: 44.25%;
+    top: 37%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vmin;
+    animation: mac 3.5s 1s forwards;
+  }
+
+  .RAVIS {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .COTT {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .COTT--active {
+    position: absolute;
+    left: 56.5%;
+    top: 37%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vmin;
+    animation: miller 4s 1s forwards;
+  }
+
+  .first__chance {
+    position: absolute;
+    left: 47%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .first__chance--active {
+    position: absolute;
+    left: 47%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    animation: firstchance 1s forwards;
+  }
+
+  .second__chance {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .second__chance--active {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    animation: secondchance 1s forwards;
+  }
+
+  .third__chance {
+    position: absolute;
+    left: 53%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .third__chance--active {
+    position: absolute;
+    left: 53%;
+    top: 30%;
+    font-size: 4vmin;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    animation: thirdchance 1s forwards;
+  }
+
+  .HANCE--active {
+    position: absolute;
+    left: 38%;
+    top: 37%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vmin;
+    animation: mac 3.5s 1s forwards;
+  }
+
+  .HANCE {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .HE--active {
+    position: absolute;
+    left: 52.5%;
+    top: 37%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vmin;
+    animation: mac 3.5s 1s forwards;
+  }
+
+  .HE {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .APPER--active {
+    position: absolute;
+    left: 61%;
+    top: 37%;
+    height: auto;
+    width: 0%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vmin;
+    animation: mac 3.5s 1s forwards;
+  }
+
+  .APPER {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
   @keyframes first {
       from {
           top: 30%;
@@ -263,6 +470,88 @@
       to {
         top: 30%;
         left: 46%;
+      }
+  }
+
+  @keyframes firsttravis {
+      from {
+          top: 30%;
+          left: 50%;
+      }
+      to {
+        top: 30%;
+        left: 42%;
+      }
+  }
+
+  @keyframes secondtravis {
+      from {
+          top: 30%;
+          left: 54%;
+      }
+      to {
+        top: 30%;
+        left: 54%;
+      }
+  }
+
+  @keyframes firstchance {
+      from {
+          top: 30%;
+          left: 47%;
+      }
+      to {
+        top: 30%;
+        left: 35%;
+      }
+  }
+
+  @keyframes secondchance {
+      from {
+          top: 30%;
+          left: 50%;
+      }
+      to {
+        top: 30%;
+        left: 50%;
+      }
+  }
+
+  @keyframes thirdchance {
+      from {
+          top: 30%;
+          left: 55%;
+      }
+      to {
+        top: 30%;
+        left: 58%;
+      }
+  }
+
+  @keyframes hance {
+      from {
+          width: 0%;
+      }
+      to {
+        width: 30%;
+      }
+  }
+
+  @keyframes he {
+      from {
+          width: 0%;
+      }
+      to {
+        width: 8%;
+      }
+  }
+
+  @keyframes apper {
+      from {
+          width: 0%;
+      }
+      to {
+        width: 30%;
       }
   }
 

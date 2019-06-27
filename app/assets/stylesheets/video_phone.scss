@@ -23,14 +23,51 @@
   .artists {
     position: absolute;
     top: 2%;
-    left: 15%;
+    left: 0%;
     height: 8%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
     color: black;
   }
 
+  .links {
+    position: relative;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    z-index: 3;
+    padding-left: 3%;
+    float: left;
+  }
+
+  .links:hover {
+    color: #F0E4E4;
+  }
+
   .random__mac {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+  }
+
+  .random__chance {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background: black;
+    border: solid .5px black;
+  }
+
+  .random__travis {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -56,7 +93,7 @@
     position: absolute;
     height: auto;
     width: auto;
-    top: 52%;
+    top: 62%;
     left: 37%;
     color: black;
     font-size: 2vmin;
