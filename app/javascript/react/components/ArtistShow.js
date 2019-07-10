@@ -18,15 +18,24 @@ class ArtistShow extends Component {
       what: "",
       artistName: "",
       artists: [],
-      albums: []
+      newSong: [],
+      albums: [],
+      youtube: "",
+      queue: ""
     }
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
     this.link = this.link.bind(this)
     this.fetchArtist = this.fetchArtist.bind(this)
+    this.nextSong = this.nextSong.bind(this)
   }
 
 playSong() {
+  if (this.state.queue) {
+    this.setState({youtube: this.state.queue})
+  }
+
+  if (this.state.queue == undefined) {
   let size = this.state.albums.length
   let num = (Math.floor(Math.random() * size))
   let album = this.state.albums[num].id
@@ -44,9 +53,10 @@ playSong() {
       })
       .then(response => response.json())
       .then(body => {
-        this.setState({ song: body })
+        this.setState({ song: body, youtube: body.youtube })
       })
       .catch(error => console.error(`Error in fetch: ${error.message}`));
+    }
   }
 
   fetchArtist() {
@@ -98,9 +108,17 @@ playSong() {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ song: body, active: "active" })
+      this.setState({ youtube: body.youtube, active: "active" })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
+  }
+
+  nextSong(yt) {
+    this.setState({queue: yt })
+  }
+
+  songQueued(yt) {
+    this.setState({youtube: yt})
   }
 
   link() {
@@ -113,6 +131,7 @@ playSong() {
   }
 
   render() {
+    console.log(this.state.queue);
     let albumArray = this.state.albums.map(album => {
       return(
         <AlbumTile
@@ -125,6 +144,7 @@ playSong() {
           text= {album.text}
           size= {album.font_size}
           clickSong= {this.clickSong}
+          nextSong= {this.nextSong}
         />
       )
     })
@@ -142,7 +162,7 @@ playSong() {
         <div className="artists"><Link className="home__link" to="/">|   Home</Link>{artistsArray}</div>
         <div className={`youtube--${this.state.active}`}>
           <Example
-            youtube= {this.state.song.youtube}
+            youtube= {this.state.youtube}
             songEnd= {this.playSong}
           />
         </div>

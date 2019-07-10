@@ -7,12 +7,14 @@ class AlbumTile extends Component {
     this.state = {album: "",
       hover: "",
       songs: [],
+      song: "",
       youtube: ""
         }
         this.handleHover = this.handleHover.bind(this)
         this.handleLeave = this.handleLeave.bind(this)
         this.handleEnter = this.handleEnter.bind(this)
         this.clickSong = this.clickSong.bind(this)
+        this.playNext = this.playNext.bind(this)
   }
 
   handleHover() {
@@ -29,7 +31,6 @@ class AlbumTile extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      debugger;
       this.setState({ songs: body })
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
@@ -47,7 +48,12 @@ class AlbumTile extends Component {
     this.props.clickSong(id)
   }
 
+  playNext(yt) {
+    this.props.nextSong(yt)
+  }
+
   render() {
+    console.log(this.state.song);
     let num = 0
     let songsArray = this.state.songs.map(song => {
       num += 1
@@ -59,6 +65,7 @@ class AlbumTile extends Component {
           youtube= {song.youtube}
           onClick= {this.clickSong}
           num= {num}
+          onNext= {this.playNext}
         />
     )
     })
