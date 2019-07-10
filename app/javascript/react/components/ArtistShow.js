@@ -139,7 +139,7 @@ playSong() {
     })
     return(
       <div>
-        <div className="artists"><Link to="/">|   Home</Link>{artistsArray}</div>
+        <div className="artists"><Link className="home__link" to="/">|   Home</Link>{artistsArray}</div>
         <div className={`youtube--${this.state.active}`}>
           <Example
             youtube= {this.state.song.youtube}
