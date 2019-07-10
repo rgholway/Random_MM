@@ -7,15 +7,22 @@ class SongTile extends Component {
         youtube: ""
         }
         this.onClick = this.onClick.bind(this)
+        this.playNext = this.playNext.bind(this)
   }
     onClick() {
       this.props.onClick(this.props.id)
     }
 
+    playNext() {
+      this.props.onNext(this.props.youtube)
+    }
+
   render() {
     return (
       <div>
-        <div className="tracks" onClick={this.onClick}>{this.props.num}. {this.props.title}</div>
+        <div className="tracks">{this.props.num}. {this.props.title}
+          <div className="play__next" onClick={this.playNext}>O</div>
+        </div>
       </div>
     )
   }
