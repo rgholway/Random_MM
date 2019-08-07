@@ -3,6 +3,7 @@ import Example from './Example'
 import AlbumTile from './AlbumTile'
 import Animation from './Animation'
 import Links from './Links'
+import QueueTile from './QueueTile'
 import { browserHistory } from 'react-router';
 import {Link} from 'react-router';
 
@@ -21,7 +22,7 @@ class ArtistShow extends Component {
       newSong: [],
       albums: [],
       youtube: "",
-      queue: ""
+      queue: []
     }
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
@@ -34,7 +35,6 @@ playSong() {
   if (this.state.queue) {
     this.setState({youtube: this.state.queue})
   }
-
   if (this.state.queue == undefined) {
   let size = this.state.albums.length
   let num = (Math.floor(Math.random() * size))
@@ -114,7 +114,9 @@ playSong() {
   }
 
   nextSong(yt) {
-    this.setState({queue: yt })
+    let queue = this.state.queue
+    queue.unshift(yt)
+    this.setState({ queue: queue })
   }
 
   songQueued(yt) {
@@ -132,6 +134,7 @@ playSong() {
 
   render() {
     console.log(this.state.queue);
+    let num = 0
     let albumArray = this.state.albums.map(album => {
       return(
         <AlbumTile
@@ -148,6 +151,15 @@ playSong() {
         />
       )
     })
+    let queueArray = this.state.queue.map(song => {
+      num += 1
+      return(
+        <QueueTile
+          key= {num}
+          name= {song}
+        />
+      )
+    })
     let artistsArray = this.state.artists.map(artist => {
       return(
         <Links
@@ -160,9 +172,9 @@ playSong() {
     return(
       <div>
         <div className="artists"><Link className="home__link" to="/">|   Home</Link>{artistsArray}</div>
-        <div className={`youtube--${this.state.active}`}>
+        <div className={`youtube--active`}>
           <Example
-            youtube= {this.state.youtube}
+            youtube= {this.state.queue[0]}
             songEnd= {this.playSong}
           />
         </div>
@@ -184,6 +196,10 @@ playSong() {
             thirdName= {this.state.artist.third_name}
             fourthName= {this.state.artist.fourth_name}
           />
+        </div>
+        <div className="songs__queue">
+          <div className="queue__title">Songs Queued</div>
+          <div className="queued__tracks">{queueArray}</div>
         </div>
       </div>
     )}
