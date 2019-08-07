@@ -53,7 +53,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.state.line);
     let artistsArray = this.state.artists.map(artist => {
       return(
         <ArtistTile

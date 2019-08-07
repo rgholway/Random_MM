@@ -17,6 +17,33 @@
   right: 5%;
 }
 
+.songs__queue {
+  position: absolute;
+  top: 77%;
+  right: 5%;
+  width: 35%;
+  height: 20%;
+  overflow: scroll;
+  background: red;
+}
+
+.queue__title {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 4vmin;
+}
+
+.queued__tracks {
+  position: relative;
+  top: 20%;
+  height: 25%;
+  width: 100%;
+  margin-top: 10%;
+}
+
 .artists {
   position: absolute;
   top: 2%;
