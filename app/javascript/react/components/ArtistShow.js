@@ -116,11 +116,7 @@ playSong() {
   nextSong(yt) {
     let queue = this.state.queue
     queue.unshift(yt)
-    this.setState({ queue: queue })
-  }
-
-  songQueued(yt) {
-    this.setState({youtube: yt})
+    this.setState({ queue: queue, youtube: queue.shift() })
   }
 
   link() {
@@ -133,7 +129,6 @@ playSong() {
   }
 
   render() {
-    console.log(this.state.queue);
     let num = 0
     let albumArray = this.state.albums.map(album => {
       return(
@@ -174,7 +169,7 @@ playSong() {
         <div className="artists"><Link className="home__link" to="/">|   Home</Link>{artistsArray}</div>
         <div className={`youtube--active`}>
           <Example
-            youtube= {this.state.queue[0]}
+            youtube= {this.state.youtube}
             songEnd= {this.playSong}
           />
         </div>
