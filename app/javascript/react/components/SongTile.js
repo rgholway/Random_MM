@@ -9,18 +9,26 @@ class SongTile extends Component {
         this.onClick = this.onClick.bind(this)
         this.playNext = this.playNext.bind(this)
   }
-    onClick() {
-      this.props.onClick(this.props.id)
+
+    onClick(e) {
+      if (e.type == "click") {
+        this.props.onClick(this.props.id)
+        }
+      if (e.type == "contextmenu") {
+        this.props.onNext(this.props.youtube)
+      }
+
     }
 
-    playNext() {
+    playNext(e) {
+      e.preventDefault()
       this.props.onNext(this.props.youtube)
     }
 
   render() {
     return (
       <div>
-        <div className="tracks">{this.props.num}. {this.props.title}
+        <div className="tracks" onContextMenu={ this.playNext} onClick={this.onClick}>{this.props.num}. {this.props.title}
           <div className="play__next" onClick={this.playNext}>O</div>
         </div>
       </div>

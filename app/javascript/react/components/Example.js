@@ -3,6 +3,7 @@ import YouTube from 'react-youtube';
 
 class Example extends React.Component {
   render() {
+    console.log(typeof this.props.youtube);
     const opts = {
       height: '300',
       width: '100%',
