@@ -22,13 +22,15 @@ class ArtistShow extends Component {
       newSong: [],
       albums: [],
       youtube: "",
-      queue: []
+      queue: [],
+      title: []
     }
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
     this.link = this.link.bind(this)
     this.fetchArtist = this.fetchArtist.bind(this)
     this.nextSong = this.nextSong.bind(this)
+    this.setSong = this.setSong.bind(this)
   }
 
 playSong() {
@@ -108,15 +110,25 @@ playSong() {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ youtube: body.youtube, active: "active" })
+      let queue = this.state.queue
+      queue.unshift(body.youtube)
+      this.setState({ youtube: queue, active: "active" })
+      this.setSong()
     })
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  nextSong(yt) {
+  nextSong(yt, title) {
     let queue = this.state.queue
-    queue.unshift(yt)
-    this.setState({ queue: queue, youtube: queue.shift() })
+    queue.push(yt)
+    let name = this.state.title
+    name.push(title)
+    this.setState({ queue: queue, title: name})
+  }
+
+  setSong() {
+    let song = this.state.queue.shift()
+    this.setState({ youtube: song})
   }
 
   link() {
@@ -146,7 +158,7 @@ playSong() {
         />
       )
     })
-    let queueArray = this.state.queue.map(song => {
+    let queueArray = this.state.title.map(song => {
       num += 1
       return(
         <QueueTile
@@ -170,7 +182,7 @@ playSong() {
         <div className={`youtube--active`}>
           <Example
             youtube= {this.state.youtube}
-            songEnd= {this.playSong}
+            songEnd= {this.setSong}
           />
         </div>
         <div className={`random__${this.state.artist.short}`}>

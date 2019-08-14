@@ -22,7 +22,7 @@ class SongTile extends Component {
 
     playNext(e) {
       e.preventDefault()
-      this.props.onNext(this.props.youtube)
+      this.props.onNext(this.props.youtube, this.props.title)
     }
 
   render() {
