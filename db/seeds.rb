@@ -70,7 +70,7 @@ end
 faces_songs = [
   {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2},
   {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2},
-  {name: "Friends", youtube: "7i-MT7YdS64thw", album_id: 2},
+  {name: "Friends", youtube: "T5iPXcvLbNk", album_id: 2},
   {name: "Angel Dust", youtube: "rIQqzTNRmoc", album_id: 2},
   {name: "Malibu", youtube: "zlHUpGHJSR0", album_id: 2},
   {name: "What Do You Do", youtube: "mmeo85zjZlo", album_id: 2},
@@ -358,7 +358,7 @@ end
 everything_songs = [
   {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 13},
   {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
-  {name: "Benji the Dog", youtube: "af--sP14zhc", album_id: 13},
+  {name: "Benji the Dog", youtube: "_hbFPAcOce8", album_id: 13},
   {name: "Happy", youtube: "tCc12IqBzRE", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
@@ -376,6 +376,7 @@ everything_songs = [
   {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 13},
   {name: "He Who Ate All the Caviar", youtube: "AyNf4k9xIXg", album_id: 13},
   {name: "Tetanus Shots", youtube: "ZYUiyDtoiFI", album_id: 13},
+  {name: "Nothing for Nothing (Cover)", youtube: "95LTzpeXM7Y", album_id: 13}
 ]
 
 everything_songs.each do |song|
