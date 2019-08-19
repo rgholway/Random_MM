@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 class Example extends React.Component {
   render() {
-    console.log(typeof this.props.youtube);
+    console.log(this.props.songEnd);
     const opts = {
       height: '300',
       width: '100%',
@@ -27,8 +27,10 @@ class Example extends React.Component {
   }
 
   _onEnd(event) {
-    this.props.songEnd()
+
   }
+
+
 }
 
 export default Example
