@@ -198,6 +198,9 @@ playSong() {
           <div className="title" onClick={this.playSong}>{this.state.artistName}</div>
           {albumArray}
           <div className="play__song" onClick={this.playSong}>Click for Random Song</div>
+          <div className="click__song" onClick={this.playSong}>Click Album to Select Song</div>
+          <div className="queued__song--mobile" onClick={this.playSong}>Hold To Add Song to Queue</div>
+          <div className="queued__song--desktop" onClick={this.playSong}>Right Click to Add Song to Queue</div>
           <div className={`circle--${this.state.album}`} onClick={this.playSong}></div>
         </div>
         <div className={`animation__box--${this.state.active}`}>
