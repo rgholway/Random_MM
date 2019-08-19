@@ -676,7 +676,49 @@
   cursor: pointer;
 }
 
-.title {
+.title--mac {
+  position: absolute;
+  height: auto;
+  width: 32vmin;
+  top: 43%;
+  left: 31%;
+  color: black;
+  font-size: 5vmin;
+  z-index: 15;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title--chance {
+  position: absolute;
+  height: auto;
+  width: 32vmin;
+  top: 43%;
+  left: 31%;
+  color: black;
+  font-size: 3vmin;
+  z-index: 15;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title--travis {
+  position: absolute;
+  height: auto;
+  width: 32vmin;
+  top: 43%;
+  left: 31%;
+  color: black;
+  font-size: 4vmin;
+  z-index: 15;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title--cudi {
   position: absolute;
   height: auto;
   width: 32vmin;

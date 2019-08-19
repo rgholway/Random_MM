@@ -195,7 +195,7 @@ playSong() {
         </div>
         <div className={`random__${this.state.artist.short}`}>
           <div className={`mac__face--${this.state.album}`}></div>
-          <div className="title" onClick={this.playSong}>{this.state.artistName}</div>
+          <div className={`title--${this.state.artist.short}`} onClick={this.playSong}>{this.state.artistName}</div>
           {albumArray}
           <div className="play__song" onClick={this.playSong}>Click for Random Song</div>
           <div className="click__song" onClick={this.playSong}>Click Album to Select Song</div>
