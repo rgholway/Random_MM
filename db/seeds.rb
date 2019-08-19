@@ -359,6 +359,7 @@ everything_songs = [
   {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 13},
   {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
   {name: "Benji the Dog", youtube: "_hbFPAcOce8", album_id: 13},
+  {name: "In Kindergarten", youtube: "eVcZCOMDaP8", album_id: 13},
   {name: "Happy", youtube: "tCc12IqBzRE", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
