@@ -49,11 +49,10 @@ class AlbumTile extends Component {
   }
 
   playNext(yt, title) {
-    this.props.nextSong(yt, title)
+    this.props.nextSong(yt, title, "active")
   }
 
   render() {
-    console.log(this.state.song);
     let num = 0
     let songsArray = this.state.songs.map(song => {
       num += 1
