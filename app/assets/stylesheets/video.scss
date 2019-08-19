@@ -43,6 +43,27 @@
   margin-top: 10%;
 }
 
+.queued__song--desktop {
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 55%;
+  left: 32%;
+  color: black;
+  font-size: 2vmin;
+  z-index: 15;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.queued__song--mobile {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
 .artists {
   position: absolute;
   top: 2%;
@@ -110,8 +131,21 @@
   position: absolute;
   height: auto;
   width: auto;
-  top: 62%;
+  top: 63%;
   left: 38%;
+  color: black;
+  font-size: 2vmin;
+  z-index: 15;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.click__song {
+  position: absolute;
+  height: auto;
+  width: auto;
+  top: 59%;
+  left: 36%;
   color: black;
   font-size: 2vmin;
   z-index: 15;
