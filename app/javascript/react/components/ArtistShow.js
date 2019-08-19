@@ -129,8 +129,12 @@ playSong() {
   }
 
   setSong() {
-    let song = this.state.queue.shift()
-    this.setState({ youtube: song, active: "active"})
+    if(typeof this.state.queue[0] == "string") {
+      let song = this.state.queue.shift()
+      this.setState({ youtube: song, active: "active"})
+    } else {
+      this.playSong()
+    }
   }
 
   link() {
