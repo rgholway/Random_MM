@@ -537,8 +537,12 @@
   user-select: none;
 }
 
+.tracks__text {
+  color: black;
+}
+
 .tracks:hover {
-  background: black;
+  background: darkgrey;
   color: white;
 }
 
