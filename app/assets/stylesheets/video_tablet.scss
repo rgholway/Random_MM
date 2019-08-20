@@ -12,12 +12,24 @@
 
   .songs__queue {
     position: absolute;
-    top: 130%;
+    top: 145%;
     left: 5%;
     width: 90%;
     text-align: center;
     height: 20%;
     overflow: scroll;
+  }
+
+  .track__next--mobile {
+    position: relative;
+    left: 0%;
+    height: auto;
+    width: auto;
+    font-size: 2vmin;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    background: black;
+    color: white;
   }
 
   .queue__title {
@@ -369,6 +381,12 @@
     font-size: 2vmin;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .tracks:hover {

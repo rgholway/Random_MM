@@ -22,7 +22,7 @@
 
   .songs__queue {
     position: absolute;
-    top: 130%;
+    top: 145%;
     left: 5%;
     width: 90%;
     text-align: center;
@@ -435,12 +435,35 @@
   .tracks {
     position: relative;
     margin-top: 5%;
+    float: left;
     color: black;
+    display: inline-block;
     background-color: white;
     z-index: 19;
     font-size: 2vmin;
     font-family: 'Raleway', sans-serif;
+    left: 0%;
+    width: 100%;
     cursor: pointer;
+    -webkit-touch-callout: default;
+    -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+  }
+
+  .song__next--mobile {
+    position: relative;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: 2vmin;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    color: black;
+    background: #EAE8E8;
+    overflow: hidden;
   }
 
   .tracks:hover {
