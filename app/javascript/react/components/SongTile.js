@@ -23,8 +23,8 @@ class SongTile extends Component {
   render() {
     return (
       <div>
-        <a className="tracks" onContextMenu={this.onClick} onClick={this.onClick}>{this.props.num}. {this.props.title}
-        </a>
+        <div className="tracks" onContextMenu={this.onClick} onClick={this.onClick}>{this.props.num}. {this.props.title}
+        </div>
       </div>
     )
   }
