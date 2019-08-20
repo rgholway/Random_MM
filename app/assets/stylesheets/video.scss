@@ -542,8 +542,15 @@
 }
 
 .tracks:hover {
-  background: darkgrey;
+  background: black;
   color: white;
+}
+
+.song__next--mobile {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
 }
 
 .six {

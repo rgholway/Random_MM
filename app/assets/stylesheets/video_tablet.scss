@@ -20,6 +20,18 @@
     overflow: scroll;
   }
 
+  .track__next--mobile {
+    position: relative;
+    left: 0%;
+    height: auto;
+    width: auto;
+    font-size: 2vmin;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    background: black;
+    color: white;
+  }
+
   .queue__title {
     position: absolute;
     height: 20%;

@@ -7,6 +7,7 @@ class SongTile extends Component {
         youtube: ""
         }
         this.onClick = this.onClick.bind(this)
+        this.nextSong = this.nextSong.bind(this)
   }
 
     onClick(e) {
@@ -17,14 +18,18 @@ class SongTile extends Component {
         e.preventDefault()
         this.props.onNext(this.props.youtube, this.props.title)
       }
-
     }
+
+      nextSong() {
+        this.props.onNext(this.props.youtube, this.props.title)
+      }
 
   render() {
     return (
       <div>
         <div className="tracks" onContextMenu={this.onClick} onClick={this.onClick}>{this.props.num}. {this.props.title}
         </div>
+        <div className="song__next--mobile" onClick={this.nextSong}>ADD TO Q</div>
       </div>
     )
   }
