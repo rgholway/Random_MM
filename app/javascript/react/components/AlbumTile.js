@@ -48,8 +48,8 @@ class AlbumTile extends Component {
     this.props.clickSong(id)
   }
 
-  playNext(yt, title) {
-    this.props.nextSong(yt, title, "active")
+  playNext(yt, title, id) {
+    this.props.nextSong(yt, title, id)
   }
 
   render() {
