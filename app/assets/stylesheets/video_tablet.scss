@@ -10,13 +10,20 @@
     overflow: hidden;
   }
 
-  .songs__queue {
+  .songs__queue--active {
     position: absolute;
     top: 145%;
     left: 5%;
     width: 90%;
     text-align: center;
     height: 20%;
+    overflow: scroll;
+  }
+
+  .songs__queue-- {
+    position: absolute;
+    height: 0%;
+    width: 0%;
     overflow: scroll;
   }
 

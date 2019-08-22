@@ -5,11 +5,16 @@ class QueueTile extends Component {
     super(props);
     this.state = {
         }
+        this.clickSong = this.clickSong.bind(this)
+  }
+
+  clickSong() {
+    this.props.clickSong(this.props.id)
   }
 
   render() {
     return (
-        <div className="queued__tracks">{this.props.name}</div>
+        <div className="queued__tracks" onClick={this.clickSong}>{this.props.name}</div>
     )
   }
 }

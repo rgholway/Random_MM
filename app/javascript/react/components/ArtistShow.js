@@ -117,11 +117,11 @@ playSong() {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  nextSong(yt, title) {
+  nextSong(yt, title, id) {
     let queue = this.state.queue
     queue.push(yt)
     let name = this.state.title
-    name.push(title)
+    name.push([title, id])
     this.setState({ queue: queue, title: name})
     if(this.state.active == "") {
       this.setSong()
@@ -165,11 +165,12 @@ playSong() {
       )
     })
     let queueArray = this.state.title.map(song => {
-      num += 1
       return(
         <QueueTile
-          key= {num}
-          name= {song}
+          key= {song[1]}
+          name= {song[0]}
+          id= {song[1]}
+          clickSong= {this.clickSong}
         />
       )
     })
@@ -215,7 +216,7 @@ playSong() {
             fourthName= {this.state.artist.fourth_name}
           />
         </div>
-        <div className="songs__queue">
+        <div className={`songs__queue--${this.state.active}`}>
           <div className="queue__title">Songs Queued</div>
           <div className="queued__tracks">{queueArray}</div>
         </div>
