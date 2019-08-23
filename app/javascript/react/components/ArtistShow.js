@@ -32,6 +32,7 @@ class ArtistShow extends Component {
     this.fetchArtist = this.fetchArtist.bind(this)
     this.nextSong = this.nextSong.bind(this)
     this.setSong = this.setSong.bind(this)
+    this.removeName = this.removeName.bind(this)
   }
 
 playSong() {
@@ -137,6 +138,18 @@ playSong() {
     }
   }
 
+  removeName() {
+    if(typeof this.state.title[0] == "object") {
+      let name = this.state.title
+      name.shift()
+      this.setState({title: name})
+      this.setSong()
+    } else {
+      this.setSong()
+    }
+
+  }
+
   link() {
     browserHistory.push(`/${this.props.short}`)
   }
@@ -184,12 +197,12 @@ playSong() {
       )
     })
     return(
-      <div>
+      <div className="white">
         <div className="artists"><Link className="home__link" to="/">|   Home</Link>{artistsArray}</div>
         <div className={`youtube--${this.state.active}`}>
           <Example
             youtube= {this.state.youtube}
-            songEnd= {this.setSong}
+            songEnd= {this.removeName}
             randomSong = {this.playSong}
             nextSong= {this.state.queue[0]}
           />
