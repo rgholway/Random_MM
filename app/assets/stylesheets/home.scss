@@ -5,6 +5,32 @@
   overflow: hidden;
 }
 
+.circle__text {
+  position: absolute;
+  right: 20%;
+  top: 25%;
+  font-size: 5vmin;
+  height: auto;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  animation: spin__circle 6s ease-out forwards, disappear 1s 6s forwards, reappear 1s 14s forwards, spin__circle 6s 15s ease-out forwards
+}
+
+.artist__text {
+  position: absolute;
+  right: 12%;
+  top: 53%;
+  font-size: 5vmin;
+  height: auto;
+  color: white;
+  width: 15%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  text-align: center;
+  animation: reappear 1s 6s forwards, disappear 1s 13s forwards, reappear 1s 21s forwards
+}
+
 .home__wheel {
     position: absolute;
     top: 17%;
@@ -326,4 +352,31 @@
     to {
         transform:rotate(810deg);
     }
+}
+
+@keyframes spin__circle {
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform:rotate(950deg)
+  }
+}
+
+@keyframes disappear {
+  from{
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes reappear {
+  from{
+    color: white;
+  }
+  to {
+    color: black;
+  }
 }
