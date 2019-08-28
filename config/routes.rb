@@ -9,9 +9,7 @@ Rails.application.routes.draw do
       resources :tracks, only: [:show]
     end
   end
-  get '/cudi', to: 'homes#index'
-  get '/mac', to: 'homes#index'
-  get '/travis', to: 'homes#index'
-  get '/chance', to: 'homes#index'
-  get '*path', to: 'homes#index'
+
+  get '/', to: 'homes#index'
+  get '/:name', to: 'homes#index'
 end
