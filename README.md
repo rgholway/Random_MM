@@ -5,3 +5,5 @@ I also decided to purchase a custom url for this site and the app can be found a
 Milestones: 4 days into the launch of the site and over 2,000 unique users have visited the site!
 
 6/23 the site has hit over 5,000 pageviews!
+
+August: The site has hit over 5,500 unique visitors and over 13,000 pageviews!
