@@ -22,6 +22,16 @@
   width: 35%;
   top: 30%;
   right: 5%;
+  z-index: 20;
+}
+
+.cover {
+  position: absolute;
+  height: 100%;
+  width: 100vmin;
+  right: 0%;
+  z-index: 15;
+  background: white;
 }
 
 .songs__queue--active {
@@ -47,6 +57,7 @@
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 4vmin;
+  z-index: 16;
 }
 
 .queued__tracks {
@@ -56,6 +67,7 @@
   width: 100%;
   margin-top: 10%;
   cursor: pointer;
+  z-index: 16;
 }
 
 .queued__song--desktop {
@@ -107,6 +119,7 @@
   border-radius: 50%;
   background: black;
   border: solid .5px black;
+  z-index: 16;
 }
 
 .random__travis {
@@ -118,6 +131,7 @@
   border-radius: 50%;
   background: black;
   border: solid .5px black;
+  z-index: 16;
 }
 
 .random__chance {
@@ -129,6 +143,7 @@
   border-radius: 50%;
   background: black;
   border: solid .5px black;
+  z-index: 16;
 }
 
 .random__cudi {
@@ -140,6 +155,7 @@
   border-radius: 50%;
   background: #363534;
   border: solid .5px black;
+  z-index: 16;
 }
 
 .play__song {
@@ -153,6 +169,7 @@
   z-index: 15;
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
+  z-index: 16;
 }
 
 .click__song {
@@ -232,6 +249,7 @@
   z-index: 3;
   padding-left: 3%;
   float: left;
+  z-index: 16;
 }
 
 .links:hover {

@@ -106,6 +106,27 @@
     color: black;
   }
 
+  .cover {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .circle__text {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
+  .artist__text {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
   .links {
     position: relative;
     height: auto;

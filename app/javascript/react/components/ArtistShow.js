@@ -233,6 +233,7 @@ playSong() {
           <div className="queue__title">Songs Queued</div>
           <div className="queued__tracks">{queueArray}</div>
         </div>
+        <div className="cover"></div>
       </div>
     )}
   }
