@@ -293,6 +293,20 @@
   overflow: hidden;
 }
 
+.circle__text {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.artist__text {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
 @keyframes mac_home {
     from {
         transform:rotate(0deg);

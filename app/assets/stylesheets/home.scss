@@ -14,7 +14,7 @@
   width: auto;
   font-family: 'Raleway', sans-serif;
   z-index: 10;
-  animation: spin__circle 6s ease-out forwards, disappear 1s 6s forwards, reappear 1s 14s forwards, spin__circle 6s 15s ease-out forwards
+  animation: spin__circle 6s ease-out forwards, disappear 1s 6s forwards, reappear 2s 8s forwards
 }
 
 .artist__text {
@@ -28,7 +28,7 @@
   font-family: 'Raleway', sans-serif;
   z-index: 10;
   text-align: center;
-  animation: reappear 1s 6s forwards, disappear 1s 13s forwards, reappear 1s 21s forwards
+  animation: reappear 1s 6s forwards
 }
 
 .home__wheel {
@@ -359,7 +359,7 @@
     transform:rotate(0deg)
   }
   to {
-    transform:rotate(950deg)
+    transform:rotate(720deg)
   }
 }
 

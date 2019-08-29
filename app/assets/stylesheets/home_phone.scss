@@ -294,6 +294,20 @@
   overflow: hidden;
 }
 
+.circle__text {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.artist__text {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
 @keyframes mac_home {
     from {
         transform:rotate(0deg);
@@ -329,4 +343,32 @@
         transform:rotate(810deg);
     }
 }
+
+@keyframes spin__circle {
+  from {
+    transform:rotate(0deg)
+  }
+  to {
+    transform:rotate(720deg)
+  }
+}
+
+@keyframes disappear {
+  from{
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes reappear {
+  from{
+    color: white;
+  }
+  to {
+    color: black;
+  }
+}
+
 }
