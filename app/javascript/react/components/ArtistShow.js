@@ -24,7 +24,8 @@ class ArtistShow extends Component {
       youtube: "",
       queue: [],
       title: [],
-      end: ""
+      end: "",
+      flash: ""
     }
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
@@ -123,7 +124,7 @@ playSong() {
     queue.push(yt)
     let name = this.state.title
     name.push([title, id])
-    this.setState({ queue: queue, title: name})
+    this.setState({ queue: queue, title: name, flash: `${title} added to queue!`})
     if(this.state.active == "") {
       this.setSong()
     }
@@ -178,9 +179,10 @@ playSong() {
       )
     })
     let queueArray = this.state.title.map(song => {
+      num += 1
       return(
         <QueueTile
-          key= {song[1]}
+          key= {num}
           name= {song[0]}
           id= {song[1]}
           clickSong= {this.clickSong}
@@ -234,6 +236,7 @@ playSong() {
           <div className="queued__tracks">{queueArray}</div>
         </div>
         <div className="cover"></div>
+        <div className="flash">{this.state.flash}</div>
       </div>
     )}
   }

@@ -1082,6 +1082,19 @@
   color: rgba(100,100, 100, 0.5)
 }
 
+.flash {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  width: auto;
+  font-family: 'Raleway', sans-serif;
+  background: #DFF3D8;
+  color: black;
+  z-index: 17;
+  border-radius: 15%;
+  animation: disappear 1.5s 2s forwards;
+}
+
 @keyframes swimming {
     from {
         transform:rotate(0deg);
@@ -1152,4 +1165,15 @@
     to {
         transform:rotate(1035deg);
     }
+}
+
+@keyframes disappear {
+  from {
+    background: #DFF3D8;
+  }
+
+  to {
+    background: white;
+    color: white;
+  }
 }
