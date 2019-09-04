@@ -1082,7 +1082,7 @@
   color: rgba(100,100, 100, 0.5)
 }
 
-.flash {
+.flash--active {
   position: absolute;
   left: 50%;
   top: 2%;
@@ -1092,7 +1092,14 @@
   color: black;
   z-index: 17;
   border-radius: 15%;
-  animation: disappear 1.5s 2s forwards;
+  animation: disappear 1.5s 2s;
+}
+
+.flash {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
 }
 
 @keyframes swimming {
