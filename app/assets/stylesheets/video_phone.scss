@@ -903,6 +903,28 @@
     color: rgba(100,100, 100, 0.5)
   }
 
+  .flash--active {
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vmin;
+    background: #DFF3D8;
+    color: black;
+    z-index: 17;
+    border-radius: 15%;
+    animation: disappear 1.5s 2s;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .flash {
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    overflow: hidden;
+  }
+
   @keyframes swimming {
       from {
           transform:rotate(0deg);

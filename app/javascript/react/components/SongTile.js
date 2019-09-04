@@ -21,7 +21,7 @@ class SongTile extends Component {
     }
 
       nextSong() {
-        this.props.onNext(this.props.youtube, this.props.title, this.props.id)
+        this.props.onNext(this.props.youtube, this.props.title, this.props.id, "--active")
       }
 
   render() {
