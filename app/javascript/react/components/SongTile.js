@@ -16,7 +16,7 @@ class SongTile extends Component {
         }
       if (e.nativeEvent.which == 3) {
         e.preventDefault()
-        this.props.onNext(this.props.youtube, this.props.title, this.props.id)
+        this.props.onNext(this.props.youtube, this.props.title, this.props.id, "--active")
       }
     }
 

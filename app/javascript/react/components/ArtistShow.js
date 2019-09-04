@@ -25,7 +25,8 @@ class ArtistShow extends Component {
       queue: [],
       title: [],
       end: "",
-      flash: ""
+      flash: "",
+      flashActive: ""
     }
     this.playSong = this.playSong.bind(this)
     this.clickSong = this.clickSong.bind(this)
@@ -119,12 +120,15 @@ playSong() {
     .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
 
-  nextSong(yt, title, id) {
+  nextSong(yt, title, id, active) {
     let queue = this.state.queue
     queue.push(yt)
     let name = this.state.title
     name.push([title, id])
-    this.setState({ queue: queue, title: name, flash: `${title} added to queue!`})
+    this.setState({ queue: queue, title: name, flash: `${title} added to queue!`, flashActive: `${active}`})
+    setTimeout(() => {
+      this.setState({ flash: "", flashActive: "" })
+    }, 3000 )
     if(this.state.active == "") {
       this.setSong()
     }
@@ -161,6 +165,7 @@ playSong() {
   }
 
   render() {
+    console.log(this.state.flash);
     let num = 0
     let albumArray = this.state.albums.map(album => {
       return(
@@ -236,7 +241,7 @@ playSong() {
           <div className="queued__tracks">{queueArray}</div>
         </div>
         <div className="cover"></div>
-        <div className="flash">{this.state.flash}</div>
+        <div className={`flash${this.state.flashActive}`}>{this.state.flash}</div>
       </div>
     )}
   }
