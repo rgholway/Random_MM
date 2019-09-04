@@ -572,10 +572,12 @@
 
 .list {
   color: black;
+  margin-top: 5px;
 }
 
 .list:hover {
   color: grey;
+  margin-top: 5px;
 }
 
 .tracks:hover {
@@ -1084,7 +1086,7 @@
 
 .flash--active {
   position: absolute;
-  left: 50%;
+  left: 70%;
   top: 2%;
   width: auto;
   font-family: 'Raleway', sans-serif;
@@ -1093,6 +1095,7 @@
   z-index: 17;
   border-radius: 15%;
   animation: disappear 1.5s 2s;
+  padding: 5px 10px 5px 10px;
 }
 
 .flash {
@@ -1181,6 +1184,6 @@
 
   to {
     background: white;
-    color: white;
+    color: white
   }
 }
