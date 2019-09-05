@@ -15,7 +15,8 @@ class Home extends Component {
       info: "YOUR FAVORITE ARTIST'S MIXTAPES AND ALBUMS IN ONE PLACE",
       title: "",
       line: "",
-      selectedArtist: ""
+      selectedArtist: "",
+      active: ""
     }
     this.fetchArtists = this.fetchArtists.bind(this)
     this.firstClick = this.firstClick.bind(this)
@@ -42,8 +43,9 @@ class Home extends Component {
     }
 
     firstClick() {
-      this.setState({circle: `${this.state.random}`})
+      this.setState({circle: `${this.state.random}`, active: "--active"})
       let random = this.state.random
+      this.animation()
       setTimeout(function(){ browserHistory.push(`/${random}`); }, 3500)
     }
 
@@ -52,27 +54,26 @@ class Home extends Component {
     }
 
     animation() {
-      let num = Math.floor(Math.random() * 4)
-      if (num == 0) {
+      if (this.state.random == 'mac') {
         this.setState({ selectedArtist: "MAC MILLER"})
       }
-      if (num == 1) {
+      if (this.state.random == 'cudi') {
         this.setState({ selectedArtist: "KID CUDI"})
       }
-      if (num == 2) {
+      if (this.state.random == 'travis') {
         this.setState({ selectedArtist: "TRAVIS SCOTT"})
       }
-      if (num == 3) {
+      if (this.state.random == 'chance') {
         this.setState({ selectedArtist: "CHANCE"})
       }
     }
 
   componentWillMount() {
     this.fetchArtists()
-    this.animation()
   }
 
   render() {
+    console.log(this.state.active);
     let artistsArray = this.state.artists.map(artist => {
       return(
         <ArtistTile
@@ -106,7 +107,7 @@ class Home extends Component {
           <Circle
           />
         </div>
-        <div className="artist__text">{this.state.selectedArtist}</div>
+        <div className={`artist__text${this.state.active}`}>{this.state.selectedArtist}</div>
       </div>
     )}
   }
