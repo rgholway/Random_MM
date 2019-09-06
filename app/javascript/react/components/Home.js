@@ -108,6 +108,10 @@ class Home extends Component {
           />
         </div>
         <div className={`artist__text${this.state.active}`}>{this.state.selectedArtist}</div>
+        <div className= {`artist__text--first--mobile${this.state.active}`}>MAC MILLER</div>
+        <div className= {`artist__text--second--mobile${this.state.active}`}>KID CUDI</div>
+        <div className= {`artist__text--third--mobile${this.state.active}`}>TRAVIS SCOTT</div>
+        <div className= {`artist__text--fourth--mobile${this.state.active}`}>CHANCE</div>
       </div>
     )}
   }
