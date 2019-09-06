@@ -306,7 +306,112 @@
   height: 0%;
   width: 0%;
   overflow: hidden;
+  z-index: -1;
 }
+
+.artist__text--active {
+  position: absolute;
+  right: 0%;
+  top: 80%;
+  font-size: 5vmin;
+  height: auto;
+  color: white;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  animation: flash 1s 2s forwards;
+  z-index: 10;
+}
+
+.artist__text--first--mobile--active {
+  position: absolute;
+  left: 3%;
+  top: 80%;
+  font-size: 5vmin;
+  height: auto;
+  color: white;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  text-align: center;
+  animation: reappear .5s 0s;
+  z-index: 11;
+}
+
+.artist__text--first--mobile {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+
+.artist__text--third--mobile {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.artist__text--fourth--mobile {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.artist__text--second--mobile {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.artist__text--second--mobile--active {
+  position: absolute;
+  left: 28%;
+  top: 80%;
+  font-size: 5vmin;
+  height: auto;
+  color: white;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  text-align: center;
+  animation: reappear .5s 1s;
+  z-index: 11;
+}
+
+.artist__text--third--mobile--active {
+  position: absolute;
+  left: 53%;
+  top: 80%;
+  font-size: 5vmin;
+  height: auto;
+  color: white;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  text-align: center;
+  animation: reappear .5s .5s;
+  z-index: 11;
+}
+
+.artist__text--fourth--mobile--active {
+  position: absolute;
+  left: 78%;
+  top: 80%;
+  font-size: 5vmin;
+  height: auto;
+  color: white;
+  width: 20%;
+  font-family: 'Raleway', sans-serif;
+  z-index: 10;
+  text-align: center;
+  animation: reappear .5s 1.5s;
+  z-index: 11;
+}
+
 
 @keyframes mac_home {
     from {
@@ -371,4 +476,15 @@
   }
 }
 
+
+@keyframes flash {
+  from{
+    color: white;
+    z-index: 10;
+  }
+  to {
+    color: black;
+    z-index: 20;
+  }
+}
 }
