@@ -309,19 +309,7 @@ ros_songs = [
   {name: "I'm Actually a Fish Alien v1", youtube: "kUr_8hg9y7Q", album_id: 12},
   {name: "She used to Love Me v1", youtube: "oc2OBt_kZNg", album_id: 12},
   {name: "The Revolution is Coming v1", youtube: "_A9FzckjKDs", album_id: 12},
-  {name: "Avocado v1", youtube: "ekA-bHWxTE4", album_id: 12},
-  {name: "Fuckin Shit v2", youtube: "NpKkwHx66oI&t=3s", album_id: 12},
-  {name: "jjjoh v2", youtube: "utU5edBbCf0", album_id: 12},
-  {name: "Hulu v2", youtube: "Tz557ZjoUjA", album_id: 12},
-  {name: "Yooo v2", youtube: "nYVD0karQG4", album_id: 12},
-  {name: "Atom Bomb v2", youtube: "XQd8Q4hGiNg", album_id: 12},
-  {name: "Juil v2", youtube: "WuDVM6hS6i4", album_id: 12},
-  {name: "HXH v2", youtube: "1VnkuG4xXPo", album_id: 12},
-  {name: "Here is a Bear v2", youtube: "rGDvG4gxkKI", album_id: 12},
-  {name: "FACEBUSH v2", youtube: "1PjMZOH1oiU", album_id: 12},
-  {name: "Funk Me v2", youtube: "_a3zARxtqhQ", album_id: 12},
-  {name: "Best for Last v2", youtube: "lmtxywyKhYY", album_id: 12},
-  {name: "Smile v2", youtube: "i_zlz8nCFrw", album_id: 12}
+  {name: "Avocado v1", youtube: "ekA-bHWxTE4", album_id: 12}
 ]
 
 ros_songs.each do |song|
@@ -356,18 +344,16 @@ stolen_songs.each do |song|
 end
 
 everything_songs = [
-  {name: "The Star Room OG Version", youtube: "DqNb66P8cSw", album_id: 13},
+  {name: "The Star Room OG Version", youtube: "PfRi1xPMflI", album_id: 13},
   {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
   {name: "Benji the Dog", youtube: "_hbFPAcOce8", album_id: 13},
-  {name: "In Kindergarten", youtube: "eVcZCOMDaP8", album_id: 13},
   {name: "Happy", youtube: "tCc12IqBzRE", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
   {name: "Once a Day I Rise", youtube: "ei0aWdzN6c0", album_id: 13},
   {name: "Inertia", youtube: "qKh8FiKzfvQ", album_id: 13},
   {name: "Dunno (Live)", youtube: "8aHvZ9eD6vs", album_id: 13},
-  {name: "Her", youtube: "xvNm4kvqqVM", album_id: 13},
-  {name: "Garden Snakes", youtube: "oogsGRGRFN8", album_id: 13},
+  {name: "Her", youtube: "Dx0nk2GA9Xg", album_id: 13},
   {name: "PlaneCarBoat", youtube: "iAQdqIZQA8c", album_id: 13},
   {name: "Just Some Raps, Nothing To See Here, Move Along", youtube: "KQcx53rn1Ic", album_id: 13},
   {name: "Headaches & Migraines", youtube: "ntbhlxpzmAY", album_id: 13},
@@ -376,8 +362,7 @@ everything_songs = [
   {name: "Guidelines", youtube: "4WWltsaADBc", album_id: 13},
   {name: "Doodling in the Key of C Sharp", youtube: "w5NAoFDFmb8", album_id: 13},
   {name: "He Who Ate All the Caviar", youtube: "AyNf4k9xIXg", album_id: 13},
-  {name: "Tetanus Shots", youtube: "ZYUiyDtoiFI", album_id: 13},
-  {name: "Nothing for Nothing (Cover)", youtube: "95LTzpeXM7Y", album_id: 13}
+  {name: "Nothing from Nothing (Cover)", youtube: "iZlu6jjdb4A", album_id: 13}
 ]
 
 everything_songs.each do |song|
