@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-  RSpec.describe Api::V1::AlbumsController, type: :controller do
+  RSpec.describe Api::V1::ArtistsController, type: :controller do
     before(:each) do
       Artist.create(name: "Mac Miller", short: "Mac", icon: "image", description: "A cool dude", first_letter: "m", second_letter: "m" )
       Artist.create(name: "Richee Fresh", short: "Rich", icon: "other_image", description: "me but I promise I don't rap that would be embarrasing", first_letter: "r", second_letter: "f")
