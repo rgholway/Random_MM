@@ -1,8 +1,17 @@
 .vote {
   position: absolute;
-  top: 50%;
-  left: 30%;
-  height: 30vh;
-  width: 20vw;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100vw;
   z-index: 20;
+  background: white;
+}
+
+.vote__songs {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  height: 80%;
+  width: 30%;
 }
