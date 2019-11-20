@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { browserHistory } from 'react-router';
 import {Link} from 'react-router';
+import VoteTile from './VoteTile'
 
 class Vote extends Component {
   constructor(props) {
@@ -36,10 +37,20 @@ class Vote extends Component {
     }
 
   render() {
+    let songArray = this.state.songs.map(song => {
+      return(
+        <VoteTile
+          key= {song.id}
+          id= {song.id}
+          name= {song.name}
+        />
+      )
+    })
     console.log(this.state.songs)
     return(
       <div className="vote">
-        <div className="vote__songs"></div>
+
+        <div className="vote__songs">{songArray}</div>
       </div>
     )}
   }
