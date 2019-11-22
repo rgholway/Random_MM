@@ -15,7 +15,7 @@ class VoteTile extends Component {
   }
 
   handleLeave() {
-    this.setState({ video: "", youtube: ""})
+    this.props.handleHover( "", "")
   }
 
   render() {
