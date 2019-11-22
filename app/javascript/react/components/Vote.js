@@ -2,15 +2,19 @@ import React, { Component } from 'react'
 import { browserHistory } from 'react-router';
 import {Link} from 'react-router';
 import VoteTile from './VoteTile'
+import VoteVideo from './VoteVideo'
 
 class Vote extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      songs: []
+      songs: [],
+      youtube: "",
+      active: ""
     }
 
     this.fetchSongs = this.fetchSongs.bind(this)
+    this.handleHover = this.handleHover.bind(this)
 
   }
 
@@ -32,6 +36,10 @@ class Vote extends Component {
         .catch(error => console.error(`Error in fetch: ${error.message}`));
     }
 
+    handleHover(active, youtube) {
+      this.setState({ active: active, youtube: youtube})
+    }
+
     componentWillMount() {
       this.fetchSongs()
     }
@@ -43,6 +51,8 @@ class Vote extends Component {
           key= {song.id}
           id= {song.id}
           name= {song.name}
+          youtube= {song.youtube}
+          handleHover= {this.handleHover}
         />
       )
     })
@@ -50,7 +60,14 @@ class Vote extends Component {
     return(
       <div className="vote">
 
-        <div className="vote__songs">{songArray}</div>
+        <div className="vote__songs">
+        {songArray}
+        </div>
+        <div className={`vote--video--${this.state.active}`}>
+          <VoteVideo
+            youtube= {this.state.youtube}
+          />
+        </div>
       </div>
     )}
   }

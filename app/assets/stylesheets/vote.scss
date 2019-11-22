@@ -10,9 +10,39 @@
 
 .vote__songs {
   position: absolute;
-  background: red;
   top: 10%;
   left: 30%;
   height: 80%;
   width: 30%;
+  overflow: scroll;
+}
+
+.music__vote {
+  position: relative;
+  border: solid 1px black;
+  margin: 5% 5% 10% 10%;
+  cursor: pointer;
+}
+
+.vote__click {
+  position: absolute;
+  right: 10%;
+  width: 20%;
+  height: 100%;
+  background: black;
+  cursor: pointer;
+}
+
+.vote--video-- {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote--video--active {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
 }
