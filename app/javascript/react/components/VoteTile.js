@@ -4,12 +4,27 @@ class VoteTile extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      video: ""
         }
+        this.handleHover = this.handleHover.bind(this)
+        this.handleLeave = this.handleLeave.bind(this)
+  }
+
+  handleHover() {
+    this.props.handleHover("active", this.props.youtube)
+  }
+
+  handleLeave() {
+    this.setState({ video: "", youtube: ""})
   }
 
   render() {
     return (
-        <div>{this.props.name}</div>
+      <div>
+        <div className="music__vote" onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}>
+          {this.props.name}
+        </div>
+      </div>
     )
   }
 }
