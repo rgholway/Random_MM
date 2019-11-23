@@ -52,6 +52,7 @@ class Vote extends Component {
           id= {song.id}
           name= {song.name}
           youtube= {song.youtube}
+          category= {song.first_characteristic}
           handleHover= {this.handleHover}
         />
       )
