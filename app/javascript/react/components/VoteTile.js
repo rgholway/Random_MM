@@ -8,6 +8,7 @@ class VoteTile extends Component {
         }
         this.handleHover = this.handleHover.bind(this)
         this.handleLeave = this.handleLeave.bind(this)
+        this.createPlaylist = this.createPlaylist.bind(this)
   }
 
   handleHover() {
@@ -18,10 +19,23 @@ class VoteTile extends Component {
     this.props.handleHover( "", "")
   }
 
+  createPlaylist() {
+    let jsonStringInfo = JSON.stringify(this.props.category)
+      fetch(`/api/v1/playlists`, {
+        method: 'POST',
+        body: jsonStringInfo,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      }
+
   render() {
     return (
       <div>
-        <div className="music__vote" onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}>
+        <div className="music__vote" onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave} onClick={this.createPlaylist}>
           {this.props.name}
         </div>
       </div>

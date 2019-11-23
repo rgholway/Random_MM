@@ -48,17 +48,17 @@ Album.create(title: "Birds in the Trap", short: "birds", css: "six", art: "https
 Album.create(title: "Features", short: "feature_travis", css: "fifteen", art: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", color: "#58BD47", text: "black", font_size: "1.8vmin", artist_id: 4)
 
 swimming_songs = [
-  {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1},
-  {name: "Hurt Feelings", youtube: "WGzhlLCdAVo", album_id: 1},
-  {name: "What's the Use?", youtube: "qI-t1I_ppL8", album_id: 1},
-  {name: "Perfecto", youtube: "XbSuMV7ghm8", album_id: 1},
-  {name: "Self Care", youtube: "SsKT0s5J8ko", album_id: 1},
-  {name: "Wings", youtube: "_O1qD95xnao", album_id: 1},
-  {name: "Ladders", youtube: "0gzmFo8UiJQ", album_id: 1},
-  {name: "Small Worlds", youtube: "nHc_7yeiLvc", album_id: 1},
-  {name: "Conversation Pt. 1", youtube: "7YcXhpgHwvI", album_id: 1},
-  {name: "Dunno", youtube: "61Lmk2k542k", album_id: 1},
-  {name: "Jet Fuel", youtube: "OnG7oL9Gg4o", album_id: 1},
+  {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1, first_characteristic: "sad"},
+  {name: "Hurt Feelings", youtube: "WGzhlLCdAVo", album_id: 1, first_characteristic: "sad"},
+  {name: "What's the Use?", youtube: "qI-t1I_ppL8", album_id: 1, first_characteristic: "funky"},
+  {name: "Perfecto", youtube: "XbSuMV7ghm8", album_id: 1, first_characteristic: "funky"},
+  {name: "Self Care", youtube: "SsKT0s5J8ko", album_id: 1, first_characteristic: "upbeat"},
+  {name: "Wings", youtube: "_O1qD95xnao", album_id: 1, first_characteristic: "upbeat"},
+  {name: "Ladders", youtube: "0gzmFo8UiJQ", album_id: 1, first_characteristic: "funky"},
+  {name: "Small Worlds", youtube: "nHc_7yeiLvc", album_id: 1, first_characteristic: "funky"},
+  {name: "Conversation Pt. 1", youtube: "7YcXhpgHwvI", album_id: 1, first_characteristic: "sad"},
+  {name: "Dunno", youtube: "61Lmk2k542k", album_id: 1, first_characteristic: "sad"},
+  {name: "Jet Fuel", youtube: "OnG7oL9Gg4o", album_id: 1, first_characteristic: "upbeat"},
   {name: "2009", youtube: "6B3YwcjQ_bU", album_id: 1},
   {name: "So it Goes", youtube: "Uf24Uk6ZMLQ", album_id: 1}
 ]
