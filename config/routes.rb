@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get '/', to: 'homes#index'
   get '/vote', to: 'homes#index'
+  get '/vote/:id', to: 'homes#index'
   get '/mac', to: 'homes#index'
   get '/cudi', to: 'homes#index'
   get '/chance', to: 'homes#index'
