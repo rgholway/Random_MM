@@ -1,7 +1,9 @@
 class Api::V1::PlaylistsController < ApplicationController
 protect_from_forgery unless: -> { request.format.json? }
 
-  def index
+  def show
+    playlist = Playlist.find(params[:id])
+    render json: playlist.songs
   end
 
   def create
