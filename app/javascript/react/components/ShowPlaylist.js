@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
+import VoteTile from './VoteTile';
 
 class PlaylistShow extends Component {
   constructor(props) {
@@ -32,10 +33,12 @@ class PlaylistShow extends Component {
   }
 
   render() {
-    console.log(this.state.playlist);
     return (
       <div className="vote">
+          <div className="song__playlist">
+            <div className="song__playlist__title"> First Playlist </div>
 
+          </div>
       </div>
     )
   }
