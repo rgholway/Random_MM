@@ -8,8 +8,12 @@ protect_from_forgery unless: -> { request.format.json? }
 
   def create
     category = playlist_params[:_json]
+    playlist = []
     selected_songs = Song.where(first_characteristic: category)
-    Playlist.create(title: "new", songs: [selected_songs])
+    selected_songs.each do |song|
+      playlist << [song.name, song.youtube]
+    end
+    Playlist.create(title: "new", songs: playlist)
   end
 
   def playlist_params
