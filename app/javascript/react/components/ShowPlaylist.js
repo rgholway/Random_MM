@@ -37,7 +37,7 @@ class PlaylistShow extends Component {
       <div className="vote">
           <div className="song__playlist">
             <div className="song__playlist__title"> First Playlist </div>
-
+            
           </div>
       </div>
     )
