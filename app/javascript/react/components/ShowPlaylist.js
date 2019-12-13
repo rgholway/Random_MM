@@ -11,12 +11,11 @@ class PlaylistShow extends Component {
       youtube: "",
       id: "",
       setting: "--play--active",
-      play: ""
+      play: "",
+      status: ""
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
-      this.handleStop = this.handleStop.bind(this)
-      this.stopSong = this.stopSong.bind(this)
   }
 
   fetchPlaylist() {
@@ -40,26 +39,12 @@ class PlaylistShow extends Component {
     this.setState({ id: id, youtube: youtube})
   }
 
-  stopSong() {
-    this.setState({ play: "" })
-  }
-
-  handleStop() {
-    if (this.state.setting == "--play--active") {
-      this.setState({ setting: "--stop--active" })
-      this.stopSong()
-    }
-    if (this.state.setting == "--stop--active") {
-      this.setState({ setting: "--play--active" })
-    }
-  }
-
   componentWillMount() {
     this.fetchPlaylist()
   }
 
   render() {
-    console.log(this.state.setting);
+    console.log(this.state.status);
     let playlistArray = this.state.playlist.map(playlist => {
       return(
         <PlaylistTile
@@ -72,19 +57,18 @@ class PlaylistShow extends Component {
       )
     })
     return (
-      <div className="vote">
-        <div className="play__button--playlist" onClick={this.handleStop}>
-          <div className={`play__button${this.state.setting}`} ></div>
-          <div className={`play__button${this.state.setting}`}></div>
+      <div className="white">
+        <div className="vote">
+            <div className="song__playlist">
+              <div className="song__playlist__title"> First Playlist </div>
+              {playlistArray}
+            </div>
+              <VoteVideo
+                key= {this.state.id}
+                youtube = {this.state.youtube}
+                status = {this.state.status}
+              />
         </div>
-          <div className="song__playlist">
-            <div className="song__playlist__title"> First Playlist </div>
-            {playlistArray}
-          </div>
-          <VoteVideo
-            key= {this.state.id}
-            youtube = {this.state.youtube}
-          />
       </div>
     )
   }
