@@ -99,20 +99,21 @@
 
 .play__button--play--active {
   position: absolute;
-  top: 25%;
-  left: 40%;
+  top: 0%;
+  left: 50%;
   width: 0;
   height: 0;
   border-top: 5vh solid transparent;
   border-bottom: 5vh solid transparent;
   border-left: 5vh solid white;
+  z-index: 30;
   cursor: pointer;
 }
 
 .play__button--stop--active {
   position: absolute;
-  top: 25%;
-  left: 40%;
+  top: 0%;
+  left: 50%;
   width: 0;
   height: 0;
   border: 5vh solid transparent;
@@ -125,4 +126,13 @@
   width: 0;
   height: 0;
   overflow: hidden;
+}
+
+.black__screen {
+  position: absolute;
+  top: 90%;
+  height: 10%;
+  width: 100%;
+  background: black;
+  z-index: 22;
 }
