@@ -8,38 +8,37 @@ class VoteVideo extends React.Component {
       setting: "play__button--play--active",
       status: ""
         }
-      this.handleStop = this.handleStop.bind(this)
+      this.handleRight = this.handleRight.bind(this)
   }
 
-  handleStop() {
-    if (this.state.setting == "play__button--play--active") {
-      this.setState({ setting: "play__button--stop--active", status: "pause" })
-      this._onPause()
+  handleRight() {
+    this.props.handleRight()
     }
-    if (this.state.setting == "play__button--stop--active") {
-      this.setState({ setting: "play__button--play--active" })
-    }
-  }
 
   render() {
     const opts = {
-      height: '0%',
-      width: '0%',
+      height: '100%',
+      width: '000%',
+      showInfo: 0,
+      setSize: 0,
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1
       }
     };
 
     return (
-      <div className="black__screen">
+      <div>
           <YouTube
             videoId={this.props.youtube}
             opts={opts}
+            className={this.props.className}
             onReady={this._onReady}
             onEnd={this.props.songEnd}
             status={this.props.status}
           />
-          <div className={this.state.setting} onClick={this.handleStop}></div>
+          <div className="black__screen">
+            <div className="right--arrow" onClick={this.handleRight}></div>
+          </div>
         </div>
     );
   }

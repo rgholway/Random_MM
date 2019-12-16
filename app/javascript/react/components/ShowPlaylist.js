@@ -12,10 +12,12 @@ class PlaylistShow extends Component {
       id: "",
       setting: "--play--active",
       play: "",
-      status: ""
+      status: "",
+      name: "under"
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
+      this.handleRight = this.handleRight.bind(this)
   }
 
   fetchPlaylist() {
@@ -36,7 +38,12 @@ class PlaylistShow extends Component {
   }
 
   handleClick(id, youtube) {
-    this.setState({ id: id, youtube: youtube})
+    this.setState({ id: id, youtube: youtube, name: "under--active"})
+  }
+
+  handleRight() {
+    let song = this.state.youtube
+    this.setState({ youtube: ""})
   }
 
   componentWillMount() {
@@ -65,8 +72,10 @@ class PlaylistShow extends Component {
             </div>
               <VoteVideo
                 key= {this.state.id}
-                youtube = {this.state.youtube}
-                status = {this.state.status}
+                youtube= {this.state.youtube}
+                status= {this.state.status}
+                className= {this.state.name}
+                handleRight= {this.handleRight}
               />
         </div>
       </div>
