@@ -9,11 +9,16 @@ class VoteVideo extends React.Component {
       status: ""
         }
       this.handleRight = this.handleRight.bind(this)
+      this.handleLeft = this.handleLeft.bind(this)
   }
 
   handleRight() {
     this.props.handleRight()
     }
+
+    handleLeft() {
+      this.props.handleLeft()
+      }
 
   render() {
     const opts = {
@@ -38,6 +43,7 @@ class VoteVideo extends React.Component {
           />
           <div className="black__screen">
             <div className="right--arrow" onClick={this.handleRight}></div>
+            <div className="left--arrow" onClick={this.handleLeft}></div>
           </div>
         </div>
     );
