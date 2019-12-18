@@ -19,6 +19,7 @@ class PlaylistShow extends Component {
       this.handleClick = this.handleClick.bind(this)
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
+      this.handleShuffle = this.handleShuffle.bind(this)
   }
 
   fetchPlaylist() {
@@ -54,7 +55,6 @@ class PlaylistShow extends Component {
         index = i
       }})
       let selected_song = (index + 1)
-      debugger;
     this.setState( { youtube: this.state.playlist[selected_song][2]})
   }
 
@@ -71,6 +71,12 @@ class PlaylistShow extends Component {
       }})
       let selected_song = (index - 1)
     this.setState( { youtube: this.state.playlist[selected_song][2]})
+  }
+
+  handleShuffle() {
+    let shuffled_playlist = this.state.playlist
+    let shuffled = shuffled_playlist.sort(function(a, b){return 0.5 - Math.random()});
+    this.setState({ playlist: shuffled })
   }
 
   componentWillMount() {
@@ -103,6 +109,7 @@ class PlaylistShow extends Component {
                 className= {this.state.name}
                 handleRight= {this.handleRight}
                 handleLeft= {this.handleLeft}
+                handleShuffle= {this.handleShuffle}
               />
         </div>
       </div>

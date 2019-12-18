@@ -1,7 +1,9 @@
 class Api::V1::AlbumsController < ApplicationController
 
   def index
-    render json: Album.all
+    artist = Artist.find(1)
+    albums = artist.albums.reverse
+    render json: albums
   end
 
   def show

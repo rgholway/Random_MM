@@ -10,15 +10,20 @@ class VoteVideo extends React.Component {
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
+      this.handleShuffle = this.handleShuffle.bind(this)
   }
 
   handleRight() {
     this.props.handleRight()
     }
 
-    handleLeft() {
-      this.props.handleLeft()
-      }
+  handleLeft() {
+    this.props.handleLeft()
+    }
+
+  handleShuffle() {
+    this.props.handleShuffle()
+  }
 
   render() {
     const opts = {
@@ -44,6 +49,7 @@ class VoteVideo extends React.Component {
           <div className="black__screen">
             <div className="right--arrow" onClick={this.handleRight}></div>
             <div className="left--arrow" onClick={this.handleLeft}></div>
+            <div className="shuffle--button" onClick={this.handleShuffle}></div>
           </div>
         </div>
     );
