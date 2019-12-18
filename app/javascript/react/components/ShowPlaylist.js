@@ -18,6 +18,7 @@ class PlaylistShow extends Component {
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
       this.handleRight = this.handleRight.bind(this)
+      this.handleLeft = this.handleLeft.bind(this)
   }
 
   fetchPlaylist() {
@@ -43,7 +44,33 @@ class PlaylistShow extends Component {
 
   handleRight() {
     let song = this.state.youtube
-    this.setState({ youtube: ""})
+    let selected = ""
+    let yt = this.state.youtube
+    let i = -1
+    let index = ""
+    this.state.playlist.forEach( function(song) {
+      i += 1
+      if (song[2] == yt) {
+        index = i
+      }})
+      let selected_song = (index + 1)
+      debugger;
+    this.setState( { youtube: this.state.playlist[selected_song][2]})
+  }
+
+  handleLeft() {
+    let song = this.state.youtube
+    let selected = ""
+    let yt = this.state.youtube
+    let i = -1
+    let index = ""
+    this.state.playlist.forEach( function(song) {
+      i += 1
+      if (song[2] == yt) {
+        index = i
+      }})
+      let selected_song = (index - 1)
+    this.setState( { youtube: this.state.playlist[selected_song][2]})
   }
 
   componentWillMount() {
@@ -51,8 +78,7 @@ class PlaylistShow extends Component {
   }
 
   render() {
-    console.log(this.state.status);
-    let playlistArray = this.state.playlist.map(playlist => {
+    let playlistArray = this.state.playlist.map( playlist => {
       return(
         <PlaylistTile
           key= {playlist[0]}
@@ -76,6 +102,7 @@ class PlaylistShow extends Component {
                 status= {this.state.status}
                 className= {this.state.name}
                 handleRight= {this.handleRight}
+                handleLeft= {this.handleLeft}
               />
         </div>
       </div>

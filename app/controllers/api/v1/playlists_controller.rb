@@ -11,7 +11,7 @@ protect_from_forgery unless: -> { request.format.json? }
     playlist = []
     selected_songs = Song.where(first_characteristic: category)
     selected_songs.each do |song|
-      playlist << [song.id, song.name, song.youtube]
+      playlist << [song.id, song.name, song.youtube ]
     end
     Playlist.create(title: "new", songs: playlist)
   end
