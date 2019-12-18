@@ -8,6 +8,7 @@ class Albums < ActiveRecord::Migration[5.2]
       t.string :color
       t.string :text
       t.string :font_size
+      t.string :sneak_peek
 
       t.belongs_to :artist
 

@@ -7,11 +7,19 @@ protect_from_forgery unless: -> { request.format.json? }
   end
 
   def create
-    category = playlist_params[:_json]
+    favorite_album = playlist_params[:_json]
     playlist = []
-    selected_songs = Song.where(first_characteristic: category)
-    selected_songs.each do |song|
-      playlist << [song.id, song.name, song.youtube ]
+    selected_album = Album.where(title: favorite_album)
+    songs = selected_album.first.songs
+    size = songs.length
+    numbers = []
+    until playlist.length == 6 do
+      num = rand(size + 1)
+      if !numbers.include?(num)
+        numbers << num
+        song = songs[num]
+        playlist << [song.id, song.name, song.youtube]
+      end
     end
     Playlist.create(title: "new", songs: playlist)
   end

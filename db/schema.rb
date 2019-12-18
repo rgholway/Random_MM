@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2019_11_22_170545) do
     t.string "color"
     t.string "text"
     t.string "font_size"
+    t.string "sneak_peek"
     t.bigint "artist_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

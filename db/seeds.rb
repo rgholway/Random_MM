@@ -3,20 +3,20 @@ Artist.create(name: "Kid Cudi", short: "cudi", first_letter: "K", second_letter:
 Artist.create(name: "Chance the Rapper", short: "chance", first_letter: "C", second_letter: "T", third_letter: "R", first_name: "HANCE", second_name: "HE", third_name: "APPER", icon: "https://i.pinimg.com/originals/e1/09/a0/e109a0b91fd868883aa963a79aab0c1e.png", description: "Acid Rap || Coloring Book || Owbum(so far) || Ten Day And More" )
 Artist.create(name: "Travis Scott", short: "travis", first_letter: "T", second_letter: "S", first_name: "RAVIS", second_name: "COTT", icon: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", description: "ASTROWORLD || Owl Pharoah || Days Before Rodeo || Huncho Jack And More")
 
-Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1)
-Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1)
-Album.create(title: "WMWTSO", short: "wmtso", css: "three", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg", color: "#B92A28", artist_id: 1)
-Album.create(title: "Go:od AM", short: "good__am", css: "four", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", color: "#FFFFFF", artist_id: 1)
-Album.create(title: "Divine Feminine", short: "divine", css: "five", art: "https://media.pitchfork.com/photos/5929bcb3ea9e61561daa752c/1:1/w_600/178c182f.jpg", color: "#DCC0BD", artist_id: 1)
-Album.create(title: "Blue Slide Park", short: "blue", css: "six", art: "https://images.genius.com/ab260470b208b8984a74e2e42e7d1ff6.600x600x1.jpg", color: "#2F46F6", artist_id: 1)
-Album.create(title: "K.I.D.S", short: "kids", css: "seven", art: "https://cdn.shopify.com/s/files/1/0807/4553/products/s-l1600-1_883370e4-02dc-4b8a-8986-22a9bcfe00fa_grande.jpg?v=1544759626", color: "#E2BC9C", artist_id: 1)
-Album.create(title: "Delusional Thomas", short: "delusional", css: "eight",  art: "http://hw-img.datpiff.com/m9019023/Mac_Miller_Delusional_Thomas-front-large.jpg", color: "#3C3D42", artist_id: 1)
-Album.create(title: "Macadelic", short: "macadelic", css: "nine",  art: "https://ssla.ulximg.com/image/750x750/cover/1332543471_fcbecdd3c7f506b3e7861654c8153f07.jpg/06a0fb870fc8d7c46f60cb31ddd8297e/1332543471_mac_miller_macadelic.jpg", color: "#ffffff", artist_id: 1)
-Album.create(title: "Live From Space", short: "space", css: "ten", art: "http://images.genius.com/932f12c26d028188907e55cf5ff23f3e.600x600x1.jpg", color: "#E74D4A", artist_id: 1)
-Album.create(title: "Best Day Ever", short: "bde", css:"eleven", art: "https://cps-static.rovicorp.com/3/JPG_500/MI0004/067/MI0004067757.jpg?partner=allrovi.com", color: "#A2369A", artist_id: 1)
-Album.create(title: "Run on Sentences", short: "v1", css: "twelve", art: "https://ssla.ulximg.com/image/750x750/cover/1362407226_b378446d8c5acfc033c85e8662022663.jpg/54af3da11b8c521d4244cf9ef9d30f7d/1362407226_abc57058448d2a15b4159a5d07b228c6.jpg", color: "#FFEF4F", artist_id: 1)
-Album.create(title: "Everything Else", short: "everything", css: "thirteen", art: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg", color: "#2046F6", artist_id: 1)
-Album.create(title: "Stolen Youth", short: "stolen", css: "fourteen", art: "https://earmilk-com.exactdn.com/wp-content/uploads/2013/07/Vince_Staples_Larry_Fisherman_Stolen_Youth-front-large.jpg?strip=all&lossy=1&ssl=1", color: "#A2369A", artist_id: 1)
+Album.create(title: "Swimming", short: "swimming", css: "first", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", color: "#FFFFFF", artist_id: 1, sneak_peek: "_O1qD95xnao")
+Album.create(title: "Faces", short: "faces", css: "two", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", color: "#F9C647", artist_id: 1, sneak_peek: "fuJPkQkhwn8")
+Album.create(title: "WMWTSO", short: "wmtso", css: "three", art: "https://images.genius.com/c2c579aaf2e5c37b2a5dd74193bb0cdd.600x600x1.jpg", color: "#B92A28", artist_id: 1, sneak_peek: "R_me4SNmGbc")
+Album.create(title: "Go:od AM", short: "good__am", css: "four", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", color: "#FFFFFF", artist_id: 1, sneak_peek: "8RUbM_WSYTI")
+Album.create(title: "Divine Feminine", short: "divine", css: "five", art: "https://media.pitchfork.com/photos/5929bcb3ea9e61561daa752c/1:1/w_600/178c182f.jpg", color: "#DCC0BD", artist_id: 1, sneak_peek: "5WU7oGiwiao")
+Album.create(title: "Blue Slide Park", short: "blue", css: "six", art: "https://images.genius.com/ab260470b208b8984a74e2e42e7d1ff6.600x600x1.jpg", color: "#2F46F6", artist_id: 1, sneak_peek: "T_Mt6Isew_0")
+Album.create(title: "K.I.D.S", short: "kids", css: "seven", art: "https://cdn.shopify.com/s/files/1/0807/4553/products/s-l1600-1_883370e4-02dc-4b8a-8986-22a9bcfe00fa_grande.jpg?v=1544759626", color: "#E2BC9C", artist_id: 1, sneak_peek: "mkGT1c98soU")
+Album.create(title: "Delusional Thomas", short: "delusional", css: "eight",  art: "http://hw-img.datpiff.com/m9019023/Mac_Miller_Delusional_Thomas-front-large.jpg", color: "#3C3D42", artist_id: 1, sneak_peek: "xKpg7bV5ml4")
+Album.create(title: "Macadelic", short: "macadelic", css: "nine",  art: "https://ssla.ulximg.com/image/750x750/cover/1332543471_fcbecdd3c7f506b3e7861654c8153f07.jpg/06a0fb870fc8d7c46f60cb31ddd8297e/1332543471_mac_miller_macadelic.jpg", color: "#ffffff", artist_id: 1, sneak_peek: "As_cvwAMYi4")
+Album.create(title: "Live From Space", short: "space", css: "ten", art: "http://images.genius.com/932f12c26d028188907e55cf5ff23f3e.600x600x1.jpg", color: "#E74D4A", artist_id: 1, sneak_peek: "p2Ic55PW1Dc")
+Album.create(title: "Best Day Ever", short: "bde", css:"eleven", art: "https://cps-static.rovicorp.com/3/JPG_500/MI0004/067/MI0004067757.jpg?partner=allrovi.com", color: "#A2369A", artist_id: 1, sneak_peek: "QtTXIoy48XU")
+Album.create(title: "Run on Sentences", short: "v1", css: "twelve", art: "https://ssla.ulximg.com/image/750x750/cover/1362407226_b378446d8c5acfc033c85e8662022663.jpg/54af3da11b8c521d4244cf9ef9d30f7d/1362407226_abc57058448d2a15b4159a5d07b228c6.jpg", color: "#FFEF4F", artist_id: 1, sneak_peek: "gLroLUKBpTU")
+Album.create(title: "Everything Else", short: "everything", css: "thirteen", art: "https://pbs.twimg.com/profile_images/1035265948192653312/4WYg4YiA.jpg", color: "#2046F6", artist_id: 1, sneak_peek: "oUz16GKrdQc")
+Album.create(title: "Stolen Youth", short: "stolen", css: "fourteen", art: "https://earmilk-com.exactdn.com/wp-content/uploads/2013/07/Vince_Staples_Larry_Fisherman_Stolen_Youth-front-large.jpg?strip=all&lossy=1&ssl=1", color: "#A2369A", artist_id: 1, sneak_peek: "Ma5Ai5IrFSc")
 
 Album.create(title: "Man on the Moon I", short: "motm", css: "first", art: "https://images.rapgenius.com/90661b285579da7ab694e7db4cd6abf8.706x700x1.jpg", color: "#EA4133", text: "black", font_size: "1.7vmin", artist_id: 2)
 Album.create(title: "Man on the Moon II", short: "motm2", css: "two", art: "https://images-na.ssl-images-amazon.com/images/I/61xjuDkOiuL.jpg", color: "#9F5526", text: "white", font_size: "1.6vmin",  artist_id: 2)
@@ -346,7 +346,7 @@ end
 everything_songs = [
   {name: "The Star Room OG Version", youtube: "PfRi1xPMflI", album_id: 13},
   {name: "That's Life", youtube: "4oviKWgwzE4", album_id: 13},
-  {name: "Benji the Dog", youtube: "_hbFPAcOce8", album_id: 13},
+  {name: "Benji the Dog", youtube: "oUz16GKrdQc", album_id: 13},
   {name: "Happy", youtube: "tCc12IqBzRE", album_id: 13},
   {name: "Buttons", youtube: "v2Q9kltRpbE", album_id: 13},
   {name: "Programs", youtube: "Wvm5GuDfAas", album_id: 13},
