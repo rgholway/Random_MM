@@ -82,6 +82,7 @@ class Vote extends Component {
           youtube= {song.youtube}
           category= {song.first_characteristic}
           handleHover= {this.handleHover}
+          art= {song.art}
         />
       )
     })
@@ -107,6 +108,8 @@ class Vote extends Component {
         <div className={`vote__albums${this.state.status}`}>
           {albumArray}
         </div>
+        <div className={`vote__songs--title${this.state.status}`}>Choose Your Favorite Song</div>
+        <div className={`vote__songs--info${this.state.status}`}>Hover over Song to Listen</div>
         <div className={`vote__songs${this.state.status}`}>
         {songArray}
         </div>

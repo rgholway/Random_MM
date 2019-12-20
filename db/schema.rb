@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 2019_11_22_170545) do
     t.string "youtube", null: false
     t.string "vote"
     t.string "first_characteristic"
-    t.string "second_characteristic"
+    t.string "art"
     t.bigint "album_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

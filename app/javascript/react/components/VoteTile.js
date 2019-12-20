@@ -8,21 +8,21 @@ class VoteTile extends Component {
         }
         this.handleHover = this.handleHover.bind(this)
         this.handleLeave = this.handleLeave.bind(this)
-        this.createPlaylist = this.createPlaylist.bind(this)
+        this.updatePlaylist = this.updatePlaylist.bind(this)
   }
 
   handleHover() {
-    this.props.handleHover("active", this.props.youtube)
+    this.props.handleHover("", this.props.youtube)
   }
 
   handleLeave() {
     this.props.handleHover( "", "")
   }
 
-  createPlaylist() {
+  updatePlaylist() {
     let jsonStringInfo = JSON.stringify(this.props.category)
-      fetch(`/api/v1/playlists`, {
-        method: 'POST',
+      fetch(`/api/v1/playlists/10`, {
+        method: 'PUT',
         body: jsonStringInfo,
         headers: {
           'Accept': 'application/json',
@@ -35,8 +35,9 @@ class VoteTile extends Component {
   render() {
     return (
       <div>
-        <div className="music__vote" onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave} onClick={this.createPlaylist}>
+        <div className="music__vote" onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave} onClick={this.updatePlaylist}>
           {this.props.name}
+          <img className="music__vote--art" src={this.props.art}/>
         </div>
       </div>
     )
