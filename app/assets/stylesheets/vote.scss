@@ -10,8 +10,8 @@
 
 .vote__songs--second {
   position: absolute;
-  top: 10%;
-  left: 30%;
+  top: 15%;
+  left: 35%;
   height: 80%;
   width: 30%;
   overflow: scroll;
@@ -31,11 +31,63 @@
   overflow: hidden;
 }
 
+.vote__songs--title--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--title--second {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  height: 10%;
+  width: 30%;
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__songs--title--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--info--second {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  color: #5F6065;
+  width: 30%;
+  text-align: center;
+  height: 20%;
+  font-size: 1.75vh;
+  font-family: 'Raleway', sans-serif;
+}
+
+.vote__songs--info--first {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.vote__songs--info--third {
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
 .music__vote {
   position: relative;
+  padding: 8.5%;
   border: solid 1px black;
-  margin: 5% 5% 10% 10%;
   cursor: pointer;
+  font-family: 'Raleway', sans-serif;
 }
 
 .vote__click {
@@ -276,4 +328,12 @@
   height: 0%;
   width: 0%;
   overflow: hidden;
+}
+
+.music__vote--art {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  width: 20%;
+  left: 70%;
 }

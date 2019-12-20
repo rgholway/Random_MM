@@ -5,7 +5,7 @@ class Songs < ActiveRecord::Migration[5.2]
     t.string :youtube, null: false
     t.string :vote
     t.string :first_characteristic
-    t.string :second_characteristic
+    t.string :art
 
     t.belongs_to :album
 
