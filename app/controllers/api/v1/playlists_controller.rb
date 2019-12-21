@@ -14,7 +14,7 @@ protect_from_forgery unless: -> { request.format.json? }
     size = songs.length
     numbers = []
     until playlist.length == 6 do
-      num = rand(size + 1)
+      num = rand(size)
       if !numbers.include?(num)
         numbers << num
         song = songs[num]
@@ -22,12 +22,13 @@ protect_from_forgery unless: -> { request.format.json? }
       end
     end
     Playlist.create(title: "new", songs: playlist)
+    render json: Playlist.last.id
   end
 
   def update
     selected_category = playlist_params[:_json]
-    selected_playlist = Playlist.find(10)
-    playlist = Playlist.find(10).songs
+    selected_playlist = Playlist.find(playlist_params[:id])
+    playlist = Playlist.find(playlist_params[:id]).songs
     songs = Song.where(first_characteristic: selected_category)
     selected_songs = []
     numbers = []
@@ -44,7 +45,7 @@ protect_from_forgery unless: -> { request.format.json? }
   end
 
   def playlist_params
-    params.permit(:_json)
+    params.permit(:_json, :id)
   end
 
 end

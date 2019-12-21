@@ -4,6 +4,7 @@ import {Link} from 'react-router';
 import VoteTile from './VoteTile'
 import VoteAlbumTile from './VoteAlbumTile'
 import VoteVideo from './VoteVideo'
+import ThirdQuestion from './ThirdQuestion'
 
 class Vote extends Component {
   constructor(props) {
@@ -13,13 +14,15 @@ class Vote extends Component {
       youtube: "",
       active: "",
       status: "--first",
-      albums: []
+      albums: [],
+      playlistId: ""
     }
 
     this.fetchSongs = this.fetchSongs.bind(this)
     this.fetchAlbums = this.fetchAlbums.bind(this)
     this.handleHover = this.handleHover.bind(this)
     this.playlistQuestions = this.playlistQuestions.bind(this)
+    this.playlistId = this.playlistId.bind(this)
 
   }
 
@@ -67,6 +70,10 @@ class Vote extends Component {
       this.setState({ status: question })
     }
 
+    playlistId(id) {
+      this.setState({ playlistId: id })
+    }
+
     componentWillMount() {
       this.fetchSongs()
       this.fetchAlbums()
@@ -83,6 +90,8 @@ class Vote extends Component {
           category= {song.first_characteristic}
           handleHover= {this.handleHover}
           art= {song.art}
+          playlistQuestions= {this.playlistQuestions}
+          playlistId= {this.state.playlistId}
         />
       )
     })
@@ -97,6 +106,7 @@ class Vote extends Component {
           sneak= {album.sneak_peek}
           handleHover= {this.handleHover}
           playlistQuestions= {this.playlistQuestions}
+          playlistId= {this.playlistId}
         />
       )
     })
@@ -111,11 +121,21 @@ class Vote extends Component {
         <div className={`vote__songs--title${this.state.status}`}>Choose Your Favorite Song</div>
         <div className={`vote__songs--info${this.state.status}`}>Hover over Song to Listen</div>
         <div className={`vote__songs${this.state.status}`}>
-        {songArray}
+          {songArray}
+        </div>
+        <div className={`vote__thirdQuestion--title${this.state.status}`}>Do You Prefer Faster Songs or Slower Songs?</div>
+        <div className={`vote__thirdQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
+        <div className={`vote__thirdQuestion${this.state.status}`}>
+          <ThirdQuestion
+            playlistQuestions= {this.playlistQuestions}
+            handleHover= {this.handleHover}
+            playlistId= {this.state.playlistId}
+          />
         </div>
         <div className={`vote--video--${this.state.active}`}>
           <VoteVideo
             youtube= {this.state.youtube}
+            onClick= {this.handleHover}
           />
         </div>
       </div>
