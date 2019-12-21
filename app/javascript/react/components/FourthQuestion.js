@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 
-class ThirdQuestion extends Component {
+class FourthQuestion extends Component {
   constructor(props) {
     super(props);
     this.state = {
         }
-      this.handleUpper = this.handleUpper.bind(this)
-      this.handleDowner = this.handleDowner.bind(this)
+      this.handleFunky = this.handleFunky.bind(this)
+      this.handleTrippy = this.handleTrippy.bind(this)
       this.handleLeave = this.handleLeave.bind(this)
-      this.updatePlaylistFaster = this.updatePlaylistFaster.bind(this)
-      this.updatePlaylistSlower = this.updatePlaylistSlower.bind(this)
+      this.updatePlaylistTrippy = this.updatePlaylistTrippy.bind(this)
+      this.updatePlaylistFunky = this.updatePlaylistFunky.bind(this)
   }
 
-  handleUpper() {
-    this.props.handleHover( "", "Wvm5GuDfAas" )
+  handleFunky() {
+    this.props.handleHover( "", "LR3GQfryp9M" )
   }
 
-  handleDowner() {
-    this.props.handleHover("", "u7MrdaSYvo0")
+  handleTrippy() {
+    this.props.handleHover("", "rIQqzTNRmoc")
   }
 
   handleLeave() {
     this.props.handleHover("", "")
   }
 
-  updatePlaylistFaster() {
-    let jsonStringInfo = JSON.stringify("upbeat")
+  updatePlaylistFunky() {
+    let jsonStringInfo = JSON.stringify("funky")
       fetch(`/api/v1/playlists/${this.props.playlistId}`, {
         method: 'PUT',
         body: jsonStringInfo,
@@ -38,8 +38,8 @@ class ThirdQuestion extends Component {
       this.props.playlistQuestions("--fourth")
       }
 
-  updatePlaylistSlower() {
-    let jsonStringInfo = JSON.stringify("downer")
+  updatePlaylistTrippy() {
+    let jsonStringInfo = JSON.stringify("trippy")
       fetch(`/api/v1/playlists/${this.props.playlistId}`, {
         method: 'PUT',
         body: jsonStringInfo,
@@ -49,17 +49,17 @@ class ThirdQuestion extends Component {
         credentials: 'same-origin'
       })
       .then(formPayload => formPayload.json())
-      this.props.playlistQuestions("--fourth")
+      this.props.playlistQuestions("--fifth")
       }
 
   render() {
     return (
       <div>
-        <div className="upper__vote" onMouseEnter={this.handleUpper} onMouseLeave={this.handleLeave} onClick={this.updatePlaylistFaster}>Faster</div>
-        <div className="downer__vote" onMouseEnter={this.handleDowner} onMouseLeave={this.handleLeave} onClick={this.updatePlaylistSlower}>Slower</div>
+        <div className="funky__vote" onMouseEnter={this.handleFunky} onMouseLeave={this.handleLeave} onClick={this.updatePlaylistFunky}>Funky</div>
+        <div className="trippy__vote" onMouseEnter={this.handleTrippy} onMouseLeave={this.handleLeave} onClick={this.updatePlaylistTrippy}>Trippy</div>
       </div>
     )
   }
 }
 
-export default ThirdQuestion
+export default FourthQuestion
