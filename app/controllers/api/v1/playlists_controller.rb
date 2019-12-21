@@ -1,6 +1,12 @@
 class Api::V1::PlaylistsController < ApplicationController
 protect_from_forgery unless: -> { request.format.json? }
 
+  class Array
+     def included_in? array
+       array.to_set.superset?(self.to_set)
+     end
+  end
+
   def show
     playlist = Playlist.find(params[:id])
     render json: playlist.songs
@@ -37,7 +43,9 @@ protect_from_forgery unless: -> { request.format.json? }
       if !numbers.include?(num)
         numbers << num
         selected_song = songs[num]
-        selected_songs << [selected_song.id, selected_song.name, selected_song.youtube]
+        if !playlist.include?([selected_song.id.to_s, selected_song.name, selected_song.youtube])
+          selected_songs << [selected_song.id, selected_song.name, selected_song.youtube]
+        end
       end
     end
     new_playlist = playlist + selected_songs

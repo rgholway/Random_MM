@@ -5,6 +5,7 @@ import VoteTile from './VoteTile'
 import VoteAlbumTile from './VoteAlbumTile'
 import VoteVideo from './VoteVideo'
 import ThirdQuestion from './ThirdQuestion'
+import FourthQuestion from './FourthQuestion'
 
 class Vote extends Component {
   constructor(props) {
@@ -127,6 +128,15 @@ class Vote extends Component {
         <div className={`vote__thirdQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
         <div className={`vote__thirdQuestion${this.state.status}`}>
           <ThirdQuestion
+            playlistQuestions= {this.playlistQuestions}
+            handleHover= {this.handleHover}
+            playlistId= {this.state.playlistId}
+          />
+        </div>
+        <div className={`vote__fourthQuestion--title${this.state.status}`}>Do You Prefer Funkier or Trippier Songs?</div>
+        <div className={`vote__fourthQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
+        <div className={`vote__fourthQuestion${this.state.status}`}>
+          <FourthQuestion
             playlistQuestions= {this.playlistQuestions}
             handleHover= {this.handleHover}
             playlistId= {this.state.playlistId}
