@@ -4,6 +4,7 @@ class VoteAlbumTile extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      playlistId: ""
         }
       this.handleHover = this.handleHover.bind(this)
       this.handleLeave = this.handleLeave.bind(this)
@@ -29,6 +30,9 @@ class VoteAlbumTile extends Component {
         credentials: 'same-origin'
       })
       .then(formPayload => formPayload.json())
+      .then(body => {
+        this.props.playlistId(body)
+      })
       this.props.playlistQuestions("--second")
       }
 

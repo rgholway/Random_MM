@@ -21,7 +21,7 @@ class VoteTile extends Component {
 
   updatePlaylist() {
     let jsonStringInfo = JSON.stringify(this.props.category)
-      fetch(`/api/v1/playlists/10`, {
+      fetch(`/api/v1/playlists/${this.props.playlistId}`, {
         method: 'PUT',
         body: jsonStringInfo,
         headers: {
@@ -30,6 +30,7 @@ class VoteTile extends Component {
         credentials: 'same-origin'
       })
       .then(formPayload => formPayload.json())
+      this.props.playlistQuestions("--third")
       }
 
   render() {
