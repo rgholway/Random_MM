@@ -6,6 +6,7 @@ import VoteAlbumTile from './VoteAlbumTile'
 import VoteVideo from './VoteVideo'
 import ThirdQuestion from './ThirdQuestion'
 import FourthQuestion from './FourthQuestion'
+import FifthQuestion from './FifthQuestion'
 
 class Vote extends Component {
   constructor(props) {
@@ -113,41 +114,49 @@ class Vote extends Component {
     })
 
     return(
-      <div className="vote">
-      <div className={`vote__albums--title${this.state.status}`}>Choose Your Favorite Album</div>
-      <div className={`vote__albums--info${this.state.status}`}>Hover over Album to Hear a Sneak Peek</div>
-        <div className={`vote__albums${this.state.status}`}>
-          {albumArray}
-        </div>
-        <div className={`vote__songs--title${this.state.status}`}>Choose Your Favorite Song</div>
-        <div className={`vote__songs--info${this.state.status}`}>Hover over Song to Listen</div>
-        <div className={`vote__songs${this.state.status}`}>
-          {songArray}
-        </div>
-        <div className={`vote__thirdQuestion--title${this.state.status}`}>Do You Prefer Faster Songs or Slower Songs?</div>
-        <div className={`vote__thirdQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
-        <div className={`vote__thirdQuestion${this.state.status}`}>
-          <ThirdQuestion
-            playlistQuestions= {this.playlistQuestions}
-            handleHover= {this.handleHover}
-            playlistId= {this.state.playlistId}
-          />
-        </div>
-        <div className={`vote__fourthQuestion--title${this.state.status}`}>Do You Prefer Funkier or Trippier Songs?</div>
-        <div className={`vote__fourthQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
-        <div className={`vote__fourthQuestion${this.state.status}`}>
-          <FourthQuestion
-            playlistQuestions= {this.playlistQuestions}
-            handleHover= {this.handleHover}
-            playlistId= {this.state.playlistId}
-          />
-        </div>
-        <div className={`vote--video--${this.state.active}`}>
-          <VoteVideo
-            youtube= {this.state.youtube}
-            onClick= {this.handleHover}
-          />
-        </div>
+      <div className="white">
+        <div className={`vote__albums--title${this.state.status}`}>Choose Your Favorite Album</div>
+        <div className={`vote__albums--info${this.state.status}`}>Hover over Album to Hear a Sneak Peek</div>
+          <div className={`vote__albums${this.state.status}`}>
+            {albumArray}
+          </div>
+          <div className={`vote__songs--title${this.state.status}`}>Choose Your Favorite Song</div>
+          <div className={`vote__songs--info${this.state.status}`}>Hover over Song to Listen</div>
+          <div className={`vote__songs${this.state.status}`}>
+            {songArray}
+          </div>
+          <div className={`vote__thirdQuestion--title${this.state.status}`}>Do You Prefer Faster Songs or Slower Songs?</div>
+          <div className={`vote__thirdQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
+          <div className={`vote__thirdQuestion${this.state.status}`}>
+            <ThirdQuestion
+              playlistQuestions= {this.playlistQuestions}
+              handleHover= {this.handleHover}
+              playlistId= {this.state.playlistId}
+            />
+          </div>
+          <div className={`vote__fourthQuestion--title${this.state.status}`}>Do You Prefer Funkier or Trippier Songs?</div>
+          <div className={`vote__fourthQuestion--info${this.state.status}`}>Hover for Sneak Peek</div>
+          <div className={`vote__fourthQuestion${this.state.status}`}>
+            <FourthQuestion
+              playlistQuestions= {this.playlistQuestions}
+              handleHover= {this.handleHover}
+              playlistId= {this.state.playlistId}
+            />
+          </div>
+          <div className={`vote__fifthQuestion--title${this.state.status}`}>Do You Prefer Older or Newer Mac?</div>
+          <div className={`vote__fifthQuestion${this.state.status}`}>
+            <FifthQuestion
+              playlistQuestions= {this.playlistQuestions}
+              handleHover= {this.handleHover}
+            />
+          </div>
+          <div className={`vote--video--${this.state.active}`}>
+            <VoteVideo
+              youtube= {this.state.youtube}
+              onClick= {this.handleHover}
+              playlistId= {this.state.playlistId}
+            />
+          </div>
       </div>
     )}
   }
