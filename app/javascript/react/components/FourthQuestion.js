@@ -35,7 +35,7 @@ class FourthQuestion extends Component {
         credentials: 'same-origin'
       })
       .then(formPayload => formPayload.json())
-      this.props.playlistQuestions("--fourth")
+      this.props.playlistQuestions("--fifth")
       }
 
   updatePlaylistTrippy() {

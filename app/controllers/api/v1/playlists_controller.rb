@@ -38,7 +38,7 @@ protect_from_forgery unless: -> { request.format.json? }
     songs = Song.where(first_characteristic: selected_category)
     selected_songs = []
     numbers = []
-    until selected_songs.length == 5 do
+    until selected_songs.length == 3 do
       num = rand(songs.size)
       if !numbers.include?(num)
         numbers << num
