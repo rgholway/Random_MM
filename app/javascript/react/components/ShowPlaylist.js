@@ -13,13 +13,16 @@ class PlaylistShow extends Component {
       setting: "--play--active",
       play: "",
       status: "",
-      name: "under"
+      name: "video--vote",
+      mode: "dark",
+      side: "left"
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
       this.handleShuffle = this.handleShuffle.bind(this)
+      this.handleMode = this.handleMode.bind(this)
   }
 
   fetchPlaylist() {
@@ -40,7 +43,7 @@ class PlaylistShow extends Component {
   }
 
   handleClick(id, youtube) {
-    this.setState({ id: id, youtube: youtube, name: "under--active"})
+    this.setState({ id: id, youtube: youtube, name: "video--vote--active"})
   }
 
   handleRight() {
@@ -79,11 +82,22 @@ class PlaylistShow extends Component {
     this.setState({ playlist: shuffled })
   }
 
+  handleMode() {
+    if (this.state.mode == "dark") {
+      this.setState({ mode: "light", side: "left" })
+    }
+    else {
+      this.setState({ mode: "dark", side: "right" })
+    }
+
+  }
+
   componentWillMount() {
     this.fetchPlaylist()
   }
 
   render() {
+    console.log(this.state.mode);
     let playlistArray = this.state.playlist.map( playlist => {
       return(
         <PlaylistTile
@@ -92,26 +106,29 @@ class PlaylistShow extends Component {
           name= {playlist[1]}
           youtube= {playlist[2]}
           onClick= {this.handleClick}
+          dark= {this.state.mode}
         />
       )
     })
     return (
-      <div className="white">
-        <div className="vote">
-            <div className="song__playlist">
-              <div className="song__playlist__title"> First Playlist </div>
-              {playlistArray}
-            </div>
-              <VoteVideo
-                key= {this.state.id}
-                youtube= {this.state.youtube}
-                status= {this.state.status}
-                className= {this.state.name}
-                handleRight= {this.handleRight}
-                handleLeft= {this.handleLeft}
-                handleShuffle= {this.handleShuffle}
-              />
+      <div className={this.state.mode}>
+        <div className={`song__playlist--${this.state.mode}`}>
+          {playlistArray}
         </div>
+        <div className={`mode--${this.state.mode}`} onClick={this.handleMode}>
+          <div className={`mode--button--${this.state.mode}`}></div>
+          <div className={`words--${this.state.mode}`}>DARK MODE</div>
+        </div>
+          <VoteVideo
+            key= {this.state.id}
+            youtube= {this.state.youtube}
+            status= {this.state.status}
+            className= {this.state.name}
+            handleRight= {this.handleRight}
+            handleLeft= {this.handleLeft}
+            handleShuffle= {this.handleShuffle}
+            mode= {this.state.mode}
+          />
       </div>
     )
   }

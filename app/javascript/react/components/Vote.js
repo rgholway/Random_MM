@@ -148,6 +148,7 @@ class Vote extends Component {
             <FifthQuestion
               playlistQuestions= {this.playlistQuestions}
               handleHover= {this.handleHover}
+              playlistId= {this.state.playlistId}
             />
           </div>
           <div className={`vote--video--${this.state.active}`}>

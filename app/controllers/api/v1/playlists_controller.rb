@@ -35,10 +35,14 @@ protect_from_forgery unless: -> { request.format.json? }
     selected_category = playlist_params[:_json]
     selected_playlist = Playlist.find(playlist_params[:id])
     playlist = Playlist.find(playlist_params[:id]).songs
-    songs = Song.where(first_characteristic: selected_category)
+    if selected_category == "newer" || selected_category == "older"
+      songs = Song.where(second_characteristic: selected_category)
+    else
+      songs = Song.where(first_characteristic: selected_category)
+    end
     selected_songs = []
     numbers = []
-    until selected_songs.length == 3 do
+    until numbers.length == 6 do
       num = rand(songs.size)
       if !numbers.include?(num)
         numbers << num

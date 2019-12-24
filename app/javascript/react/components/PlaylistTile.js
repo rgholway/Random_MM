@@ -14,7 +14,7 @@ class PlaylistTile extends Component {
 
   render() {
     return (
-      <div className="songs__in__playlist" onClick={this.handleClick}>
+      <div className={`songs__in__playlist--${this.props.dark}`} onClick={this.handleClick}>
         {this.props.name}
       </div>
     )
