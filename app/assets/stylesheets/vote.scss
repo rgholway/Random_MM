@@ -154,38 +154,6 @@
   overflow: hidden;
 }
 
-.song__playlist {
-  position: absolute;
-  top: 20%;
-  left: 30%;
-  width: 40%;
-  height: 60%;
-  overflow: scroll;
-  background: black;
-  border: solid red 1px;
-}
-
-.song__playlist__title {
-  position: absolute;
-  height: 20%;
-  width: 100%;
-  background: white;
-  z-index: 6;
-  color: black;
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-}
-
-.songs__in__playlist {
-  position: relative;
-  top: 30%;
-  padding: 5%;
-  color: white;
-  border: solid 1px white;
-  font-family: 'Raleway', sans-serif;
-  cursor: pointer;
-}
-
 .play__button--playlist {
   position: absolute;
   left: 5%;
@@ -234,15 +202,6 @@
   overflow: hidden;
 }
 
-.black__screen {
-  position: absolute;
-  top: 85%;
-  height: 15%;
-  width: 100%;
-  background: black;
-  z-index: 22;
-}
-
 .under {
   position: absolute;
   height: 0%;
@@ -257,33 +216,6 @@
   height: 15%;
   width: 15%;
   z-index: 30;
-}
-
-.right--arrow {
-  position: absolute;
-  right: 15%;
-  height: 100%;
-  width: 10%;
-  background: red;
-  cursor: pointer;
-}
-
-.left--arrow {
-  position: absolute;
-  left: 15%;
-  height: 100%;
-  width: 10%;
-  background: green;
-  cursor: pointer;
-}
-
-.shuffle--button {
-  position: absolute;
-  left: 30%;
-  height: 100%;
-  width: 10%;
-  background: yellow;
-  cursor: pointer;
 }
 
 .album__vote {

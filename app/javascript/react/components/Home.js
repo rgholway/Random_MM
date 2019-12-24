@@ -3,7 +3,6 @@ import { browserHistory } from 'react-router';
 import {Link} from 'react-router';
 import ArtistTile from './ArtistTile'
 import ArtistShow from './ArtistShow'
-import Circle from './Circle'
 
 class Home extends Component {
   constructor(props) {
@@ -102,10 +101,6 @@ class Home extends Component {
         <div className="home__wheel">
         <div className={`home${this.state.circle}`} onClick={this.firstClick}></div>
           {artistsArray}
-        </div>
-        <div className="circle__text">
-          <Circle
-          />
         </div>
         <div className={`artist__text${this.state.active}`}>{this.state.selectedArtist}</div>
         <div className= {`artist__text--first--mobile${this.state.active}`}>MAC MILLER</div>

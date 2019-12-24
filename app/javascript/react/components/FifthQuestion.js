@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 
 class FifthQuestion extends Component {
   constructor(props) {
@@ -10,6 +11,8 @@ class FifthQuestion extends Component {
       this.setNew = this.setNew.bind(this)
       this.setOld = this.setOld.bind(this)
       this.notActive = this.notActive.bind(this)
+      this.updateNew = this.updateNew.bind(this)
+      this.updateOld = this.updateOld.bind(this)
   }
 
   handleHover() {
@@ -29,6 +32,34 @@ class FifthQuestion extends Component {
   notActive() {
     this.setState({ active: "" })
   }
+
+  updateNew() {
+    let jsonStringInfo = JSON.stringify("newer")
+      fetch(`/api/v1/playlists/${this.props.playlistId}`, {
+        method: 'PUT',
+        body: jsonStringInfo,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      browserHistory.push(`/vote/${this.props.playlistId}`)
+      }
+
+    updateOld() {
+      let jsonStringInfo = JSON.stringify("older")
+        fetch(`/api/v1/playlists/${this.props.playlistId}`, {
+          method: 'PUT',
+          body: jsonStringInfo,
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json' },
+          credentials: 'same-origin'
+        })
+        .then(formPayload => formPayload.json())
+        browserHistory.push(`/vote/${this.props.playlistId}`)
+        }
 
   render() {
     return (
@@ -64,8 +95,8 @@ class FifthQuestion extends Component {
           <div className="ninth__year--year">2018</div>
           <img className="ninth__year--album" src="http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg" onMouseEnter={this.handleHover} onMouseLeave={this.handleLeave}/>
         </div>
-        <div className="old__vote" onMouseEnter={this.setOld} onMouseLeave={this.notActive} ></div>
-        <div className="new__vote" onMouseEnter={this.setNew} onMouseLeave={this.notActive} ></div>
+        <div className="old__vote" onMouseEnter={this.setOld} onMouseLeave={this.notActive} onClick={this.updateOld}></div>
+        <div className="new__vote" onMouseEnter={this.setNew} onMouseLeave={this.notActive} onClick={this.updateNew}></div>
         <div className= {`old__title${this.state.active}`}> Older Mac </div>
         <div className= {`new__title${this.state.active}`}> Newer Mac </div>
       </div>

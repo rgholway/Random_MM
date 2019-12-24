@@ -48,19 +48,19 @@ Album.create(title: "Birds in the Trap", short: "birds", css: "six", art: "https
 Album.create(title: "Features", short: "feature_travis", css: "fifteen", art: "http://www.freepngclipart.com/thumb/cactus/2329-cactus-images-hd-photo-thumb.png", color: "#58BD47", text: "black", font_size: "1.8vmin", artist_id: 4)
 
 swimming_songs = [
-  {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Hurt Feelings", youtube: "WGzhlLCdAVo", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "What's the Use?", youtube: "qI-t1I_ppL8", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Perfecto", youtube: "XbSuMV7ghm8", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Self Care", youtube: "SsKT0s5J8ko", album_id: 1, first_characteristic: "upbeat", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Wings", youtube: "_O1qD95xnao", album_id: 1, first_characteristic: "upbeat", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Ladders", youtube: "0gzmFo8UiJQ", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Small Worlds", youtube: "nHc_7yeiLvc", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Conversation Pt. 1", youtube: "7YcXhpgHwvI", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Dunno", youtube: "61Lmk2k542k", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "Jet Fuel", youtube: "OnG7oL9Gg4o", album_id: 1, first_characteristic: "upbeat", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "2009", youtube: "6B3YwcjQ_bU", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"},
-  {name: "So it Goes", youtube: "Uf24Uk6ZMLQ", album_id: 1, first_characteristic: "downer", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg"}
+  {name: "Come Back to Earth", youtube: "W4ocPPhtglU", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Hurt Feelings", youtube: "WGzhlLCdAVo", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "What's the Use?", youtube: "qI-t1I_ppL8", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Perfecto", youtube: "XbSuMV7ghm8", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Self Care", youtube: "SsKT0s5J8ko", album_id: 1, first_characteristic: "upbeat", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Wings", youtube: "_O1qD95xnao", album_id: 1, first_characteristic: "upbeat", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Ladders", youtube: "0gzmFo8UiJQ", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Small Worlds", youtube: "nHc_7yeiLvc", album_id: 1, first_characteristic: "funky", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Conversation Pt. 1", youtube: "7YcXhpgHwvI", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Dunno", youtube: "61Lmk2k542k", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "Jet Fuel", youtube: "OnG7oL9Gg4o", album_id: 1, first_characteristic: "upbeat", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "2009", youtube: "6B3YwcjQ_bU", album_id: 1, first_characteristic: "sad", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"},
+  {name: "So it Goes", youtube: "Uf24Uk6ZMLQ", album_id: 1, first_characteristic: "downer", art: "http://www.getalternative.com/wp-content/uploads/2018/12/mac-miller-self-care-video-reveals-cover-art-tracklist-swimming-album.jpg", second_characteristic: "newer"}
 ]
 
 swimming_songs.each do |song|
@@ -68,30 +68,30 @@ swimming_songs.each do |song|
 end
 
 faces_songs = [
-  {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Friends", youtube: "T5iPXcvLbNk", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg" },
-  {name: "Angel Dust", youtube: "rIQqzTNRmoc", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Malibu", youtube: "zlHUpGHJSR0", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "What Do You Do", youtube: "mmeo85zjZlo", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "It Just Doesn't Matter", youtube: "aRAcZP0d69s", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Therapy", youtube: "ts0I8YY30Rk", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Polo Jeans", youtube: "0o-6n5IiVY0", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Happy Birthday", youtube: "s8_f4Sj5qzk", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Wedding", youtube: "x3elAONl3jY", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg" },
-  {name: "Funeral", youtube: "k8gQZ60u2jg", album_id: 2, first_characteristic: "sad", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Diablo", youtube: "KlQESTshOPw", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Ave Maria", youtube: "j2dXGVFT9fg", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "55", youtube: "7pjyOg-3_RM", album_id: 2, first_characteristic: "instrumental", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "San Francisco", youtube: "jR_WuiY6-Sg", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg" },
-  {name: "Colors and Shapes", youtube: "8P5Hx3xXYqw", album_id: 2, first_characteristic: "sad", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Insomniak", youtube: "VywJsq4YXfA", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Uber", youtube: "Zn9CMLebeuc", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Rain", youtube: "BCt9U_iWd38", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Apparition", youtube: "J7iMyLl987w", album_id: 2, first_characteristic: "sad", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Thumbalina", youtube: "QxHWGjXmf0s", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"},
-  {name: "Grand Finale", youtube: "O8QJYVG1cpI", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg"}
+  {name: "Here We Go", youtube: "v19YY2r-HMA", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Inside Outside", youtube: "7i-OZkxv9uQ", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Friends", youtube: "T5iPXcvLbNk", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer" },
+  {name: "Angel Dust", youtube: "rIQqzTNRmoc", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Malibu", youtube: "zlHUpGHJSR0", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "What Do You Do", youtube: "mmeo85zjZlo", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "It Just Doesn't Matter", youtube: "aRAcZP0d69s", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Therapy", youtube: "ts0I8YY30Rk", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Polo Jeans", youtube: "0o-6n5IiVY0", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Happy Birthday", youtube: "s8_f4Sj5qzk", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Wedding", youtube: "x3elAONl3jY", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Funeral", youtube: "k8gQZ60u2jg", album_id: 2, first_characteristic: "sad", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Diablo", youtube: "KlQESTshOPw", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Ave Maria", youtube: "j2dXGVFT9fg", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "55", youtube: "7pjyOg-3_RM", album_id: 2, first_characteristic: "instrumental", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "San Francisco", youtube: "jR_WuiY6-Sg", album_id: 2, first_characteristic: "trippy", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer" },
+  {name: "Colors and Shapes", youtube: "8P5Hx3xXYqw", album_id: 2, first_characteristic: "sad", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Insomniak", youtube: "VywJsq4YXfA", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Uber", youtube: "Zn9CMLebeuc", album_id: 2, first_characteristic: "downer", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Rain", youtube: "BCt9U_iWd38", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Apparition", youtube: "J7iMyLl987w", album_id: 2, first_characteristic: "sad", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Thumbalina", youtube: "QxHWGjXmf0s", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "New Faces", youtube: "fuJPkQkhwn8", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"},
+  {name: "Grand Finale", youtube: "O8QJYVG1cpI", album_id: 2, first_characteristic: "upbeat", art: "https://media.pitchfork.com/photos/5929a7d7ea9e61561daa56a2/1:1/w_600/85c259af.jpg", second_characteristic: "newer"}
 ]
 
 faces_songs.each do |song|
@@ -125,23 +125,23 @@ wmwtso_songs.each do |song|
 end
 
 am_songs = [
-  {name: "Doors", youtube: "wE_KOXiSbI8", album_id: 4, first_characteristic: "instrumental", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Brand Name", youtube: "vuCyrtGQhAk", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Rush Hour", youtube: "L73SaFeTaA8", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Two Matches", youtube: "KWtg0BDRl9k", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "100 Grandkids", youtube: "RDCoM1x7U38", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Time Flies", youtube: "TOvPYP55FlM", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Weekend", youtube: "EAL3PuyulZw", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Club House", youtube: "d2iONei2b7U", album_id: 4, first_characteristic: "funky", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "In The Bag", youtube: "cRxpib4eV2E", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Break the Law", youtube: "IQ49uwe-zv8", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Perfect Circle/God Speed", youtube: "2UkrJ0YjjUY", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "When in Rome", youtube: "hGizbKWt7_g", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "ROS", youtube: "-2AfeMnpiRI", album_id: 4, first_characteristic: "sad", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Cut the Check", youtube: "K6-8KO5UQQo", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "Jump", youtube: "x-2Jd9d2GTY", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"},
-  {name: "The Festival", youtube: "ZptG-yglvmw", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1"}
+  {name: "Doors", youtube: "wE_KOXiSbI8", album_id: 4, first_characteristic: "instrumental", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Brand Name", youtube: "vuCyrtGQhAk", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Rush Hour", youtube: "L73SaFeTaA8", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Two Matches", youtube: "KWtg0BDRl9k", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "100 Grandkids", youtube: "RDCoM1x7U38", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Time Flies", youtube: "TOvPYP55FlM", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Weekend", youtube: "EAL3PuyulZw", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Club House", youtube: "d2iONei2b7U", album_id: 4, first_characteristic: "funky", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "In The Bag", youtube: "cRxpib4eV2E", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Break the Law", youtube: "IQ49uwe-zv8", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Perfect Circle/God Speed", youtube: "2UkrJ0YjjUY", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "When in Rome", youtube: "hGizbKWt7_g", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "ROS", youtube: "-2AfeMnpiRI", album_id: 4, first_characteristic: "sad", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Cut the Check", youtube: "K6-8KO5UQQo", album_id: 4, first_characteristic: "upbeat", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Ascension", youtube: "8RUbM_WSYTI", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "Jump", youtube: "x-2Jd9d2GTY", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"},
+  {name: "The Festival", youtube: "ZptG-yglvmw", album_id: 4, first_characteristic: "downer", art: "https://i2.wp.com/www.parlemag.com/wp-content/uploads/2015/08/Mac-Miller-GOOD-AM.jpg?fit=684%2C684&ssl=1", second_characteristic: "newer"}
 ]
 
 am_songs.each do |song|
@@ -166,22 +166,22 @@ divine_songs.each do |song|
 end
 
 blue_songs = [
-  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 6},
-  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 6},
-  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 6},
-  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 6},
-  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6},
-  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 6},
-  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 6},
-  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 6},
-  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 6},
-  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 6},
-  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 6},
-  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 6},
-  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 6},
-  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 6},
-  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 6},
-  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 6},
+  {name: "English Lane", youtube: "jenO5Fwp2sI", album_id: 6, second_characteristic: "older"},
+  {name: "Blue Slide Park", youtube: "7Sya2lGMuYE", album_id: 6, second_characteristic: "older"},
+  {name: "Party on Fifth Ave", youtube: "f3GGN51_pjE", album_id: 6, second_characteristic: "older"},
+  {name: "PA Nights", youtube: "BhYubDi_2_k", album_id: 6, second_characteristic: "older"},
+  {name: "Frick Park Market", youtube: "KJ19PJ7-SWc", album_id: 6, second_characteristic: "older"},
+  {name: "Smile Back", youtube: "T_Mt6Isew_0", album_id: 6, second_characteristic: "older"},
+  {name: "Under the Weather", youtube: "T32idaCH3Po", album_id: 6, second_characteristic: "older"},
+  {name: "Of the Soul", youtube: "C9RdmVDxl4I", album_id: 6, second_characteristic: "older"},
+  {name: "My Team", youtube: "cCaSqmdOm04", album_id: 6, second_characteristic: "older"},
+  {name: "Up All Night", youtube: "nGB_FZtHyPI", album_id: 6, second_characteristic: "older"},
+  {name: "Loitering", youtube: "s2OI2F9k4nk", album_id: 6, second_characteristic: "older"},
+  {name: "Hole in my Pocket", youtube: "-tmA3TcLf8c", album_id: 6, second_characteristic: "older"},
+  {name: "Diamonds and Gold", youtube: "sGAGev81uOI", album_id: 6, second_characteristic: "older"},
+  {name: "Missed Calls", youtube: "ys-9b9QI3Q4", album_id: 6, second_characteristic: "older"},
+  {name: "Man in the Hat", youtube: "YeNC1I9wE1U", album_id: 6, second_characteristic: "older"},
+  {name: "One Last Thing", youtube: "QBk8fXaFSMs", album_id: 6, second_characteristic: "older"},
 ]
 
 blue_songs.each do |song|
@@ -189,24 +189,24 @@ blue_songs.each do |song|
 end
 
 kids_songs = [
-  {name: "Kicking Incredibly Dope Shit", youtube: "FV9_ND7CrYs", album_id: 7},
-  {name: "Outside", youtube: "g-Nj1LIKo3U", album_id: 7},
-  {name: "Get em Up", youtube: "jwj_4kbcUHY", album_id: 7},
-  {name: "Nikes on my Feet", youtube: "a-rqu-hjobc", album_id: 7},
-  {name: "Senior Skip Day", youtube: "h7NJfuVk9hY", album_id: 7},
-  {name: "The Spins", youtube: "mkGT1c98soU", album_id: 7},
-  {name: "Traffic in the Sky", youtube: "WIUJXgvwgZ0", album_id: 7},
-  {name: "Dont Mind if I Do", youtube: "VbjhM3Bmusw", album_id: 7},
-  {name: "Paper Route", youtube: "uF__NW16rT4", album_id: 7},
-  {name: "Good Evening", youtube: "ST4HeGPuw8Y", album_id: 7},
-  {name: "Ride Around", youtube: "qrxkiAf0sl8", album_id: 7},
-  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7},
-  {name: "Mad Flava Heavy Flow", youtube: "sDgBUU8-4QE", album_id: 7},
-  {name: "Kool Aid and Frozen Pizza", youtube: "UnAbszcy3bs", album_id: 7},
-  {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 7},
-  {name: "Poppy", youtube: "C_7G48V71m0", album_id: 7},
-  {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 7},
-  {name: "La La La", youtube: "_MMI1hEScO8", album_id: 7},
+  {name: "Kicking Incredibly Dope Shit", youtube: "FV9_ND7CrYs", album_id: 7, second_characteristic: "older"},
+  {name: "Outside", youtube: "g-Nj1LIKo3U", album_id: 7, second_characteristic: "older"},
+  {name: "Get em Up", youtube: "jwj_4kbcUHY", album_id: 7, second_characteristic: "older"},
+  {name: "Nikes on my Feet", youtube: "a-rqu-hjobc", album_id: 7, second_characteristic: "older"},
+  {name: "Senior Skip Day", youtube: "h7NJfuVk9hY", album_id: 7, second_characteristic: "older"},
+  {name: "The Spins", youtube: "mkGT1c98soU", album_id: 7, second_characteristic: "older"},
+  {name: "Traffic in the Sky", youtube: "WIUJXgvwgZ0", album_id: 7, second_characteristic: "older"},
+  {name: "Dont Mind if I Do", youtube: "VbjhM3Bmusw", album_id: 7, second_characteristic: "older"},
+  {name: "Paper Route", youtube: "uF__NW16rT4", album_id: 7, second_characteristic: "older"},
+  {name: "Good Evening", youtube: "ST4HeGPuw8Y", album_id: 7, second_characteristic: "older"},
+  {name: "Ride Around", youtube: "qrxkiAf0sl8", album_id: 7, second_characteristic: "older"},
+  {name: "Knock Knock", youtube: "6bMmhKz6KXg", album_id: 7, second_characteristic: "older"},
+  {name: "Mad Flava Heavy Flow", youtube: "sDgBUU8-4QE", album_id: 7, second_characteristic: "older"},
+  {name: "Kool Aid and Frozen Pizza", youtube: "UnAbszcy3bs", album_id: 7, second_characteristic: "older"},
+  {name: "All I Want is You", youtube: "8ZbD-rqHOr0", album_id: 7, second_characteristic: "older"},
+  {name: "Poppy", youtube: "C_7G48V71m0", album_id: 7, second_characteristic: "older"},
+  {name: "Face in the Crowd", youtube: "h3-RhAEgVjU", album_id: 7, second_characteristic: "older"},
+  {name: "La La La", youtube: "_MMI1hEScO8", album_id: 7, second_characteristic: "older"},
 
 
 ]
@@ -233,23 +233,23 @@ delusional_songs.each do |song|
 end
 
 macadelic_songs = [
-  {name: "Love Me As I Have Loved You", youtube: "TlS_XHgKjvo", album_id: 9},
-  {name: "Desperado", youtube: "C8-L78g10Ag", album_id: 9},
-  {name: "Loud", youtube: "_BYIEXzdnlY", album_id: 9},
-  {name: "Thoughts from a Balcony", youtube: "nxufWf7dEcM", album_id: 9},
-  {name: "Aliens Fighting Robots", youtube: "1ivzb0yl4fg", album_id: 9},
-  {name: "Vitamins", youtube: "kcfUxP0yoak", album_id: 9},
-  {name: "Fight the Feeling", youtube: "As_cvwAMYi4", album_id: 9},
-  {name: "Lucky Ass Bitch", youtube: "XZAU4K9TXBM", album_id: 9},
-  {name: "The Mourning After", youtube: "kZk3OhsPYQk", album_id: 9},
-  {name: "1 Threw 8", youtube: "_0bqJ1yRaOs", album_id: 9},
-  {name: "Ignorant", youtube: "AnMz52URFXc", album_id: 9},
-  {name: "The Question", youtube: "DS4dmS-t60Q", album_id: 9},
-  {name: "Angels", youtube: "mODR7mL-9pU", album_id: 9},
-  {name: "America", youtube: "1nZKwreCVtU", album_id: 9},
-  {name: "Sunlight", youtube: "CVSzOsi3sao", album_id: 9},
-  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9},
-  {name: "Fuck em All", youtube: "FgcAUMz9lzA", album_id: 9}
+  {name: "Love Me As I Have Loved You", youtube: "TlS_XHgKjvo", album_id: 9, second_characteristic: "older"},
+  {name: "Desperado", youtube: "C8-L78g10Ag", album_id: 9, second_characteristic: "older"},
+  {name: "Loud", youtube: "_BYIEXzdnlY", album_id: 9, second_characteristic: "older"},
+  {name: "Thoughts from a Balcony", youtube: "nxufWf7dEcM", album_id: 9, second_characteristic: "older"},
+  {name: "Aliens Fighting Robots", youtube: "1ivzb0yl4fg", album_id: 9, second_characteristic: "older"},
+  {name: "Vitamins", youtube: "kcfUxP0yoak", album_id: 9, second_characteristic: "older"},
+  {name: "Fight the Feeling", youtube: "As_cvwAMYi4", album_id: 9, second_characteristic: "older"},
+  {name: "Lucky Ass Bitch", youtube: "XZAU4K9TXBM", album_id: 9, second_characteristic: "older"},
+  {name: "The Mourning After", youtube: "kZk3OhsPYQk", album_id: 9, second_characteristic: "older"},
+  {name: "1 Threw 8", youtube: "_0bqJ1yRaOs", album_id: 9, second_characteristic: "older"},
+  {name: "Ignorant", youtube: "AnMz52URFXc", album_id: 9, second_characteristic: "older"},
+  {name: "The Question", youtube: "DS4dmS-t60Q", album_id: 9, second_characteristic: "older"},
+  {name: "Angels", youtube: "mODR7mL-9pU", album_id: 9, second_characteristic: "older"},
+  {name: "America", youtube: "1nZKwreCVtU", album_id: 9, second_characteristic: "older"},
+  {name: "Sunlight", youtube: "CVSzOsi3sao", album_id: 9, second_characteristic: "older"},
+  {name: "Clarity", youtube: "6CJ4odoWNSs", album_id: 9, second_characteristic: "older"},
+  {name: "Fuck em All", youtube: "FgcAUMz9lzA", album_id: 9, second_characteristic: "older"}
 ]
 
 macadelic_songs.each do |song|

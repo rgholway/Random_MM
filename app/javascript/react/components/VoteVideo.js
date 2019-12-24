@@ -28,7 +28,7 @@ class VoteVideo extends React.Component {
   render() {
     const opts = {
       height: '100%',
-      width: '000%',
+      width: '30%',
       showInfo: 0,
       setSize: 0,
       playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -46,7 +46,7 @@ class VoteVideo extends React.Component {
             onEnd={this.props.songEnd}
             status={this.props.status}
           />
-          <div className="black__screen">
+          <div className={`black__screen--${this.props.mode}`}>
             <div className="right--arrow" onClick={this.handleRight}></div>
             <div className="left--arrow" onClick={this.handleLeft}></div>
             <div className="shuffle--button" onClick={this.handleShuffle}></div>
