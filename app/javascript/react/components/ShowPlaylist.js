@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import PlaylistTile from './PlaylistTile';
 import VoteVideo from './VoteVideo';
+import SearchBar from './SearchBar';
+import SearchTile from './SearchTile';
 
 class PlaylistShow extends Component {
   constructor(props) {
@@ -15,7 +17,9 @@ class PlaylistShow extends Component {
       status: "",
       name: "video--vote",
       mode: "dark",
-      side: "left"
+      side: "left",
+      songs: [],
+      activeSearch: "inactive"
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -23,6 +27,8 @@ class PlaylistShow extends Component {
       this.handleLeft = this.handleLeft.bind(this)
       this.handleShuffle = this.handleShuffle.bind(this)
       this.handleMode = this.handleMode.bind(this)
+      this.searchSong = this.searchSong.bind(this)
+      this.handleAdd = this.handleAdd.bind(this)
   }
 
   fetchPlaylist() {
@@ -44,6 +50,13 @@ class PlaylistShow extends Component {
 
   handleClick(id, youtube) {
     this.setState({ id: id, youtube: youtube, name: "video--vote--active"})
+  }
+
+  handleAdd(id, name, youtube) {
+    this.setState({ activeSearch: ""})
+    let playlist = this.state.playlist
+    playlist.push([id, name, youtube])
+    this.setState({ playlist: playlist, activeSearch: "inactive" })
   }
 
   handleRight() {
@@ -89,7 +102,10 @@ class PlaylistShow extends Component {
     else {
       this.setState({ mode: "dark", side: "right" })
     }
+  }
 
+  searchSong(song) {
+    this.setState({ songs: song})
   }
 
   componentWillMount() {
@@ -97,7 +113,17 @@ class PlaylistShow extends Component {
   }
 
   render() {
-    console.log(this.state.mode);
+    let songsArray = this.state.songs.map( song => {
+      return(
+        <SearchTile
+          key= {song.id}
+          id= {song.id}
+          name= {song.name}
+          youtube= {song.youtube}
+          onClick= {this.handleAdd}
+        />
+      )
+    })
     let playlistArray = this.state.playlist.map( playlist => {
       return(
         <PlaylistTile
@@ -112,6 +138,11 @@ class PlaylistShow extends Component {
     })
     return (
       <div className={this.state.mode}>
+        <div className="playlist__search">
+          <SearchBar
+            searchSong= {this.searchSong}
+          />
+        </div>
         <div className={`song__playlist--${this.state.mode}`}>
           {playlistArray}
         </div>
@@ -129,6 +160,7 @@ class PlaylistShow extends Component {
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
           />
+          <div className={`songs__search`}> {songsArray} </div>
       </div>
     )
   }
