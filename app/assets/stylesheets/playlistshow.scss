@@ -186,3 +186,62 @@
   font-size: 1.5vh;
   color: white;
 }
+
+.playlist__search {
+  position: absolute;
+  top: 2.5%;
+  left: 40%;
+  width: 20%;
+  height: 5vmin;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 25%;
+}
+
+.submit__button__search {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  font-family: 'Raleway', sans-serif;
+  height: 5vmin;
+  width: 20%;
+  background: grey;
+  font-size: 1.5vmin;
+  border: solid 1px grey;
+}
+
+.submit__button__search:hover {
+  background: lightgrey;
+}
+
+.songs__search {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 20%;
+  height: 15%;
+  font-family: 'Raleway', sans-serif;
+  background: black;
+  color: white;
+  overflow: scroll;
+}
+
+.songs__search--inactive {
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  overflow: hidden;
+}
+
+.searched__songs {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  padding: 2%;
+  border: solid 1px white;
+}
+
+.searched__songs {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  padding: 2%;
+  border: solid 1px white;
+}

@@ -10,5 +10,9 @@ class Api::V1::SongsController < ApplicationController
     render json: songs
   end
 
+  def search
+    @songs = Song.where("name ILIKE ?", "%#{params['search_string']}%")
+    render json: @songs
+  end
 
 end
