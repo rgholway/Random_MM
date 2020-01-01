@@ -16,10 +16,10 @@
 
 .song__playlist--dark {
   position: absolute;
-  top: 40%;
+  top: 34%;
   left: 35%;
   width: 30%;
-  height: 60%;
+  height: 66%;
   overflow: scroll;
   background: black;
   border: solid red 1px;
@@ -28,10 +28,10 @@
 
 .song__playlist--light {
   position: absolute;
-  top: 40%;
+  top: 34%;
   left: 35%;
   width: 30%;
-  height: 60%;
+  height: 50%;
   overflow: scroll;
   background: white;
   border: solid black 1px;
@@ -125,10 +125,10 @@
   position: absolute;
   top: 5%;
   right: 5%;
-  height: 3%;
-  width: 6%;
+  height: 2.5vmin;
+  width: 7.5vmin;
   background: grey;
-  border-radius: 30%;
+  border-radius: 20%;
   overflow: hidden;
   cursor: pointer;
 }
@@ -137,64 +137,49 @@
   position: absolute;
   top: 5%;
   right: 5%;
-  height: 3%;
-  width: 6%;
-  background: darkgrey;
-  border-radius: 30%;
+  height: 2.5vmin;
+  width: 7.5vmin;
+  background: black;
+  border-radius: 20%;
   overflow: hidden;
-  cursor: pointer;
-}
-
-.mode--button--dark {
-  position: absolute;
-  right: 0%;
-  height: 100%;
-  width: 35%;
-  background: red;
-  border: solid 1px black;
-  cursor: pointer;
-}
-
-.mode--button--light {
-  position: absolute;
-  left: 0%;
-  height: 100%;
-  width: 35%;
-  background: grey;
-  border: solid 1px black;
   cursor: pointer;
 }
 
 .words--dark {
   position: absolute;
-  left: 50%;
-  top: 15%;
+  right: 00%;
   height: 100%;
+  width: 35%;
   text-align: left;
-  font-family: 'Raleway', sans-serif;
   font-size: 1.5vh;
-  color: black;
+  border-radius: 50%;
+  background: white;
+  border: solid 5px grey;
 }
 
 .words--light {
   position: absolute;
-  right: 50%;
-  top: 15%;
+  left: 00%;
   height: 100%;
+  width: 35%;
   text-align: left;
-  font-family: 'Raleway', sans-serif;
   font-size: 1.5vh;
-  color: white;
+  border-radius: 50%;
+  background: red;
+  border: solid 5px black;
 }
 
 .playlist__search {
   position: absolute;
-  top: 2.5%;
+  top: 95%;
   left: 40%;
   width: 20%;
   height: 5vmin;
+  background: grey;
+  border-radius: 50%;
   font-family: 'Raleway', sans-serif;
   border-radius: 25%;
+  z-index: 25;
 }
 
 .submit__button__search {
@@ -202,7 +187,7 @@
   top: 0%;
   right: 0%;
   font-family: 'Raleway', sans-serif;
-  height: 5vmin;
+  height: 37px;
   width: 20%;
   background: grey;
   font-size: 1.5vmin;
@@ -215,20 +200,28 @@
 
 .songs__search {
   position: absolute;
-  top: 10%;
+  height: 0%;
+  width: 0%;
+  overflow: hidden;
+}
+
+.songs__search--active {
+  position: absolute;
+  top: 85%;
   left: 40%;
   width: 20%;
-  height: 15%;
+  height: 10%;
   font-family: 'Raleway', sans-serif;
   background: black;
   color: white;
   overflow: scroll;
+  z-index: 30;
 }
 
-.songs__search--inactive {
+.songs__search {
   position: absolute;
-  width: 0%;
   height: 0%;
+  width: 0%;
   overflow: hidden;
 }
 
@@ -244,4 +237,26 @@
   font-family: 'Raleway', sans-serif;
   padding: 2%;
   border: solid 1px white;
+}
+
+.search__bar--bar {
+  position: absolute;
+  background: black;
+}
+
+.songs__x {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  background: red;
+  height: 50%;
+  width: 10%;
+  z-index: 30;
+  cursor: cell;
+}
+
+.songs__in__in__playlist {
+  width: 90%;
+  height: 100%;
+  cursor: pointer;
 }

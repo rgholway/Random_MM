@@ -1,4 +1,5 @@
 class Api::V1::VotesController < ApplicationController
+protect_from_forgery unless: -> { request.format.json? }
 
   def index
     songs = []
@@ -15,5 +16,20 @@ class Api::V1::VotesController < ApplicationController
     render json: songs
   end
 
+  def update
+    playlist = Playlist.find(playlist_params[:id])
+    songs = playlist.songs
+    i = 0
+    songs.delete_if do |song|
+      if song[0] == playlist_params[:_json]
+        true
+      end
+    end
+    playlist.update(songs: songs)
+    render json: songs
+  end
 
+  def playlist_params
+    params.permit(:_json, :id)
+  end
 end

@@ -19,7 +19,8 @@ class PlaylistShow extends Component {
       mode: "dark",
       side: "left",
       songs: [],
-      activeSearch: "inactive"
+      activeSearch: "inactive",
+      active: ""
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -29,6 +30,7 @@ class PlaylistShow extends Component {
       this.handleMode = this.handleMode.bind(this)
       this.searchSong = this.searchSong.bind(this)
       this.handleAdd = this.handleAdd.bind(this)
+      this.handleDelete = this.handleDelete.bind(this)
   }
 
   fetchPlaylist() {
@@ -52,11 +54,20 @@ class PlaylistShow extends Component {
     this.setState({ id: id, youtube: youtube, name: "video--vote--active"})
   }
 
-  handleAdd(id, name, youtube) {
-    this.setState({ activeSearch: ""})
-    let playlist = this.state.playlist
-    playlist.push([id, name, youtube])
-    this.setState({ playlist: playlist, activeSearch: "inactive" })
+  handleAdd(id) {
+    let jsonStringInfo = JSON.stringify(id)
+      fetch(`/api/v1/tracks/${this.props.params.id}`, {
+        method: 'PUT',
+        body: jsonStringInfo,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      .then(body => {
+        this.setState({ playlist: body });
+      })
   }
 
   handleRight() {
@@ -104,8 +115,24 @@ class PlaylistShow extends Component {
     }
   }
 
+  handleDelete(id) {
+    let jsonStringInfo = JSON.stringify(id)
+      fetch(`/api/v1/votes/${this.props.params.id}`, {
+        method: 'PUT',
+        body: jsonStringInfo,
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      .then(body => {
+        this.setState({ playlist: body });
+      })
+  }
+
   searchSong(song) {
-    this.setState({ songs: song})
+    this.setState({ songs: song, active: "--active"})
   }
 
   componentWillMount() {
@@ -121,6 +148,7 @@ class PlaylistShow extends Component {
           name= {song.name}
           youtube= {song.youtube}
           onClick= {this.handleAdd}
+          active= {this.state.active}
         />
       )
     })
@@ -132,6 +160,7 @@ class PlaylistShow extends Component {
           name= {playlist[1]}
           youtube= {playlist[2]}
           onClick= {this.handleClick}
+          delete= {this.handleDelete}
           dark= {this.state.mode}
         />
       )
@@ -148,7 +177,7 @@ class PlaylistShow extends Component {
         </div>
         <div className={`mode--${this.state.mode}`} onClick={this.handleMode}>
           <div className={`mode--button--${this.state.mode}`}></div>
-          <div className={`words--${this.state.mode}`}>DARK MODE</div>
+          <div className={`words--${this.state.mode}`}></div>
         </div>
           <VoteVideo
             key= {this.state.id}
@@ -160,7 +189,7 @@ class PlaylistShow extends Component {
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
           />
-          <div className={`songs__search`}> {songsArray} </div>
+          <div className={`songs__search${this.state.active}`}> {songsArray} </div>
       </div>
     )
   }
