@@ -6,16 +6,24 @@ class PlaylistTile extends Component {
     this.state = {
         }
       this.handleClick = this.handleClick.bind(this)
+      this.handleDelete = this.handleDelete.bind(this)
   }
 
   handleClick() {
     this.props.onClick(this.props.id, this.props.youtube )
   }
 
+  handleDelete() {
+    this.props.delete(this.props.id)
+  }
+
   render() {
     return (
-      <div className={`songs__in__playlist--${this.props.dark}`} onClick={this.handleClick}>
-        {this.props.name}
+      <div>
+        <div className={`songs__in__playlist--${this.props.dark}`}>
+          <div className="songs__in__in__playlist" onClick={this.handleClick}>{this.props.name}</div>
+          <div className="songs__x" onClick={this.handleDelete}></div>
+        </div>
       </div>
     )
   }

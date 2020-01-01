@@ -7,8 +7,8 @@ Rails.application.routes.draw do
       resources :albums, only: [:index, :show]
       resources :songs, only: [:show]
       resources :artists, only: [:index, :show]
-      resources :tracks, only: [:show]
-      resources :votes, only: [:index]
+      resources :tracks, only: [:show, :update]
+      resources :votes, only: [:index, :update]
       resources :playlists, only: [:index, :show, :create, :new, :update]
     end
   end
