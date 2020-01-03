@@ -10,7 +10,7 @@ class PlaylistTile extends Component {
   }
 
   handleClick() {
-    this.props.onClick(this.props.id, this.props.youtube )
+    this.props.onClick(this.props.id, this.props.youtube, this.props.place)
   }
 
   handleDelete() {

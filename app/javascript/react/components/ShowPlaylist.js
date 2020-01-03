@@ -20,7 +20,10 @@ class PlaylistShow extends Component {
       side: "left",
       songs: [],
       activeSearch: "inactive",
-      active: ""
+      active: "",
+      index: "",
+      seconds: 0,
+      stop: ""
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -30,7 +33,9 @@ class PlaylistShow extends Component {
       this.handleMode = this.handleMode.bind(this)
       this.searchSong = this.searchSong.bind(this)
       this.handleAdd = this.handleAdd.bind(this)
+      this.handleEnd = this.handleEnd.bind(this)
       this.handleDelete = this.handleDelete.bind(this)
+      this.getTime = this.getTime.bind(this)
   }
 
   fetchPlaylist() {
@@ -50,8 +55,13 @@ class PlaylistShow extends Component {
     })
   }
 
-  handleClick(id, youtube) {
-    this.setState({ id: id, youtube: youtube, name: "video--vote--active"})
+  getTime(time) {
+    this.setState({ seconds: time })
+  }
+
+  handleClick(id, youtube, place) {
+    this.setState({ id: id, youtube: youtube, name: "video--vote--active", index: place})
+    this.startTimer
   }
 
   handleAdd(id) {
@@ -71,33 +81,14 @@ class PlaylistShow extends Component {
   }
 
   handleRight() {
-    let song = this.state.youtube
-    let selected = ""
-    let yt = this.state.youtube
-    let i = -1
-    let index = ""
-    this.state.playlist.forEach( function(song) {
-      i += 1
-      if (song[2] == yt) {
-        index = i
-      }})
-      let selected_song = (index + 1)
-    this.setState( { youtube: this.state.playlist[selected_song][2]})
+    let index = this.state.index + 1
+    this.setState( { youtube: this.state.playlist[index][2], index: index})
+
   }
 
   handleLeft() {
-    let song = this.state.youtube
-    let selected = ""
-    let yt = this.state.youtube
-    let i = -1
-    let index = ""
-    this.state.playlist.forEach( function(song) {
-      i += 1
-      if (song[2] == yt) {
-        index = i
-      }})
-      let selected_song = (index - 1)
-    this.setState( { youtube: this.state.playlist[selected_song][2]})
+    let index = this.state.index - 1
+    this.setState( { youtube: this.state.playlist[index][2], index: index})
   }
 
   handleShuffle() {
@@ -131,6 +122,15 @@ class PlaylistShow extends Component {
       })
   }
 
+  handleEnd() {
+    if (this.state.youtube != "") {
+      this.setState({ youtube: "", stop: "stop", status: "paused" })
+    }
+    if (this.state.youtube == "") {
+      this.setState({ youtube: this.state.playlist[this.state.index][2], status: "played"})
+    }
+  }
+
   searchSong(song) {
     this.setState({ songs: song, active: "--active"})
   }
@@ -152,11 +152,14 @@ class PlaylistShow extends Component {
         />
       )
     })
+    let i = -1
     let playlistArray = this.state.playlist.map( playlist => {
+      i += 1
       return(
         <PlaylistTile
           key= {playlist[0]}
           id= {playlist[0]}
+          place= {i}
           name= {playlist[1]}
           youtube= {playlist[2]}
           onClick= {this.handleClick}
@@ -188,6 +191,9 @@ class PlaylistShow extends Component {
             handleLeft= {this.handleLeft}
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
+            handleEnd= {this.handleEnd}
+            seconds= {this.state.seconds}
+            getTime= {this.getTime}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
       </div>
