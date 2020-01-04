@@ -101,7 +101,6 @@ class VoteVideo extends React.Component {
           <YouTube
             videoId={this.props.youtube}
             opts={opts}
-            className="video--vote--active"
             onReady={this._onReady}
             onPause={this._onPause}
             onPlay={this._onPlay}
@@ -136,6 +135,7 @@ class VoteVideo extends React.Component {
   }
 
   _onPlay(event) {
+    event.preventDefault()
     this.setState({ play: "pause" })
     if (this.state.status == "") {
       this.startTimer()
