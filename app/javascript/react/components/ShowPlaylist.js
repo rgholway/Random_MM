@@ -24,7 +24,8 @@ class PlaylistShow extends Component {
       index: "",
       seconds: 0,
       stop: "",
-      timer: 0
+      timer: 0,
+      currentSong: ""
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -54,7 +55,7 @@ class PlaylistShow extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ playlist: body, youtube: body[0][2], index: 0 });
+      this.setState({ playlist: body, youtube: body[0][2], index: 0, currentSong: body[0][1] });
     })
   }
 
@@ -63,7 +64,7 @@ class PlaylistShow extends Component {
   }
 
   handleClick(id, youtube, place) {
-    this.setState({ id: id, youtube: youtube, name: "video--vote--active", index: place})
+    this.setState({ id: id, youtube: youtube, name: "video--vote--active", index: place, currentSong: this.state.playlist[place][1]})
   }
 
   handleAdd(id) {
@@ -78,18 +79,18 @@ class PlaylistShow extends Component {
       })
       .then(formPayload => formPayload.json())
       .then(body => {
-        this.setState({ playlist: body });
+        this.setState({ playlist: body, active: "" });
       })
   }
 
   handleRight() {
     let index = this.state.index + 1
-    this.setState( { youtube: this.state.playlist[index][2], index: index})
+    this.setState( { youtube: this.state.playlist[index][2], index: index, currentSong: this.state.playlist[index][1]})
   }
 
   handleLeft() {
     let index = this.state.index - 1
-    this.setState( { youtube: this.state.playlist[index][2], index: index})
+    this.setState( { youtube: this.state.playlist[index][2], index: index, currentSong: this.state.playlist[index][1]})
   }
 
   handleShuffle() {
@@ -225,6 +226,8 @@ class PlaylistShow extends Component {
             getTime= {this.getTime}
             startTimer= {this.startTimer}
             stopTimer= {this.stopTimer}
+            currentSong= {this.state.currentSong}
+            index= {this.state.index}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
       </div>

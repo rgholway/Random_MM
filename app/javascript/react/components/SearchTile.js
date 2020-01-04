@@ -15,7 +15,7 @@ class SearchTile extends Component {
   render() {
     return (
       <div className={`searched__songs${this.props.active}`} onClick={this.handleAdd}>
-        {this.props.name}
+        <div className="songs__in--search">{this.props.name}</div>
       </div>
     )
   }
