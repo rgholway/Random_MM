@@ -22,7 +22,7 @@ class PlaylistTile extends Component {
       <div>
         <div className={`songs__in__playlist--${this.props.dark}`}>
           <div className="songs__in__in__playlist" onClick={this.handleClick}>{this.props.name}</div>
-          <div className="songs__x" onClick={this.handleDelete}></div>
+          <div className="songs__x" onClick={this.handleDelete}>X</div>
         </div>
       </div>
     )

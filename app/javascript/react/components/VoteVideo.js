@@ -1,5 +1,10 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import playbutton from '../../../assets/images/play.png'
+import pausebutton from '../../../assets/images/pause.png'
+import rightbutton from '../../../assets/images/right.png'
+import leftbutton from '../../../assets/images/left.png'
+import shufflebutton from '../../../assets/images/shuffle.png'
 
 class VoteVideo extends React.Component {
   constructor(props) {
@@ -8,6 +13,7 @@ class VoteVideo extends React.Component {
       setting: "play__button--play--active",
       status: "",
       stop: "",
+      play: "pause",
       timer: 0.0
         }
       this.handleRight = this.handleRight.bind(this)
@@ -44,6 +50,11 @@ class VoteVideo extends React.Component {
   }
 
   handleEnd() {
+    if (this.state.play == "play") {
+      this.setState({ play: "pause" })
+    } else {
+      this.setState({ play: "play" })
+    }
     if (this.state.status == "") {
       this.setState({ status: "paused" })
     }
@@ -74,6 +85,7 @@ class VoteVideo extends React.Component {
     }
 
   render() {
+    console.log(this.state.play);
     const opts = {
       height: '0%',
       width: '0%',
@@ -97,11 +109,14 @@ class VoteVideo extends React.Component {
             onStateChange={this._onStateChange}
             status={this.props.status}
           />
+          <div className="song__playing--dark">{this.props.currentSong}</div>
           <div className={`black__screen--${this.props.mode}`}>
-            <div className="right--arrow" onClick={this.handleRight}></div>
             <div className="left--arrow" onClick={this.handleLeft}></div>
-            <div className="shuffle--button" onClick={this.handleShuffle}></div>
-            <div className="end__button" onClick={this.handleEnd}></div>
+            <img className={`end__button--${this.state.play}`} src={playbutton} onClick={this.handleEnd}/>
+            <img className={`pause__button--${this.state.play}`} src={pausebutton} onClick={this.handleEnd}/>
+            <img className="right--arrow" src={rightbutton} onClick={this.handleRight}/>
+            <img className="left--arrow" src={leftbutton} onClick={this.handleLeft}/>
+            <img className="shuffle__button" src={shufflebutton} onClick={this.handleShuffle}/>
           </div>
         </div>
     );
@@ -121,6 +136,7 @@ class VoteVideo extends React.Component {
   }
 
   _onPlay(event) {
+    this.setState({ play: "pause" })
     if (this.state.status == "") {
       this.startTimer()
     }
