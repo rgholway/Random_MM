@@ -14,7 +14,7 @@ class PlaylistShow extends Component {
       id: "",
       setting: "--play--active",
       play: "",
-      status: "",
+      status: "played",
       name: "video--vote",
       mode: "dark",
       side: "left",
@@ -23,7 +23,8 @@ class PlaylistShow extends Component {
       active: "",
       index: "",
       seconds: 0,
-      stop: ""
+      stop: "",
+      timer: 0
         }
       this.fetchPlaylist = this.fetchPlaylist.bind(this)
       this.handleClick = this.handleClick.bind(this)
@@ -36,6 +37,8 @@ class PlaylistShow extends Component {
       this.handleEnd = this.handleEnd.bind(this)
       this.handleDelete = this.handleDelete.bind(this)
       this.getTime = this.getTime.bind(this)
+      this.startTimer = this.startTimer.bind(this)
+      this.stopTimer = this.stopTimer.bind(this)
   }
 
   fetchPlaylist() {
@@ -51,7 +54,7 @@ class PlaylistShow extends Component {
     })
     .then(response => response.json())
     .then(body => {
-      this.setState({ playlist: body });
+      this.setState({ playlist: body, youtube: body[0][2], index: 0 });
     })
   }
 
@@ -61,7 +64,6 @@ class PlaylistShow extends Component {
 
   handleClick(id, youtube, place) {
     this.setState({ id: id, youtube: youtube, name: "video--vote--active", index: place})
-    this.startTimer
   }
 
   handleAdd(id) {
@@ -83,7 +85,6 @@ class PlaylistShow extends Component {
   handleRight() {
     let index = this.state.index + 1
     this.setState( { youtube: this.state.playlist[index][2], index: index})
-
   }
 
   handleLeft() {
@@ -92,9 +93,17 @@ class PlaylistShow extends Component {
   }
 
   handleShuffle() {
-    let shuffled_playlist = this.state.playlist
-    let shuffled = shuffled_playlist.sort(function(a, b){return 0.5 - Math.random()});
-    this.setState({ playlist: shuffled })
+      fetch(`/api/v1/songs/${this.props.params.id}`, {
+        method: 'PUT',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json' },
+        credentials: 'same-origin'
+      })
+      .then(formPayload => formPayload.json())
+      .then(body => {
+        this.setState({ playlist: body });
+      })
   }
 
   handleMode() {
@@ -124,9 +133,9 @@ class PlaylistShow extends Component {
 
   handleEnd() {
     if (this.state.youtube != "") {
-      this.setState({ youtube: "", stop: "stop", status: "paused" })
+      this.setState({ youtube: "stop", status: "paused"})
     }
-    if (this.state.youtube == "") {
+    if (this.state.youtube == "stop") {
       this.setState({ youtube: this.state.playlist[this.state.index][2], status: "played"})
     }
   }
@@ -134,6 +143,26 @@ class PlaylistShow extends Component {
   searchSong(song) {
     this.setState({ songs: song, active: "--active"})
   }
+
+  startTimer() {
+    this.setState({ stop: "" })
+    if (this.state.youtube != "stop") {
+      this.timer = setInterval(this.timerStart.bind(this), 1000)
+    }
+    }
+
+    timerStart() {
+      this.setState({ timer: this.state.timer + 1 })
+      if (this.state.stop == "stop") {
+        clearInterval(this.timer)
+        return
+      }
+    }
+
+    stopTimer() {
+      this.setState({ stop: "stop"})
+    }
+
 
   componentWillMount() {
     this.fetchPlaylist()
@@ -192,8 +221,10 @@ class PlaylistShow extends Component {
             handleShuffle= {this.handleShuffle}
             mode= {this.state.mode}
             handleEnd= {this.handleEnd}
-            seconds= {this.state.seconds}
+            seconds= {this.state.timer}
             getTime= {this.getTime}
+            startTimer= {this.startTimer}
+            stopTimer= {this.stopTimer}
           />
           <div className={`songs__search${this.state.active}`}> {songsArray} </div>
       </div>

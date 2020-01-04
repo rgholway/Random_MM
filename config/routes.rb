@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post 'songs/search', to: 'songs#search'
       resources :albums, only: [:index, :show]
-      resources :songs, only: [:show]
+      resources :songs, only: [:show, :update]
       resources :artists, only: [:index, :show]
       resources :tracks, only: [:show, :update]
       resources :votes, only: [:index, :update]
