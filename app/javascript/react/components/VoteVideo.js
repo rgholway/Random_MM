@@ -87,8 +87,8 @@ class VoteVideo extends React.Component {
   render() {
     console.log(this.state.play);
     const opts = {
-      height: '0%',
-      width: '0%',
+      height: '100%',
+      width: '100%',
       showInfo: 0,
       setSize: 0,
       playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -101,7 +101,7 @@ class VoteVideo extends React.Component {
           <YouTube
             videoId={this.props.youtube}
             opts={opts}
-            className="video--vote"
+            className="video--vote--active"
             onReady={this._onReady}
             onPause={this._onPause}
             onPlay={this._onPlay}

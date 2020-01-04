@@ -15,7 +15,7 @@ class PlaylistShow extends Component {
       setting: "--play--active",
       play: "",
       status: "played",
-      name: "video--vote",
+      name: "video--vote--active",
       mode: "dark",
       side: "left",
       songs: [],
