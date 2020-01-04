@@ -8,13 +8,14 @@ class VoteVideo extends React.Component {
       setting: "play__button--play--active",
       status: "",
       stop: "",
-      timer: 0
+      timer: 0.0
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
       this.handleShuffle = this.handleShuffle.bind(this)
       this.handleEnd = this.handleEnd.bind(this)
       this._onReady = this._onReady.bind(this)
+      this._onEnd = this._onEnd.bind(this)
       this._onPause = this._onPause.bind(this)
       this._onStateChange = this._onStateChange.bind(this)
       this.startTimer = this.startTimer.bind(this)
@@ -23,10 +24,18 @@ class VoteVideo extends React.Component {
   }
 
   handleRight() {
+    if (this.state.status == "paused") {
+      this.setState({ status: "" })
+    }
+    this.setState({ timer: 0 })
     this.props.handleRight()
     }
 
   handleLeft() {
+    if (this.state.status == "paused") {
+      this.setState({ status: "" })
+    }
+    this.setState({ timer: 0 })
     this.props.handleLeft()
     }
 
@@ -35,26 +44,28 @@ class VoteVideo extends React.Component {
   }
 
   handleEnd() {
-    this.props.handleEnd({ stop: "stop"})
+    if (this.state.status == "") {
+      this.setState({ status: "paused" })
+    }
+    this.props.handleEnd()
   }
 
   handlePause() {
-    debugger;
     this.setState({ status: "paused" })
   }
 
   startTimer() {
+    this.setState({ stop: "" })
     if (this.props.youtube != "") {
-      this.timer = setInterval(this.timerStart.bind(this), 1000)
+      this.timer = setInterval(this.timerStart.bind(this), 500)
     }
     }
 
     timerStart() {
-      this.setState({ timer: this.state.timer + 1 })
+      this.setState({ timer: this.state.timer + 0.5 })
       if (this.state.stop == "stop") {
         clearInterval(this.timer)
       }
-      console.log(this.state.timer);
     }
 
     stopTimer() {
@@ -97,9 +108,9 @@ class VoteVideo extends React.Component {
   }
 
   _onReady(event) {
-    this.setState({ timer: 0})
-    event.target.playVideo()
-    this.startTimer()
+    if(this.state.status != "paused") {
+      event.target.playVideo()
+    }
   }
 
   _onPause(event) {
@@ -110,16 +121,19 @@ class VoteVideo extends React.Component {
   }
 
   _onPlay(event) {
-    console.log(this.state.status + "state");
-    console.log(typeof(this.props.status) + "props");
-    if (this.props.status == "played" && this.state.status == "") {
-      event.target.seekTo(this.props.seconds)
-      this.setState({ status: "paused" })
+    if (this.state.status == "") {
+      this.startTimer()
+    }
+    if (this.props.status == "played" && this.state.status == "paused") {
+      event.target.seekTo(this.state.timer)
+      this.setState({ status: "" })
       return
     }
   }
 
   _onEnd(event) {
+    this.setState({ timer: 0 })
+    this.props.handleRight()
   }
 
 
