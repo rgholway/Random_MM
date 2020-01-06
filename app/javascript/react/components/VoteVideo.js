@@ -94,8 +94,8 @@ class VoteVideo extends React.Component {
 
   render() {
     const opts = {
-      height: '0%',
-      width: '0%',
+      height: '100%',
+      width: '100%',
       showInfo: 0,
       setSize: 0,
       playerVars: { // https://developers.google.com/youtube/player_parameters
@@ -108,7 +108,6 @@ class VoteVideo extends React.Component {
           <YouTube
             videoId={this.props.youtube}
             opts={opts}
-            className="video--vote"
             onReady={this._onReady}
             onPause={this._onPause}
             onPlay={this._onPlay}
@@ -150,6 +149,7 @@ class VoteVideo extends React.Component {
     let correctTime = Math.floor(videoTime / 60);
     let minutes = (videoTime - correctTime * 60) / 100
     this.setState({ play: "pause", videoTime: (correctTime + minutes).toFixed(2), totalTime: videoTime})
+
     if (this.state.status == "") {
       this.startTimer()
     }
