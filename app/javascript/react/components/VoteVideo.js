@@ -14,7 +14,10 @@ class VoteVideo extends React.Component {
       status: "",
       stop: "",
       play: "pause",
-      timer: 0.0
+      timer: 0.0,
+      vidoeTime: 0.00,
+      totalTime: 0,
+      timeBar: 0
         }
       this.handleRight = this.handleRight.bind(this)
       this.handleLeft = this.handleLeft.bind(this)
@@ -27,6 +30,7 @@ class VoteVideo extends React.Component {
       this.startTimer = this.startTimer.bind(this)
       this._onPlay = this._onPlay.bind(this)
       this.handlePause = this.handlePause.bind(this)
+      this.handleProgress = this.handleProgress.bind(this)
   }
 
   handleRight() {
@@ -47,6 +51,10 @@ class VoteVideo extends React.Component {
 
   handleShuffle() {
     this.props.handleShuffle()
+  }
+
+  handleProgress() {
+    debugger;
   }
 
   handleEnd() {
@@ -73,7 +81,7 @@ class VoteVideo extends React.Component {
     }
 
     timerStart() {
-      this.setState({ timer: this.state.timer + 0.5 })
+      this.setState({ timer: this.state.timer + 0.5, timeBar: (this.state.timer / this.state.totalTime * 100) })
       if (this.state.stop == "stop") {
         clearInterval(this.timer)
       }
@@ -85,7 +93,6 @@ class VoteVideo extends React.Component {
     }
 
   render() {
-    console.log(this.state.play);
     const opts = {
       height: '0%',
       width: '0%',
@@ -109,7 +116,10 @@ class VoteVideo extends React.Component {
             onStateChange={this._onStateChange}
             status={this.props.status}
           />
-          <div className="song__playing--dark">{this.props.currentSong}</div>
+          <div className="song__playing--dark">{this.props.currentSong}
+            <div className="progress__bar" onClick={this.handleProgress}></div>
+            <div className="progress__cover" style={ { width: `${ this.state.timeBar }%` } }></div>
+          </div>
           <div className={`black__screen--${this.props.mode}`}>
             <div className="left--arrow" onClick={this.handleLeft}></div>
             <img className={`end__button--${this.state.play}`} src={playbutton} onClick={this.handleEnd}/>
@@ -136,7 +146,10 @@ class VoteVideo extends React.Component {
   }
 
   _onPlay(event) {
-    this.setState({ play: "pause" })
+    let videoTime = event.target.getDuration()
+    let correctTime = Math.floor(videoTime / 60);
+    let minutes = (videoTime - correctTime * 60) / 100
+    this.setState({ play: "pause", videoTime: (correctTime + minutes).toFixed(2), totalTime: videoTime})
     if (this.state.status == "") {
       this.startTimer()
     }
